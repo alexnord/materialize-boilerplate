@@ -11,9 +11,11 @@
         "phpcbf": "./vendor/bin/phpcbf; exit 0;",
         "lint:php": "./vendor/bin/phpcs --colors; exit 0;",
         "lint:js": "npx eslint resources/js/**; exit 0;",
-        "lint": "./vendor/bin/phpcs --colors && npx eslint resources/js"
+        "lint": "./vendor/bin/phpcs --colors && npx eslint resources/js",
+        "test:php": "./vendor/bin/phpunit"
     },
     "pre-commit": [
+        "test:php",
         "lint"
     ],
     "devDependencies": {

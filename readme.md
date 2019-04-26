@@ -4,15 +4,22 @@
 
 A starter kit for setting up a [Laravel](https://laravel.com) project coupled with a ReactJS frontend.
 
-### Opinionated code compliance
+## Includes
+* Registration w/ email confirmation
+* Stateless Authentication
+* Server side and client side tests
+
+#### Opinionated code
+* Repository design pattern
 * [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer) for PSR-2 code compliance
 * [ESLint](https://github.com/eslint/eslint) Javascript linter using Airbnb styleguide
-* PHPUnit and Jest testing suite
 * Pre-commit git hooks for CI
 
-### Pre-installed packages
+#### Pre-installed packages
+* [Prettus Repsitory](https://github.com/andersao/l5-repository)
 * [Spatie Activity Log](https://github.com/spatie/laravel-activitylog)
 * [Spatie Permissions](https://github.com/spatie/laravel-permission)
+* [Laravel Socialite](https://laravel.com/docs/5.8/socialite)
 
 ## Requirements
 
