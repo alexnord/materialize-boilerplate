@@ -79075,6 +79075,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Navbar"], {
+    collapseOnSelect: true,
+    expand: "lg",
     bg: "dark",
     variant: "dark"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Container"], {
@@ -79087,9 +79089,8 @@ var Header = function Header() {
   }, "Materialize Boilerplate")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Navbar"].Toggle, {
     "aria-controls": "basic-navbar-nav"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Navbar"].Collapse, {
-    id: "basic-navbar-nav"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Nav"], {
-    className: "mr-auto"
+    id: "basic-navbar-nav",
+    className: "justify-content-end"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "nav-link"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
@@ -79104,7 +79105,7 @@ var Header = function Header() {
     style: {
       color: 'rgba(255, 255, 255, 0.5)'
     }
-  }, "Register"))))));
+  }, "Register")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
