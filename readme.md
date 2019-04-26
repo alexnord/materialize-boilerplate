@@ -54,7 +54,7 @@ For detailed Laravel setup instructions, visit [their documentation](https://lar
 1. **Clone the repo**
    
    ```sh
-   $ git clone git@github.com:alexnord/dendri.git
+   $ git clone git@github.com:alexnord/materialize-boilerplate.git
    ```
 2. **Install PHP dependencies**
    
