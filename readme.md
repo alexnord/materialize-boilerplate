@@ -4,17 +4,21 @@
 
 A starter kit for setting up a [Laravel](https://laravel.com) project coupled with a ReactJS frontend.
 
-This package provides
+### Opinionated code compliance
 * [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer) for PSR-2 code compliance
-* [ESLint](https://github.com/eslint/eslint) Javascript linter
+* [ESLint](https://github.com/eslint/eslint) Javascript linter using Airbnb styleguide
 * PHPUnit and Jest testing suite
 * Pre-commit git hooks for CI
+
+### Pre-installed packages
+* [Spatie Activity Log](https://github.com/spatie/laravel-activitylog)
+* [Spatie Permissions](https://github.com/spatie/laravel-permission)
 
 ## Requirements
 
 * PHP 7.2
 * MySQL
-* Node and NPM
+* [Node](https://nodejs.org/en/download/)
 * [NVM](https://github.com/nvm-sh/nvm)
 * [Composer](https://getcomposer.org/)
 
@@ -32,26 +36,41 @@ For detailed Laravel setup instructions, visit [their documentation](https://lar
    ```sh
    $ composer install
    ```
-3. **Run migrations and seed DB**
+3. **Copy the example .env file**
+   
+   ```sh
+   $ cp .env.example .env
+   ```
+4. **Generate application key**
+   
+   ```sh
+   $ php artisan key:generate
+   ```
+5. **Run migrations and seed DB**
    
    ```sh
    $ php artisan migrate:seed
    ```
-4. **Use the Node version provided by .nvmrc**
+6. **Use the Node version provided by .nvmrc**
 
    ```sh
    nvm use
    ```
 
-5. **Install frontend dependencies**
+7. **Install frontend dependencies**
    
    ```sh
    $ npm i
    ```
-6. **Compile frontend assets**
+8. **Compile frontend assets**
 
    ```sh
    $ npm run prod
+   ```
+9. **Run website**
+
+   ```sh
+   $ php artisan serve
    ```
 
 ## Useful commands
@@ -66,7 +85,7 @@ $ npm run watch
 $ npm run test
 ```
 
-**Run code sniffers**
+**Run linters**
 ```sh
-$ npm run sniff
+$ npm run lint
 ```
