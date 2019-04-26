@@ -11,8 +11,8 @@ import {
 } from 'react-bootstrap';
 
 const Header = () => (
-  <Container>
-    <Navbar bg="dark" variant="dark">
+  <Navbar bg="dark" variant="dark">
+    <Container fluid>
       <Navbar.Brand>
         <Link to="/" style={{ color: 'white' }}>Materialize Boilerplate</Link>
       </Navbar.Brand>
@@ -35,8 +35,8 @@ const Header = () => (
           <Button variant="outline-success">Search</Button>
         </Form>
       </Navbar.Collapse>
-    </Navbar>
-  </Container>
+    </Container>
+  </Navbar>
 );
 
 export default Header;
