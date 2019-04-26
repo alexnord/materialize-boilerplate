@@ -23,19 +23,29 @@ For detailed Laravel setup instructions, visit [their documentation](https://lar
 
 1. **Clone the repo**
    
-   `git clone git@github.com:alexnord/dendri.git`
+   ```sh
+   git clone git@github.com:alexnord/dendri.git
+   ```
 2. **Install PHP dependencies**
    
-   `composer install`
+   ```sh
+   composer install
+   ```
 3. **Run migrations and seed DB**
    
-   `php artisan migrate:seed`
+   ```sh
+   php artisan migrate:seed
+   ```
 4. **Install frontend dependencies**
    
-   `npm i`
+   ```sh
+   npm i
+   ```
 5. **Compile frontend assets**
 
-   `npm run prod`
+   ```sh
+   npm run prod
+   ```
 
 ## Useful commands
 
