@@ -1,30 +1,48 @@
+<a href="https://materializelabs.com">
+	<img src="https://d1vqe4bnlv6mwq.cloudfront.net/horizontal-logo.png" alt="Materialize Labs" width="400"/>
+</a>
+
 # Laravel Boilerplate
 
 ## About the Project
 
-A starter kit for setting up a [Laravel](https://laravel.com) project coupled with a ReactJS frontend.
+A starter kit for setting up a [Laravel](https://laravel.com) backend coupled with a [ReactJS](https://reactjs.org/) frontend using the [Bootstrap](https://react-bootstrap.github.io/) UI framework.
 
 ## Includes
-* Registration w/ email confirmation
-* Stateless Authentication
+
+#### Features
+* React SPA frontend
+* Bootstrap UI
+* Authentication
+  * Register / login forms
+  * Email verification
+  * Stateless auth
+* Form validation
 * Server side and client side tests
 
 #### Opinionated code
 * Repository design pattern
-* [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer) for PSR-2 code compliance
-* [ESLint](https://github.com/eslint/eslint) Javascript linter using Airbnb styleguide
 * Pre-commit git hooks for CI
+* [phpcs](https://github.com/squizlabs/PHP_CodeSniffer) for PSR-2 code compliance
+* [eslint](https://github.com/eslint/eslint) Javascript linter using Airbnb styleguide
 
 #### Pre-installed packages
-* [Prettus Repsitory](https://github.com/andersao/l5-repository)
-* [Spatie Activity Log](https://github.com/spatie/laravel-activitylog)
-* [Spatie Permissions](https://github.com/spatie/laravel-permission)
-* [Laravel Socialite](https://laravel.com/docs/5.8/socialite)
+
+##### Server Side
+* [l5-repository](https://github.com/andersao/l5-repository)
+* [laravel-activitylog](https://github.com/spatie/laravel-activitylog)
+* [laravel-permission](https://github.com/spatie/laravel-permission)
+* [socialite](https://laravel.com/docs/5.8/socialite)
+
+##### Client Side
+* [react-bootstrap]((https://react-bootstrap.github.io/)
+* [react-router](https://github.com/ReactTraining/react-router)
+* [formik](https://github.com/jaredpalmer/formik)
 
 ## Requirements
 
-* PHP 7.2
-* MySQL
+* PHP 7.2>
+* MySQL 5.7>
 * [Node](https://nodejs.org/en/download/)
 * [NVM](https://github.com/nvm-sh/nvm)
 * [Composer](https://getcomposer.org/)
@@ -87,7 +105,7 @@ For detailed Laravel setup instructions, visit [their documentation](https://lar
 $ npm run watch
 ```
 
-**Run tests**
+**Run backend and frontend tests**
 ```sh
 $ npm run test
 ```
