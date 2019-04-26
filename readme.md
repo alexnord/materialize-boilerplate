@@ -15,6 +15,7 @@ This package provides
 * PHP 7.2
 * MySQL
 * Node and NPM
+* [NVM](https://github.com/nvm-sh/nvm)
 * [Composer](https://getcomposer.org/)
 
 ## Installation
@@ -24,42 +25,48 @@ For detailed Laravel setup instructions, visit [their documentation](https://lar
 1. **Clone the repo**
    
    ```sh
-   git clone git@github.com:alexnord/dendri.git
+   $ git clone git@github.com:alexnord/dendri.git
    ```
 2. **Install PHP dependencies**
    
    ```sh
-   composer install
+   $ composer install
    ```
 3. **Run migrations and seed DB**
    
    ```sh
-   php artisan migrate:seed
+   $ php artisan migrate:seed
    ```
-4. **Install frontend dependencies**
-   
-   ```sh
-   npm i
-   ```
-5. **Compile frontend assets**
+4. **Use the Node version provided by .nvmrc**
 
    ```sh
-   npm run prod
+   nvm use
+   ```
+
+5. **Install frontend dependencies**
+   
+   ```sh
+   $ npm i
+   ```
+6. **Compile frontend assets**
+
+   ```sh
+   $ npm run prod
    ```
 
 ## Useful commands
 
 **Compile assets for development (hot module reloading enabled)**
 ```sh
-npm run watch
+$ npm run watch
 ```
 
 **Run tests**
 ```sh
-npm run test
+$ npm run test
 ```
 
 **Run code sniffers**
 ```sh
-npm run sniff
+$ npm run sniff
 ```
