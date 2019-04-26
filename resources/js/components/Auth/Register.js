@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 
-const Login = () => (
+const Register = () => (
   <Container>
-    <div>Login Form</div>
+    <div>Registration Form</div>
   </Container>
 );
 
-export default Login;
+export default Register;

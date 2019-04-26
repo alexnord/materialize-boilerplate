@@ -12,11 +12,11 @@
         "lint:php": "./vendor/bin/phpcs --colors; exit 0;",
         "lint:js": "npx eslint resources/js/**; exit 0;",
         "lint": "./vendor/bin/phpcs --colors && npx eslint resources/js",
-        "test:php": "./vendor/bin/phpunit"
+        "test:php": "./vendor/bin/phpunit",
+        "ci": "./vendor/bin/phpunit && ./vendor/bin/phpcs --colors && npx eslint resources/js"
     },
     "pre-commit": [
-        "test:php",
-        "lint"
+        "ci"
     ],
     "devDependencies": {
         "@babel/preset-react": "^7.0.0",

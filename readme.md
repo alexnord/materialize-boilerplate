@@ -35,6 +35,7 @@ A starter kit for setting up a [Laravel](https://laravel.com) backend coupled wi
 * [socialite](https://laravel.com/docs/5.8/socialite)
 
 ##### Client Side
+* [react-redux](https://github.com/reduxjs/react-redux)
 * [react-bootstrap](https://react-bootstrap.github.io/)
 * [react-router](https://github.com/ReactTraining/react-router)
 * [formik](https://github.com/jaredpalmer/formik)
@@ -74,7 +75,8 @@ For detailed Laravel setup instructions, visit [their documentation](https://lar
 5. **Run migrations and seed DB**
    
    ```sh
-   $ php artisan migrate:seed
+   $ php artisan migrate
+   $ php artisan db:seed
    ```
 6. **Use the Node version provided by .nvmrc**
 

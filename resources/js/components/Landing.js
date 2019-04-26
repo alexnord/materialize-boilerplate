@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 
 const Login = () => (
   <Container>
-    <div>Login Form</div>
+    <div>Landing Page</div>
   </Container>
 );
 

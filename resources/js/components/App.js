@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Header from './Header';
+import Header from './includes/Header';
+import Landing from './Landing';
 import Login from './Auth/Login';
+import Register from './Auth/Register';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class App extends Component {
@@ -12,7 +14,9 @@ class App extends Component {
         <div>
           <Header />
           <Switch>
-            <Route exact path="/" component={Login} />
+            <Route exact path="/" component={Landing} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/register" component={Register} />
           </Switch>
         </div>
       </BrowserRouter>
