@@ -65705,7 +65705,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-
+ // eslint-disable-next-line react/prefer-stateless-function
 
 var App =
 /*#__PURE__*/
