@@ -8,10 +8,14 @@
         "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
         "prod": "npm run production",
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "phpcs": "./vendor/bin/phpcs --colors; exit 0;",
-        "phpcbf": "./vendor/bin/phpcbf; exit 0;"
+        "phpcbf": "./vendor/bin/phpcbf; exit 0;",
+        "lint:php": "./vendor/bin/phpcs --colors; exit 0;",
+        "lint:js": "npx eslint resources/js/**; exit 0;",
+        "lint": "./vendor/bin/phpcs --colors && npx eslint resources/js"
     },
-    "pre-commit": [],
+    "pre-commit": [
+        "lint"
+    ],
     "devDependencies": {
         "@babel/preset-react": "^7.0.0",
         "axios": "^0.18",
