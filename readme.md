@@ -35,7 +35,7 @@ A starter kit for setting up a [Laravel](https://laravel.com) backend coupled wi
 * [socialite](https://laravel.com/docs/5.8/socialite)
 
 ##### Client Side
-* [react-bootstrap]((https://react-bootstrap.github.io/)
+* [react-bootstrap](https://react-bootstrap.github.io/)
 * [react-router](https://github.com/ReactTraining/react-router)
 * [formik](https://github.com/jaredpalmer/formik)
 
@@ -102,7 +102,7 @@ For detailed Laravel setup instructions, visit [their documentation](https://lar
 
 **Compile assets for development (hot module reloading enabled)**
 ```sh
-$ npm run watch
+$ npm run hot
 ```
 
 **Run backend and frontend tests**

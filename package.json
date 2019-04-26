@@ -21,7 +21,7 @@
     "devDependencies": {
         "@babel/preset-react": "^7.0.0",
         "axios": "^0.18",
-        "bootstrap": "^4.0.0",
+        "bootstrap": "^4.3.1",
         "cross-env": "^5.1",
         "eslint": "^5.3.0",
         "eslint-config-airbnb": "^17.1.0",
@@ -41,6 +41,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "react-bootstrap": "^1.0.0-beta.8",
         "react-router-dom": "^5.0.0"
     }
 }

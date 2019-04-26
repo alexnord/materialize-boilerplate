@@ -1,12 +1,42 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {
+  Container,
+  Navbar,
+  Nav,
+  NavDropdown,
+  Form,
+  FormControl,
+  Button,
+} from 'react-bootstrap';
 
 const Header = () => (
-  <nav className="navbar navbar-expand-md navbar-light navbar-laravel">
-    <div className="container">
-      <Link className="navbar-brand" to="/">Tasksman</Link>
-    </div>
-  </nav>
+  <Container>
+    <Navbar bg="dark" variant="dark">
+      <Navbar.Brand>
+        <Link to="/" style={{ color: 'white' }}>Materialize Boilerplate</Link>
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+          <div className="nav-link">
+            <Link to="/" style={{ color: 'rgba(255, 255, 255, 0.5)' }}>Home</Link>
+          </div>
+          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+        <Form inline>
+          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+          <Button variant="outline-success">Search</Button>
+        </Form>
+      </Navbar.Collapse>
+    </Navbar>
+  </Container>
 );
 
 export default Header;
