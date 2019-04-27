@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "712d6e6831d4b1ab8b2249236d118f89",
+    "content-hash": "bcacf312e34a5957dbae4cc55accb8fe",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3080,6 +3080,17 @@
             "time": "2019-02-13T09:37:52+00:00"
         },
         {
+            "name": "mrholek/CoreUI-React",
+            "version": "dev-master",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/mrholek/CoreUI-React/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library"
+        },
+        {
             "name": "myclabs/deep-copy",
             "version": "1.9.1",
             "source": {
@@ -4555,7 +4566,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "mrholek/coreui-react": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
