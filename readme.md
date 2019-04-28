@@ -127,3 +127,10 @@ $ npm run test
 ```sh
 $ npm run lint
 ```
+
+## Example API Requests
+
+**Get list of users**
+```
+GET /graphql?query=query+FetchUsers{users{id,name,email}}
+```
