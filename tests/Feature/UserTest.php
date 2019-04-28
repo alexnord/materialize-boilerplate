@@ -3,6 +3,8 @@
 namespace Tests\Feature;
 
 use Tests\TestCase;
+use Tymon\JWTAuth\Facades\JWTAuth;
+use App\Models\User;
 
 class UserTest extends TestCase
 {
@@ -35,9 +37,15 @@ class UserTest extends TestCase
      */
     public function testCanUpdateUser()
     {
-        $response = $this->post('/graphql', [
+
+        $token = JWTAuth::fromUser(User::first());
+
+        $response = $this->withHeaders([
+            'Authorization' => 'Bearer ' . $token
+        ])
+        ->json('POST', '/graphql', [
             'query' => "mutation qUpdateUser{
-              updateUser(id: 1, name: \"Poopie Pants McGee\") {
+              updateUser(id: 1, name: \"Changed Name\") {
                 id
                 email
                 name
@@ -45,11 +53,9 @@ class UserTest extends TestCase
             }"
         ]);
 
-        $jsonResponse = $response->json();
-
         $response
             ->assertStatus(200)
-            ->assertSee('Poopie Pants McGee');
+            ->assertJson($this->updateUsersResponse());
     }
 
     private function getUsersResponse()
@@ -62,6 +68,19 @@ class UserTest extends TestCase
                 "name" => "Testy McTesterson",
                 "email" => "admin@test.com"
               ]
+            ]
+          ]
+        ];
+    }
+
+    private function updateUsersResponse()
+    {
+        return [
+          "data" => [
+            "updateUser" => [
+                "id" => 1,
+                "email" => "admin@test.com",
+                "name" => "Changed Name",
             ]
           ]
         ];
