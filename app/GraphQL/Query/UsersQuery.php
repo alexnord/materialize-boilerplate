@@ -32,12 +32,17 @@ class UsersQuery extends Query
             'email' => [
                 'name' => 'email',
                 'type' => Type::string()
+            ],
+            'name' => [
+                'name' => 'name',
+                'type' => Type::string()
             ]
         ];
     }
 
     public function resolve($root, $args, SelectFields $fields)
     {
+        return User::all();
         $where = function ($query) use ($args) {
             if (isset($args['id'])) {
                 $query->where('id', $args['id']);
