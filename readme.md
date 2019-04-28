@@ -71,6 +71,12 @@ For detailed Laravel setup instructions, visit [their documentation](https://lar
    ```sh
    $ cp .env.example .env
    ```
+4. **Create SQLite DB for testing**
+   
+   ```sh
+   $ touch database/database.sqlite
+   ```
+
 4. **Generate application keys**
    
    ```sh
