@@ -1,9 +1,19 @@
 
+// // Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// // Variables
+// @import 'variables';
+
+// // Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import "~font-awesome/scss/font-awesome"; // Font Awesome
+@import "~simple-line-icons/scss/simple-line-icons"; // Simple Line Icons
+
+// CoreUI Style
+@import "../coreui/src/scss/style";
 
 // Variables
-@import 'variables';
-
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import 'custom';

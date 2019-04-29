@@ -9,9 +9,16 @@
     <title>Materialize</title>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <script>
+        window.Laravel = {!! json_encode([
+            'csrfToken' => csrf_token(),
+        ]) !!};
+    </script>
+
 </head>
-<body>
-    <div id="app"></div>
+<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+    <div id="root"></div>
 
     <script src="{{ asset('js/app.js') }}"></script>
 </body>

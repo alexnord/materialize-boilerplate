@@ -113,9 +113,9 @@ For detailed Laravel setup instructions, visit [their documentation](https://lar
 
 ## Useful commands
 
-**Compile assets for development (hot module reloading enabled)**
+**Compile assets for development and watch for changes**
 ```sh
-$ npm run hot
+$ npm run watch
 ```
 
 **Run backend and frontend tests**

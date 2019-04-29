@@ -13,4 +13,7 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-require('./components/App');
+// require('./components/App');
+
+/* Import the Main component */
+require('../coreui/src/index.js');

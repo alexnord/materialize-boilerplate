@@ -14,7 +14,8 @@
         "lint:js": "npx eslint resources/js/**; exit 0;",
         "lint": "./vendor/bin/phpcs --colors && npx eslint resources/js",
         "test:php": "npm run migrate:seed && ./vendor/bin/phpunit",
-        "ci": "npm run test:php && ./vendor/bin/phpcs --colors && npx eslint resources/js"
+        "test": "npm run test:php",
+        "ci": "npm run test && ./vendor/bin/phpcs --colors && npx eslint resources/js"
     },
     "pre-commit": [
         "ci"
@@ -57,11 +58,13 @@
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0",
         "simple-line-icons": "^2.4.1",
-        "vue-template-compiler": "^2.6.10"
+        "vue-template-compiler": "^2.6.10",
+        "chart.js": "^2.8.0"
     },
     "dependencies": {
+        "@babel/plugin-syntax-dynamic-import": "^7.2.0",
         "react-bootstrap": "^1.0.0-beta.8",
-        "react-router-dom": "^5.0.0",
+        "react-router-dom": "~4.3.1",
         "react-scripts": "^2.1.8"
     }
 }
