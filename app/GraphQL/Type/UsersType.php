@@ -6,6 +6,7 @@ use App\Models\User;
 use GraphQL\Type\Definition\Type;
 use Rebing\GraphQL\Support\Facades\GraphQL;
 use Rebing\GraphQL\Support\Type as GraphQLType;
+use JWTAuth;
 
 class UsersType extends GraphQLType
 {
@@ -31,11 +32,21 @@ class UsersType extends GraphQLType
                 'type' => Type::string(),
                 'description' => 'The name of the user'
             ],
+            'token' => [
+                'type' => Type::string(),
+                'description' => 'JWT token of the user',
+                'selectable' => false, // Does not try to query this from the database
+            ]
         ];
     }
 
     protected function resolveEmailField($root, $args)
     {
         return strtolower($root->email);
+    }
+
+    protected function resolveTokenField($root, $args)
+    {
+        return JWTAuth::fromUser(User::findOrFail($root->id));
     }
 }

@@ -8,6 +8,7 @@ use Rebing\GraphQL\Support\Mutation;
 use App\Models\User;
 use App\Services\UserService;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 
 class NewUserMutation extends Mutation
 {
@@ -45,7 +46,7 @@ class NewUserMutation extends Mutation
             'password' => [
                 'name' => 'password',
                 'type' => Type::nonNull(Type::string())
-            ],
+            ]
         ];
     }
 

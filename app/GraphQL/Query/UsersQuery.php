@@ -34,6 +34,10 @@ class UsersQuery extends Query
             'name' => [
                 'name' => 'name',
                 'type' => Type::string()
+            ],
+            'token' => [
+                'name' => 'token',
+                'type' => Type::string()
             ]
         ];
     }
