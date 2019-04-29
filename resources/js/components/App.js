@@ -5,6 +5,7 @@ import Header from './includes/Header';
 import Landing from './Landing';
 import Login from './Auth/Login';
 import Register from './Auth/Register';
+import NotFound from './Static/NotFound';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
             <Route exact path="/" component={Landing} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
+            <Route component={NotFound} />
           </Switch>
         </div>
       </BrowserRouter>

@@ -6,22 +6,23 @@
 
 ## About the Project
 
-A starter kit for setting up a [Laravel](https://laravel.com) backend coupled with a [ReactJS](https://reactjs.org/) frontend using the [Bootstrap](https://react-bootstrap.github.io/) UI framework.
+A starter kit for setting up a [Laravel](https://laravel.com) backend and GraphQL API coupled with a [ReactJS](https://reactjs.org/) frontend using [Apollo](https://github.com/apollographql/react-apollo) and the [Bootstrap](https://react-bootstrap.github.io/) UI framework.
 
 ## Includes
 
 #### Features
-* React SPA frontend
+* React SPA frontend (served through a Laravel web route)
+* GraphQL API
 * Bootstrap UI
-* Authentication
-  * Register / login forms
-  * Email verification
-  * Stateless auth
+* JWT Authentication
+  * Register/login forms
 * Form validation
 * Server side and client side tests
 
 #### Opinionated code
 * Repository design pattern
+* GraphQL API
+* JWT authentication
 * Pre-commit git hooks for CI
 * [phpcs](https://github.com/squizlabs/PHP_CodeSniffer) for PSR-2 code compliance
 * [eslint](https://github.com/eslint/eslint) Javascript linter using Airbnb styleguide
@@ -30,14 +31,17 @@ A starter kit for setting up a [Laravel](https://laravel.com) backend coupled wi
 
 ##### Server Side
 * [l5-repository](https://github.com/andersao/l5-repository)
+* [jwt-auth](https://github.com/tymondesigns/jwt-auth)
 * [laravel-activitylog](https://github.com/spatie/laravel-activitylog)
 * [laravel-permission](https://github.com/spatie/laravel-permission)
 * [socialite](https://laravel.com/docs/5.8/socialite)
+* [graphql-laravel](https://github.com/rebing/graphql-laravel)
 
 ##### Client Side
 * [react-redux](https://github.com/reduxjs/react-redux)
 * [react-bootstrap](https://react-bootstrap.github.io/)
 * [react-router](https://github.com/ReactTraining/react-router)
+* [react-apollo](https://github.com/apollographql/react-apollo)
 * [formik](https://github.com/jaredpalmer/formik)
 
 ## Requirements
@@ -67,10 +71,17 @@ For detailed Laravel setup instructions, visit [their documentation](https://lar
    ```sh
    $ cp .env.example .env
    ```
-4. **Generate application key**
+4. **Create SQLite DB for testing**
+   
+   ```sh
+   $ touch database/database.sqlite
+   ```
+
+4. **Generate application keys**
    
    ```sh
    $ php artisan key:generate
+   $ php artisan jwt:secret
    ```
 5. **Run migrations and seed DB**
    
@@ -115,4 +126,11 @@ $ npm run test
 **Run linters**
 ```sh
 $ npm run lint
+```
+
+## Example API Requests
+
+**Get list of users**
+```
+GET /graphql?query=query+FetchUsers{users{id,name,email}}
 ```
