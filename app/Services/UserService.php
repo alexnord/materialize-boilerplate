@@ -36,6 +36,24 @@ class UserService
     }
 
     /**
+     * Update a user record.
+     *
+     * @param Models\User $user
+     * @param array       $attributes
+     * @return Models\User|null
+     */
+    public function update(Models\User $user, array $attributes): ?Models\User
+    {
+        if (!empty($attributes['password'])) {
+            $attributes['password'] = Hash::make($attributes['password']);
+        }
+
+        $user = $this->userRepo->update($attributes, $user->id);
+
+        return $user;
+    }
+
+    /**
      * Updates a user's roles.
      *
      * @param Models\User $user
@@ -50,21 +68,6 @@ class UserService
             $user->roles()->detach();
             $user->assignRole('User');
         }
-
-        return $user;
-    }
-
-    /**
-     * Update a user record.
-     *
-     * @param Models\User $user
-     * @param array       $attributes
-     * @return Models\User|null
-     */
-    public function updateUser(Models\User $user, array $attributes): ?Models\User
-    {
-        $user = $this->userRepo->update($attributes, $user->id);
-        CacheService::flush($this->cacheTags);
 
         return $user;
     }

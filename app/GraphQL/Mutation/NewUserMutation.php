@@ -8,8 +8,6 @@ use Rebing\GraphQL\Support\Mutation;
 use App\Models\User;
 use App\Services\UserService;
 use Illuminate\Support\Facades\Hash;
-use Tymon\JWTAuth\JWTAuth;
-use Tymon\JWTAuth\Exceptions\JWTException;
 
 class NewUserMutation extends Mutation
 {

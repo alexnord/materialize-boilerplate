@@ -6,10 +6,21 @@ use GraphQL\Type\Definition\Type;
 use Rebing\GraphQL\Support\Facades\GraphQL;
 use Rebing\GraphQL\Support\Mutation;
 use App\Models\User;
+use App\Services\UserService;
+use Illuminate\Support\Facades\Hash;
 use Tymon\JWTAuth\Facades\JWTAuth;
 
 class UpdateUserMutation extends Mutation
 {
+    /**
+     * @param Repos\UserService $userService
+     */
+    public function __construct(
+        UserService $userService
+    ) {
+        $this->userService = $userService;
+    }
+
     protected $attributes = [
         'name' => 'UpdateUser'
     ];
@@ -39,21 +50,32 @@ class UpdateUserMutation extends Mutation
             ],
             'name' => [
                 'name' => 'name',
-                'type' => Type::nonNull(Type::string())
+                'type' => Type::string()
+            ],
+            'email' => [
+                'name' => 'email',
+                'type' => Type::string()
+            ],
+            'password' => [
+                'name' => 'password',
+                'type' => Type::string()
             ]
+        ];
+    }
+
+    public function rules(array $args = [])
+    {
+        return [
+            'name'     => ['string', 'max:255', 'min:2'],
+            'email'    => ['email', 'max:255', 'unique:users'],
+            'password' => ['string', 'min:6'],
         ];
     }
 
     public function resolve($root, $args)
     {
-        // $this->UserService->update($args);
-
-        $user = User::find($args['id']);
-        if (!$user) {
-            return null;
-        }
-        $user->name = $args['name'];
-        $user->save();
+        $model = User::findOrFail($args['id']);
+        $user = $this->userService->update($model, $args);
 
         return $user;
     }

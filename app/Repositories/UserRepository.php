@@ -19,18 +19,4 @@ class UserRepository extends BaseRepository
     {
         return User::class;
     }
-
-    /**
-     * Creates a new user.
-     *
-     * @param array $attributes
-     * @return User
-     */
-    public function create(array $attributes) : User
-    {
-        $user = new User($attributes);
-        $user->save();
-
-        return $user;
-    }
 }
