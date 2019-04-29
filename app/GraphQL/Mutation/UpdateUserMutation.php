@@ -46,6 +46,8 @@ class UpdateUserMutation extends Mutation
 
     public function resolve($root, $args)
     {
+        // $this->UserService->update($args);
+
         $user = User::find($args['id']);
         if (!$user) {
             return null;

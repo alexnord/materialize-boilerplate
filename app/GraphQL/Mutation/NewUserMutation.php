@@ -6,10 +6,24 @@ use GraphQL\Type\Definition\Type;
 use Rebing\GraphQL\Support\Facades\GraphQL;
 use Rebing\GraphQL\Support\Mutation;
 use App\Models\User;
+use App\Services\UserService;
 use Illuminate\Support\Facades\Hash;
+use Tymon\JWTAuth\JWTAuth;
+use Tymon\JWTAuth\Exceptions\JWTException;
 
 class NewUserMutation extends Mutation
 {
+    public $userService;
+
+    /**
+     * @param Repos\UserService $userService
+     */
+    public function __construct(
+        UserService $userService
+    ) {
+        $this->userService = $userService;
+    }
+
     protected $attributes = [
         'name' => 'NewUser'
     ];
@@ -37,14 +51,18 @@ class NewUserMutation extends Mutation
         ];
     }
 
+    public function rules(array $args = [])
+    {
+        return [
+            'name'     => ['required', 'string', 'max:255'],
+            'email'    => ['required', 'email', 'max:255', 'unique:users'],
+            'password' => ['required' ,'string', 'min:6'],
+        ];
+    }
+
     public function resolve($root, $args)
     {
-        $args['password'] = Hash::make($args['password']);
-        $user = User::create($args);
-
-        if (!$user) {
-            return null;
-        }
+        $user = $this->userService->create($args);
 
         return $user;
     }

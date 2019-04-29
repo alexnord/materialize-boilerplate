@@ -39,6 +39,17 @@ class User extends Authenticatable implements JWTSubject
     ];
 
     /**
+     * Validation rules
+     *
+     * @var array
+     */
+    public static $rules = [
+        'name'     => ['nullable', 'string', 'max:255'],
+        'email'    => ['required', 'email', 'max:255', 'unique:users'],
+        'password' => ['nullable' ,'string', 'min:6'],
+    ];
+
+    /**
      * Get the identifier that will be stored in the subject claim of the JWT.
      *
      * @return mixed

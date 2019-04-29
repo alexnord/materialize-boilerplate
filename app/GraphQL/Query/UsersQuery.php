@@ -17,11 +17,9 @@ class UsersQuery extends Query
 
     public function type()
     {
-        // result of query with pagination laravel
         return Type::listOf(GraphQL::type('users'));
     }
 
-    // arguments to filter query
     public function args()
     {
         return [
@@ -42,13 +40,9 @@ class UsersQuery extends Query
 
     public function resolve($root, $args, SelectFields $fields)
     {
-        return User::all();
         $where = function ($query) use ($args) {
-            if (isset($args['id'])) {
-                $query->where('id', $args['id']);
-            }
-            if (isset($args['email'])) {
-                $query->where('email', $args['email']);
+            foreach ($args as $key => $value) {
+                $query->where($key, $value);
             }
         };
 

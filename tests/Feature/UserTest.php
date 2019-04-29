@@ -37,7 +37,6 @@ class UserTest extends TestCase
      */
     public function testCanUpdateUser()
     {
-
         $token = JWTAuth::fromUser(User::first());
 
         $response = $this->withHeaders([
