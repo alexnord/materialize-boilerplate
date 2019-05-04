@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[37],{
 
-/***/ "./resources/coreui/src/views/Icons/FontAwesome/FontAwesome.js":
-/*!*********************************************************************!*\
-  !*** ./resources/coreui/src/views/Icons/FontAwesome/FontAwesome.js ***!
-  \*********************************************************************/
+/***/ "./resources/js/pages/Icons/FontAwesome/FontAwesome.js":
+/*!*************************************************************!*\
+  !*** ./resources/js/pages/Icons/FontAwesome/FontAwesome.js ***!
+  \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -53,7 +53,7 @@ function (_Component) {
         id: "new47"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardHeader"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-font-awesome"
-      }), " 55 New Icons in 4.7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+      }), ' ', "55 New Icons in 4.7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
         className: "text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         className: "fa-hover",
@@ -105,7 +105,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-bathtub fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "bathtub ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "bathtub", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -114,7 +114,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-drivers-license fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "drivers-license ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "drivers-license", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -123,7 +123,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-drivers-license-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "drivers-license-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "drivers-license-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -251,7 +251,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-s15 fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "s15 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "s15", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -288,7 +288,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-thermometer fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "thermometer ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "thermometer", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -297,7 +297,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-thermometer-0 fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "thermometer-0 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "thermometer-0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -306,7 +306,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-thermometer-1 fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "thermometer-1 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "thermometer-1", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -315,7 +315,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-thermometer-2 fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "thermometer-2 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "thermometer-2", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -324,7 +324,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-thermometer-3 fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "thermometer-3 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "thermometer-3", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -333,7 +333,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-thermometer-4 fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "thermometer-4 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "thermometer-4", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -377,7 +377,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-times-rectangle fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "times-rectangle ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "times-rectangle", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -386,7 +386,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-times-rectangle-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "times-rectangle-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "times-rectangle-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -416,7 +416,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-vcard fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "vcard ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "vcard", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -425,7 +425,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-vcard-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "vcard-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "vcard-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -687,7 +687,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-automobile fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "automobile ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "automobile", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -710,7 +710,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-bank fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "bank ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "bank", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -726,7 +726,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-bar-chart-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "bar-chart-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "bar-chart-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -749,7 +749,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-battery-0 fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "battery-0 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "battery-0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -758,7 +758,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-battery-1 fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "battery-1 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "battery-1", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -767,7 +767,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-battery-2 fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "battery-2 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "battery-2", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -776,7 +776,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-battery-3 fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "battery-3 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "battery-3", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -785,7 +785,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-battery-4 fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "battery-4 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "battery-4", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -990,7 +990,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-cab fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "cab ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "cab", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -1209,7 +1209,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-close fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "close ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "close", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -1386,7 +1386,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-dashboard fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "dashboard ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "dashboard", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -1430,7 +1430,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-edit fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "edit ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "edit", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -1551,7 +1551,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-feed fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "feed ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "feed", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -1609,7 +1609,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-file-movie-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "file-movie-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "file-movie-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -1625,7 +1625,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-file-photo-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "file-photo-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "file-photo-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -1634,7 +1634,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-file-picture-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "file-picture-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "file-picture-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -1650,7 +1650,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-file-sound-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "file-sound-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "file-sound-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -1673,7 +1673,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-file-zip-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "file-zip-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "file-zip-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -1731,7 +1731,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-flash fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "flash ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "flash", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -1803,7 +1803,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-gear fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "gear ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "gear", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -1812,7 +1812,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-gears fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "gears ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "gears", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -1849,7 +1849,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-group fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "group ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "group", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -1858,7 +1858,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-hand-grab-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "hand-grab-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "hand-grab-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -1916,7 +1916,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-hand-stop-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "hand-stop-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "hand-stop-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -1981,7 +1981,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-hotel fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "hotel ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "hotel", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -1997,7 +1997,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-hourglass-1 fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "hourglass-1 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "hourglass-1", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2006,7 +2006,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-hourglass-2 fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "hourglass-2 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "hourglass-2", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2015,7 +2015,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-hourglass-3 fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "hourglass-3 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "hourglass-3", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2059,7 +2059,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-image fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "image ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "image", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2096,7 +2096,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-institution fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "institution ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "institution", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2140,7 +2140,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-legal fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "legal ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "legal", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2170,7 +2170,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-life-bouy fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "life-bouy ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "life-bouy", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2179,7 +2179,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-life-buoy fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "life-buoy ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "life-buoy", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2195,7 +2195,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-life-saver fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "life-saver ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "life-saver", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2246,7 +2246,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-mail-forward fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "mail-forward ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "mail-forward", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2255,7 +2255,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-mail-reply fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "mail-reply ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "mail-reply", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2264,7 +2264,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-mail-reply-all fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "mail-reply-all ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "mail-reply-all", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2371,7 +2371,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-mobile-phone fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "mobile-phone ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "mobile-phone", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2394,7 +2394,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-mortar-board fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "mortar-board ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "mortar-board", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2424,7 +2424,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-navicon fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "navicon ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "navicon", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2524,7 +2524,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-photo fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "photo ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "photo", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2673,7 +2673,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-remove fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "remove ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "remove", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2682,7 +2682,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-reorder fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "reorder ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "reorder", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2761,7 +2761,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-send fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "send ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "send", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2770,7 +2770,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-send-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "send-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "send-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2898,7 +2898,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-soccer-ball-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "soccer-ball-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "soccer-ball-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2956,7 +2956,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-sort-down fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "sort-down ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "sort-down", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -2979,7 +2979,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-sort-up fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "sort-up ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "sort-up", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -3037,7 +3037,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-star-half-empty fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "star-half-empty ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "star-half-empty", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -3046,7 +3046,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-star-half-full fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "star-half-full ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "star-half-full", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -3104,7 +3104,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-support fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "support ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "support", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -3239,7 +3239,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-toggle-down fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "toggle-down ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "toggle-down", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -3248,7 +3248,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-toggle-left fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "toggle-left ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "toggle-left", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -3271,7 +3271,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-toggle-right fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "toggle-right ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "toggle-right", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -3280,7 +3280,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-toggle-up fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "toggle-up ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "toggle-up", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -3338,7 +3338,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-tv fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "tv ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "tv", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -3375,7 +3375,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-unsorted fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "unsorted ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "unsorted", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -3454,7 +3454,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-warning fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "warning ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "warning", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -3488,7 +3488,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-hand-grab-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "hand-grab-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "hand-grab-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -3574,7 +3574,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-hand-stop-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "hand-stop-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "hand-stop-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -3622,7 +3622,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-automobile fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "automobile ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "automobile", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -3645,7 +3645,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-cab fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "cab ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "cab", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -3749,7 +3749,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-intersex fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "intersex ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "intersex", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -3888,7 +3888,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-file-movie-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "file-movie-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "file-movie-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -3911,7 +3911,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-file-photo-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "file-photo-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "file-photo-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -3920,7 +3920,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-file-picture-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "file-picture-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "file-picture-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -3936,7 +3936,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-file-sound-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "file-sound-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "file-sound-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -3973,7 +3973,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-file-zip-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "file-zip-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "file-zip-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], {
         id: "spinner"
@@ -3983,7 +3983,7 @@ function (_Component) {
         className: "fa-ul"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-info-circle fa-li"
-      }), "These icons work great with the ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "fa-spin"), " class."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+      }), "These icons work great with the", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "fa-spin"), ' ', "class."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
         className: "text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4006,7 +4006,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-gear fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "gear ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "gear", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4216,7 +4216,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-bar-chart-o fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "bar-chart-o ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "bar-chart-o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4243,7 +4243,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-bitcoin fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "bitcoin ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "bitcoin", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4259,7 +4259,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-cny fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "cny ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "cny", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4268,7 +4268,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-dollar fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "dollar ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "dollar", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4284,7 +4284,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-euro fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "euro ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "euro", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4349,7 +4349,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-rmb fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "rmb ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "rmb", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4358,7 +4358,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-rouble fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "rouble ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "rouble", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4374,7 +4374,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-ruble fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "ruble ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "ruble", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4383,7 +4383,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-rupee fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "rupee ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "rupee", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4392,7 +4392,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-shekel fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "shekel ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "shekel", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4401,7 +4401,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-sheqel fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "sheqel ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "sheqel", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4417,7 +4417,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-turkish-lira fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "turkish-lira ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "turkish-lira", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4433,7 +4433,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-won fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "won ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "won", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4442,7 +4442,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-yen fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "yen ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "yen", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], {
         id: "text-editor"
@@ -4490,7 +4490,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-chain fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "chain ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "chain", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4520,7 +4520,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-copy fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "copy ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "copy", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4529,7 +4529,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-cut fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "cut ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "cut", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4538,7 +4538,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-dedent fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "dedent ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "dedent", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4680,7 +4680,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-paste fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "paste ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "paste", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4696,7 +4696,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-rotate-left fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "rotate-left ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "rotate-left", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4705,7 +4705,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-rotate-right fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "rotate-right ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "rotate-right", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4714,7 +4714,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-save fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "save ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "save", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -4807,7 +4807,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-unlink fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "unlink ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "unlink", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], {
         id: "directional"
@@ -5163,7 +5163,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-toggle-down fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "toggle-down ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "toggle-down", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -5172,7 +5172,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-toggle-left fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "toggle-left ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "toggle-left", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -5181,7 +5181,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-toggle-right fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "toggle-right ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "toggle-right", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -5190,7 +5190,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-toggle-up fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "toggle-up ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "toggle-up", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], {
         id: "video-player"
@@ -5349,10 +5349,10 @@ function (_Component) {
         color: "warning"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-warning"
-      }), " Warning!"), "Apparently, Adblock Plus can remove Font Awesome brand icons with their \"Remove Social Media Buttons\" setting. We will not use hacks to force them to display. Please", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }), ' ', "Warning!"), "Apparently, Adblock Plus can remove Font Awesome brand icons with their \"Remove Social Media Buttons\" setting. We will not use hacks to force them to display. Please", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "https://adblockplus.org/en/bugs",
         className: "alert-link"
-      }, " report an issue with Adblock Plus"), " if you believe this to be an error. To work around this, you'll need to modify the social icon class names."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+      }, " report an issue with Adblock Plus"), ' ', "if you believe this to be an error. To work around this, you'll need to modify the social icon class names."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
         className: "text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -5431,7 +5431,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-bitcoin fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "bitcoin ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "bitcoin", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -5650,7 +5650,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-facebook-f fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "facebook-f ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "facebook-f", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -5715,7 +5715,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-ge fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "ge ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "ge", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -5780,7 +5780,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-gittip fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "gittip ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "gittip", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -6062,7 +6062,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-ra fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "ra ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "ra", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -6337,7 +6337,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-wechat fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "wechat ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "wechat", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -6409,7 +6409,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-y-combinator-square fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "y-combinator-square ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "y-combinator-square", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -6425,7 +6425,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-yc fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "yc ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "yc", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",
@@ -6434,7 +6434,7 @@ function (_Component) {
         lg: "2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-yc-square fa-lg mt-4"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "yc-square ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "yc-square", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "(alias)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",

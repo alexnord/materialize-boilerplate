@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[43],{
 
-/***/ "./resources/coreui/src/views/Pages/Page404/Page404.js":
-/*!*************************************************************!*\
-  !*** ./resources/coreui/src/views/Pages/Page404/Page404.js ***!
-  \*************************************************************/
+/***/ "./resources/js/pages/Page404/Page404.js":
+/*!***********************************************!*\
+  !*** ./resources/js/pages/Page404/Page404.js ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 

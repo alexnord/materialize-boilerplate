@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[8],{
 
-/***/ "./resources/coreui/src/_nav.js":
-/*!**************************************!*\
-  !*** ./resources/coreui/src/_nav.js ***!
-  \**************************************/
+/***/ "./resources/js/_nav.js":
+/*!******************************!*\
+  !*** ./resources/js/_nav.js ***!
+  \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -234,7 +234,7 @@ __webpack_require__.r(__webpack_exports__);
     variant: 'success',
     attributes: {
       target: '_blank',
-      rel: "noopener"
+      rel: 'noopener'
     }
   }, {
     name: 'Try CoreUI PRO',
@@ -243,17 +243,17 @@ __webpack_require__.r(__webpack_exports__);
     variant: 'danger',
     attributes: {
       target: '_blank',
-      rel: "noopener"
+      rel: 'noopener'
     }
   }]
 });
 
 /***/ }),
 
-/***/ "./resources/coreui/src/containers/DefaultLayout/DefaultLayout.js":
-/*!************************************************************************!*\
-  !*** ./resources/coreui/src/containers/DefaultLayout/DefaultLayout.js ***!
-  \************************************************************************/
+/***/ "./resources/js/containers/DefaultLayout/DefaultLayout.js":
+/*!****************************************************************!*\
+  !*** ./resources/js/containers/DefaultLayout/DefaultLayout.js ***!
+  \****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -264,8 +264,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
 /* harmony import */ var _coreui_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @coreui/react */ "./node_modules/@coreui/react/es/index.js");
-/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../_nav */ "./resources/coreui/src/_nav.js");
-/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../routes */ "./resources/coreui/src/routes.js");
+/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../_nav */ "./resources/js/_nav.js");
+/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../routes */ "./resources/js/routes.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -297,13 +297,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 var DefaultAside = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! ./DefaultAside */ "./resources/coreui/src/containers/DefaultLayout/DefaultAside.js"));
+  return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! ./DefaultAside */ "./resources/js/containers/DefaultLayout/DefaultAside.js"));
 });
 var DefaultFooter = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 13).then(__webpack_require__.bind(null, /*! ./DefaultFooter */ "./resources/coreui/src/containers/DefaultLayout/DefaultFooter.js"));
+  return __webpack_require__.e(/*! import() */ 13).then(__webpack_require__.bind(null, /*! ./DefaultFooter */ "./resources/js/containers/DefaultLayout/DefaultFooter.js"));
 });
 var DefaultHeader = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! ./DefaultHeader */ "./resources/coreui/src/containers/DefaultLayout/DefaultHeader.js"));
+  return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! ./DefaultHeader */ "./resources/js/containers/DefaultLayout/DefaultHeader.js"));
 });
 
 var DefaultLayout =
@@ -399,10 +399,10 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./resources/coreui/src/routes.js":
-/*!****************************************!*\
-  !*** ./resources/coreui/src/routes.js ***!
-  \****************************************/
+/***/ "./resources/js/routes.js":
+/*!********************************!*\
+  !*** ./resources/js/routes.js ***!
+  \********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -412,109 +412,109 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 var Breadcrumbs = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 14).then(__webpack_require__.bind(null, /*! ./views/Base/Breadcrumbs */ "./resources/coreui/src/views/Base/Breadcrumbs/Breadcrumbs.js"));
+  return __webpack_require__.e(/*! import() */ 14).then(__webpack_require__.bind(null, /*! ./pages/Base/Breadcrumbs */ "./resources/js/pages/Base/Breadcrumbs/Breadcrumbs.js"));
 });
 var Cards = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 15).then(__webpack_require__.bind(null, /*! ./views/Base/Cards */ "./resources/coreui/src/views/Base/Cards/Cards.js"));
+  return __webpack_require__.e(/*! import() */ 15).then(__webpack_require__.bind(null, /*! ./pages/Base/Cards */ "./resources/js/pages/Base/Cards/Cards.js"));
 });
 var Carousels = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 16).then(__webpack_require__.bind(null, /*! ./views/Base/Carousels */ "./resources/coreui/src/views/Base/Carousels/Carousels.js"));
+  return __webpack_require__.e(/*! import() */ 16).then(__webpack_require__.bind(null, /*! ./pages/Base/Carousels */ "./resources/js/pages/Base/Carousels/Carousels.js"));
 });
 var Collapses = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 17).then(__webpack_require__.bind(null, /*! ./views/Base/Collapses */ "./resources/coreui/src/views/Base/Collapses/Collapses.js"));
+  return __webpack_require__.e(/*! import() */ 17).then(__webpack_require__.bind(null, /*! ./pages/Base/Collapses */ "./resources/js/pages/Base/Collapses/Collapses.js"));
 });
 var Dropdowns = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 18).then(__webpack_require__.bind(null, /*! ./views/Base/Dropdowns */ "./resources/coreui/src/views/Base/Dropdowns/Dropdowns.js"));
+  return __webpack_require__.e(/*! import() */ 18).then(__webpack_require__.bind(null, /*! ./pages/Base/Dropdowns */ "./resources/js/pages/Base/Dropdowns/Dropdowns.js"));
 });
 var Forms = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 19).then(__webpack_require__.bind(null, /*! ./views/Base/Forms */ "./resources/coreui/src/views/Base/Forms/Forms.js"));
+  return __webpack_require__.e(/*! import() */ 19).then(__webpack_require__.bind(null, /*! ./pages/Base/Forms */ "./resources/js/pages/Base/Forms/Forms.js"));
 });
 var Jumbotrons = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 20).then(__webpack_require__.bind(null, /*! ./views/Base/Jumbotrons */ "./resources/coreui/src/views/Base/Jumbotrons/Jumbotrons.js"));
+  return __webpack_require__.e(/*! import() */ 20).then(__webpack_require__.bind(null, /*! ./pages/Base/Jumbotrons */ "./resources/js/pages/Base/Jumbotrons/Jumbotrons.js"));
 });
 var ListGroups = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 21).then(__webpack_require__.bind(null, /*! ./views/Base/ListGroups */ "./resources/coreui/src/views/Base/ListGroups/ListGroups.js"));
+  return __webpack_require__.e(/*! import() */ 21).then(__webpack_require__.bind(null, /*! ./pages/Base/ListGroups */ "./resources/js/pages/Base/ListGroups/ListGroups.js"));
 });
 var Navbars = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 22).then(__webpack_require__.bind(null, /*! ./views/Base/Navbars */ "./resources/coreui/src/views/Base/Navbars/Navbars.js"));
+  return __webpack_require__.e(/*! import() */ 22).then(__webpack_require__.bind(null, /*! ./pages/Base/Navbars */ "./resources/js/pages/Base/Navbars/Navbars.js"));
 });
 var Navs = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 23).then(__webpack_require__.bind(null, /*! ./views/Base/Navs */ "./resources/coreui/src/views/Base/Navs/Navs.js"));
+  return __webpack_require__.e(/*! import() */ 23).then(__webpack_require__.bind(null, /*! ./pages/Base/Navs */ "./resources/js/pages/Base/Navs/Navs.js"));
 });
 var Paginations = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 24).then(__webpack_require__.bind(null, /*! ./views/Base/Paginations */ "./resources/coreui/src/views/Base/Paginations/Pagnations.js"));
+  return __webpack_require__.e(/*! import() */ 24).then(__webpack_require__.bind(null, /*! ./pages/Base/Paginations */ "./resources/js/pages/Base/Paginations/Pagnations.js"));
 });
 var Popovers = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 25).then(__webpack_require__.bind(null, /*! ./views/Base/Popovers */ "./resources/coreui/src/views/Base/Popovers/Popovers.js"));
+  return __webpack_require__.e(/*! import() */ 25).then(__webpack_require__.bind(null, /*! ./pages/Base/Popovers */ "./resources/js/pages/Base/Popovers/Popovers.js"));
 });
 var ProgressBar = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 26).then(__webpack_require__.bind(null, /*! ./views/Base/ProgressBar */ "./resources/coreui/src/views/Base/ProgressBar/ProgressBar.js"));
+  return __webpack_require__.e(/*! import() */ 26).then(__webpack_require__.bind(null, /*! ./pages/Base/ProgressBar */ "./resources/js/pages/Base/ProgressBar/ProgressBar.js"));
 });
 var Switches = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 27).then(__webpack_require__.bind(null, /*! ./views/Base/Switches */ "./resources/coreui/src/views/Base/Switches/Switches.js"));
+  return __webpack_require__.e(/*! import() */ 27).then(__webpack_require__.bind(null, /*! ./pages/Base/Switches */ "./resources/js/pages/Base/Switches/Switches.js"));
 });
 var Tables = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 28).then(__webpack_require__.bind(null, /*! ./views/Base/Tables */ "./resources/coreui/src/views/Base/Tables/Tables.js"));
+  return __webpack_require__.e(/*! import() */ 28).then(__webpack_require__.bind(null, /*! ./pages/Base/Tables */ "./resources/js/pages/Base/Tables/Tables.js"));
 });
 var Tabs = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 29).then(__webpack_require__.bind(null, /*! ./views/Base/Tabs */ "./resources/coreui/src/views/Base/Tabs/Tabs.js"));
+  return __webpack_require__.e(/*! import() */ 29).then(__webpack_require__.bind(null, /*! ./pages/Base/Tabs */ "./resources/js/pages/Base/Tabs/Tabs.js"));
 });
 var Tooltips = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 30).then(__webpack_require__.bind(null, /*! ./views/Base/Tooltips */ "./resources/coreui/src/views/Base/Tooltips/Tooltips.js"));
+  return __webpack_require__.e(/*! import() */ 30).then(__webpack_require__.bind(null, /*! ./pages/Base/Tooltips */ "./resources/js/pages/Base/Tooltips/Tooltips.js"));
 });
 var BrandButtons = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 31).then(__webpack_require__.bind(null, /*! ./views/Buttons/BrandButtons */ "./resources/coreui/src/views/Buttons/BrandButtons/BrandButtons.js"));
+  return __webpack_require__.e(/*! import() */ 31).then(__webpack_require__.bind(null, /*! ./pages/Buttons/BrandButtons */ "./resources/js/pages/Buttons/BrandButtons/BrandButtons.js"));
 });
 var ButtonDropdowns = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 32).then(__webpack_require__.bind(null, /*! ./views/Buttons/ButtonDropdowns */ "./resources/coreui/src/views/Buttons/ButtonDropdowns/ButtonDropdowns.js"));
+  return __webpack_require__.e(/*! import() */ 32).then(__webpack_require__.bind(null, /*! ./pages/Buttons/ButtonDropdowns */ "./resources/js/pages/Buttons/ButtonDropdowns/ButtonDropdowns.js"));
 });
 var ButtonGroups = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 33).then(__webpack_require__.bind(null, /*! ./views/Buttons/ButtonGroups */ "./resources/coreui/src/views/Buttons/ButtonGroups/ButtonGroups.js"));
+  return __webpack_require__.e(/*! import() */ 33).then(__webpack_require__.bind(null, /*! ./pages/Buttons/ButtonGroups */ "./resources/js/pages/Buttons/ButtonGroups/ButtonGroups.js"));
 });
 var Buttons = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 34).then(__webpack_require__.bind(null, /*! ./views/Buttons/Buttons */ "./resources/coreui/src/views/Buttons/Buttons/Buttons.js"));
+  return __webpack_require__.e(/*! import() */ 34).then(__webpack_require__.bind(null, /*! ./pages/Buttons/Buttons */ "./resources/js/pages/Buttons/Buttons/Buttons.js"));
 });
 var Charts = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(6)]).then(__webpack_require__.bind(null, /*! ./views/Charts */ "./resources/coreui/src/views/Charts/Charts.js"));
+  return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(6)]).then(__webpack_require__.bind(null, /*! ./pages/Charts */ "./resources/js/pages/Charts/Charts.js"));
 });
 var Dashboard = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(3), __webpack_require__.e(7)]).then(__webpack_require__.bind(null, /*! ./views/Dashboard */ "./resources/coreui/src/views/Dashboard/Dashboard.js"));
+  return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(3), __webpack_require__.e(7)]).then(__webpack_require__.bind(null, /*! ./pages/Dashboard */ "./resources/js/pages/Dashboard/Dashboard.js"));
 });
 var CoreUIIcons = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 35).then(__webpack_require__.bind(null, /*! ./views/Icons/CoreUIIcons */ "./resources/coreui/src/views/Icons/CoreUIIcons/CoreUIIcons.js"));
+  return __webpack_require__.e(/*! import() */ 35).then(__webpack_require__.bind(null, /*! ./pages/Icons/CoreUIIcons */ "./resources/js/pages/Icons/CoreUIIcons/CoreUIIcons.js"));
 });
 var Flags = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 36).then(__webpack_require__.bind(null, /*! ./views/Icons/Flags */ "./resources/coreui/src/views/Icons/Flags/Flags.js"));
+  return __webpack_require__.e(/*! import() */ 36).then(__webpack_require__.bind(null, /*! ./pages/Icons/Flags */ "./resources/js/pages/Icons/Flags/Flags.js"));
 });
 var FontAwesome = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 37).then(__webpack_require__.bind(null, /*! ./views/Icons/FontAwesome */ "./resources/coreui/src/views/Icons/FontAwesome/FontAwesome.js"));
+  return __webpack_require__.e(/*! import() */ 37).then(__webpack_require__.bind(null, /*! ./pages/Icons/FontAwesome */ "./resources/js/pages/Icons/FontAwesome/FontAwesome.js"));
 });
 var SimpleLineIcons = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 38).then(__webpack_require__.bind(null, /*! ./views/Icons/SimpleLineIcons */ "./resources/coreui/src/views/Icons/SimpleLineIcons/SimpleLineIcons.js"));
+  return __webpack_require__.e(/*! import() */ 38).then(__webpack_require__.bind(null, /*! ./pages/Icons/SimpleLineIcons */ "./resources/js/pages/Icons/SimpleLineIcons/SimpleLineIcons.js"));
 });
 var Alerts = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 39).then(__webpack_require__.bind(null, /*! ./views/Notifications/Alerts */ "./resources/coreui/src/views/Notifications/Alerts/Alerts.js"));
+  return __webpack_require__.e(/*! import() */ 40).then(__webpack_require__.bind(null, /*! ./pages/Notifications/Alerts */ "./resources/js/pages/Notifications/Alerts/Alerts.js"));
 });
 var Badges = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 40).then(__webpack_require__.bind(null, /*! ./views/Notifications/Badges */ "./resources/coreui/src/views/Notifications/Badges/Badges.js"));
+  return __webpack_require__.e(/*! import() */ 41).then(__webpack_require__.bind(null, /*! ./pages/Notifications/Badges */ "./resources/js/pages/Notifications/Badges/Badges.js"));
 });
 var Modals = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 41).then(__webpack_require__.bind(null, /*! ./views/Notifications/Modals */ "./resources/coreui/src/views/Notifications/Modals/Modals.js"));
+  return __webpack_require__.e(/*! import() */ 42).then(__webpack_require__.bind(null, /*! ./pages/Notifications/Modals */ "./resources/js/pages/Notifications/Modals/Modals.js"));
 });
 var Colors = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(46)]).then(__webpack_require__.bind(null, /*! ./views/Theme/Colors */ "./resources/coreui/src/views/Theme/Colors/Colors.js"));
+  return Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(46)]).then(__webpack_require__.bind(null, /*! ./pages/Theme/Colors */ "./resources/js/pages/Theme/Colors/Colors.js"));
 });
 var Typography = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 47).then(__webpack_require__.bind(null, /*! ./views/Theme/Typography */ "./resources/coreui/src/views/Theme/Typography/Typography.js"));
+  return __webpack_require__.e(/*! import() */ 47).then(__webpack_require__.bind(null, /*! ./pages/Theme/Typography */ "./resources/js/pages/Theme/Typography/Typography.js"));
 });
 var Widgets = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(5)]).then(__webpack_require__.bind(null, /*! ./views/Widgets/Widgets */ "./resources/coreui/src/views/Widgets/Widgets.js"));
+  return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(5)]).then(__webpack_require__.bind(null, /*! ./pages/Widgets/Widgets */ "./resources/js/pages/Widgets/Widgets.js"));
 });
 var Users = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 11).then(__webpack_require__.bind(null, /*! ./views/Users/Users */ "./resources/coreui/src/views/Users/Users.js"));
+  return __webpack_require__.e(/*! import() */ 11).then(__webpack_require__.bind(null, /*! ./pages/Users/Users */ "./resources/js/pages/Users/Users.js"));
 });
 var User = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! ./views/Users/User */ "./resources/coreui/src/views/Users/User.js"));
+  return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! ./pages/Users/User */ "./resources/js/pages/Users/User.js"));
 }); // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 
 var routes = [{

@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[22],{
 
-/***/ "./resources/coreui/src/views/Base/Navbars/Navbars.js":
-/*!************************************************************!*\
-  !*** ./resources/coreui/src/views/Base/Navbars/Navbars.js ***!
-  \************************************************************/
+/***/ "./resources/js/pages/Base/Navbars/Navbars.js":
+/*!****************************************************!*\
+  !*** ./resources/js/pages/Base/Navbars/Navbars.js ***!
+  \****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 

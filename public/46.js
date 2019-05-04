@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[46],{
 
-/***/ "./resources/coreui/src/views/Theme/Colors/Colors.js":
-/*!***********************************************************!*\
-  !*** ./resources/coreui/src/views/Theme/Colors/Colors.js ***!
-  \***********************************************************/
+/***/ "./resources/js/pages/Theme/Colors/Colors.js":
+/*!***************************************************!*\
+  !*** ./resources/js/pages/Theme/Colors/Colors.js ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -150,7 +150,7 @@ function (_Component3) {
         className: "card-header"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "icon-drop"
-      }), " Theme colors"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }), ' ', "Theme colors"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ThemeColor, {
         className: "bg-primary"
@@ -174,7 +174,7 @@ function (_Component3) {
         className: "card-header"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "icon-drop"
-      }), " Grays"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }), ' ', "Grays"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], {
         className: "mb-3"
@@ -202,7 +202,7 @@ function (_Component3) {
         className: "card-header"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "icon-drop"
-      }), " Additional colors"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }), ' ', "Additional colors"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ThemeColor, {
         className: "bg-blue"

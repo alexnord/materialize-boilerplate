@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[35],{
 
-/***/ "./resources/coreui/src/views/Icons/CoreUIIcons/CoreUIIcons.js":
-/*!*********************************************************************!*\
-  !*** ./resources/coreui/src/views/Icons/CoreUIIcons/CoreUIIcons.js ***!
-  \*********************************************************************/
+/***/ "./resources/js/pages/Icons/CoreUIIcons/CoreUIIcons.js":
+/*!*************************************************************!*\
+  !*** ./resources/js/pages/Icons/CoreUIIcons/CoreUIIcons.js ***!
+  \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -51,8 +51,8 @@ function (_Component) {
         className: "animated fadeIn"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardHeader"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-picture-o"
-      }), "CoreUI Icons", ' ', " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Badge"], {
-        color: 'info'
+      }), "CoreUI Icons", ' ', ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Badge"], {
+        color: "info"
       }, "New"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-header-actions"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {

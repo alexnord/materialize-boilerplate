@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[12],{
 
-/***/ "./resources/coreui/src/containers/DefaultLayout/DefaultAside.js":
-/*!***********************************************************************!*\
-  !*** ./resources/coreui/src/containers/DefaultLayout/DefaultAside.js ***!
-  \***********************************************************************/
+/***/ "./resources/js/containers/DefaultLayout/DefaultAside.js":
+/*!***************************************************************!*\
+  !*** ./resources/js/containers/DefaultLayout/DefaultAside.js ***!
+  \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -121,7 +121,7 @@ function (_Component) {
         tabId: "1"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ListGroup"], {
         className: "list-group-accent",
-        tag: 'div'
+        tag: "div"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ListGroupItem"], {
         className: "list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase small"
       }, "Today"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ListGroupItem"], {
@@ -133,9 +133,9 @@ function (_Component) {
         className: "avatar float-right"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "img-avatar",
-        src: "assets/img/avatars/7.jpg",
+        src: "/img/avatars/7.jpg",
         alt: "admin@bootstrapmaster.com"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Meeting with ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Lucas"), " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Meeting with", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Lucas"), ' '), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
         className: "text-muted mr-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "icon-calendar"
@@ -143,7 +143,7 @@ function (_Component) {
         className: "text-muted"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "icon-location-pin"
-      }), " Palo Alto, CA")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ListGroupItem"], {
+      }), ' ', "Palo Alto, CA")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ListGroupItem"], {
         action: true,
         tag: "a",
         href: "#",
@@ -152,9 +152,9 @@ function (_Component) {
         className: "avatar float-right"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "img-avatar",
-        src: "assets/img/avatars/4.jpg",
+        src: "/img/avatars/4.jpg",
         alt: "admin@bootstrapmaster.com"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Skype with ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Megan")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Skype with", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Megan")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
         className: "text-muted mr-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "icon-calendar"
@@ -162,14 +162,14 @@ function (_Component) {
         className: "text-muted"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "icon-social-skype"
-      }), " On-line")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ListGroupItem"], {
+      }), ' ', "On-line")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ListGroupItem"], {
         className: "list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase small"
       }, "Tomorrow"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ListGroupItem"], {
         action: true,
         tag: "a",
         href: "#",
         className: "list-group-item-accent-danger list-group-item-divider"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "New UI Project - ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "deadline")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "New UI Project -", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "deadline")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
         className: "text-muted mr-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "icon-calendar"
@@ -182,31 +182,31 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar avatar-xs"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/2.jpg',
+        src: "/img/avatars/2.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar avatar-xs"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/3.jpg',
+        src: "/img/avatars/3.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar avatar-xs"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/4.jpg',
+        src: "/img/avatars/4.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar avatar-xs"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/5.jpg',
+        src: "/img/avatars/5.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar avatar-xs"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/6.jpg',
+        src: "/img/avatars/6.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ListGroupItem"], {
@@ -214,7 +214,7 @@ function (_Component) {
         tag: "a",
         href: "#",
         className: "list-group-item-accent-success list-group-item-divider"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "#10 Startups.Garden"), " Meetup"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "#10 Startups.Garden"), ' ', "Meetup"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
         className: "text-muted mr-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "icon-calendar"
@@ -240,43 +240,43 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar avatar-xs"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/2.jpg',
+        src: "/img/avatars/2.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar avatar-xs"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/3.jpg',
+        src: "/img/avatars/3.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar avatar-xs"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/4.jpg',
+        src: "/img/avatars/4.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar avatar-xs"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/5.jpg',
+        src: "/img/avatars/5.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar avatar-xs"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/6.jpg',
+        src: "/img/avatars/6.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar avatar-xs"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/7.jpg',
+        src: "/img/avatars/7.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar avatar-xs"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/8.jpg',
+        src: "/img/avatars/8.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["TabPane"], {
@@ -289,7 +289,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/7.jpg',
+        src: "/img/avatars/7.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -309,7 +309,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/7.jpg',
+        src: "/img/avatars/7.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -329,7 +329,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/7.jpg',
+        src: "/img/avatars/7.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -349,7 +349,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/7.jpg',
+        src: "/img/avatars/7.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -369,7 +369,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/7.jpg',
+        src: "/img/avatars/7.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -390,12 +390,12 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "clearfix mt-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "Option 1")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_coreui_react__WEBPACK_IMPORTED_MODULE_4__["AppSwitch"], {
-        className: 'float-right',
-        variant: 'pill',
+        className: "float-right",
+        variant: "pill",
         label: true,
-        color: 'success',
+        color: "success",
         defaultChecked: true,
-        size: 'sm'
+        size: "sm"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
         className: "text-muted"
       }, "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -403,11 +403,11 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "clearfix mt-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "Option 2")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_coreui_react__WEBPACK_IMPORTED_MODULE_4__["AppSwitch"], {
-        className: 'float-right',
-        variant: 'pill',
+        className: "float-right",
+        variant: "pill",
         label: true,
-        color: 'success',
-        size: 'sm'
+        color: "success",
+        size: "sm"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
         className: "text-muted"
       }, "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -415,12 +415,12 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "clearfix mt-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "Option 3")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_coreui_react__WEBPACK_IMPORTED_MODULE_4__["AppSwitch"], {
-        className: 'float-right',
-        variant: 'pill',
+        className: "float-right",
+        variant: "pill",
         label: true,
-        color: 'success',
+        color: "success",
         defaultChecked: true,
-        size: 'sm',
+        size: "sm",
         disabled: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
         className: "text-muted"
@@ -429,12 +429,12 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "clearfix mt-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "Option 4")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_coreui_react__WEBPACK_IMPORTED_MODULE_4__["AppSwitch"], {
-        className: 'float-right',
-        variant: 'pill',
+        className: "float-right",
+        variant: "pill",
         label: true,
-        color: 'success',
+        color: "success",
         defaultChecked: true,
-        size: 'sm'
+        size: "sm"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "System Utilization"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "text-uppercase mb-1 mt-4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "CPU Usage"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Progress"], {

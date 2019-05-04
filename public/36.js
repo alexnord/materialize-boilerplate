@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[36],{
 
-/***/ "./resources/coreui/src/views/Icons/Flags/Flags.js":
-/*!*********************************************************!*\
-  !*** ./resources/coreui/src/views/Icons/Flags/Flags.js ***!
-  \*********************************************************/
+/***/ "./resources/js/pages/Icons/Flags/Flags.js":
+/*!*************************************************!*\
+  !*** ./resources/js/pages/Icons/Flags/Flags.js ***!
+  \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -51,12 +51,12 @@ function (_Component) {
         className: "animated fadeIn"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardHeader"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-font-awesome"
-      }), " Flags"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+      }), ' ', "Flags"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
         className: "text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         className: "mb-5 text-left",
         xs: "12"
-      }, "For using the flags inline with text add the classes ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, ".flag-icon"), " and ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, ".flag-icon-xx"), " (where xx is the ISO 3166-1-alpha-2 code of a country) to an empty span. If you want to have a squared version flag then add the class flag-icon-squared as well."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+      }, "For using the flags inline with text add the classes", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, ".flag-icon"), ' ', "and", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, ".flag-icon-xx"), ' ', "(where xx is the ISO 3166-1-alpha-2 code of a country) to an empty span. If you want to have a squared version flag then add the class flag-icon-squared as well."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         className: "mb-5",
         xs: "3",
         sm: "2"

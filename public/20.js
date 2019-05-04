@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[20],{
 
-/***/ "./resources/coreui/src/views/Base/Jumbotrons/Jumbotrons.js":
-/*!******************************************************************!*\
-  !*** ./resources/coreui/src/views/Base/Jumbotrons/Jumbotrons.js ***!
-  \******************************************************************/
+/***/ "./resources/js/pages/Base/Jumbotrons/Jumbotrons.js":
+/*!**********************************************************!*\
+  !*** ./resources/js/pages/Base/Jumbotrons/Jumbotrons.js ***!
+  \**********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 

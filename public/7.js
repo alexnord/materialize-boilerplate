@@ -434,10 +434,10 @@ webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
 
 /***/ }),
 
-/***/ "./resources/coreui/src/views/Dashboard/Dashboard.js":
-/*!***********************************************************!*\
-  !*** ./resources/coreui/src/views/Dashboard/Dashboard.js ***!
-  \***********************************************************/
+/***/ "./resources/js/pages/Dashboard/Dashboard.js":
+/*!***************************************************!*\
+  !*** ./resources/js/pages/Dashboard/Dashboard.js ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -477,7 +477,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 var Widget03 = Object(react__WEBPACK_IMPORTED_MODULE_0__["lazy"])(function () {
-  return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../../views/Widgets/Widget03 */ "./resources/coreui/src/views/Widgets/Widget03.js"));
+  return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../../pages/Widgets/Widget03 */ "./resources/js/pages/Widgets/Widget03.js"));
 });
 var brandPrimary = Object(_coreui_coreui_dist_js_coreui_utilities__WEBPACK_IMPORTED_MODULE_4__["getStyle"])('--primary');
 var brandSuccess = Object(_coreui_coreui_dist_js_coreui_utilities__WEBPACK_IMPORTED_MODULE_4__["getStyle"])('--success');
@@ -1574,7 +1574,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/1.jpg',
+        src: '/img/avatars/1.jpg',
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -1613,7 +1613,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/2.jpg',
+        src: '/img/avatars/2.jpg',
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -1652,7 +1652,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/3.jpg',
+        src: '/img/avatars/3.jpg',
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -1691,7 +1691,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/4.jpg',
+        src: '/img/avatars/4.jpg',
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -1730,7 +1730,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/5.jpg',
+        src: '/img/avatars/5.jpg',
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -1769,7 +1769,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: 'assets/img/avatars/6.jpg',
+        src: '/img/avatars/6.jpg',
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {

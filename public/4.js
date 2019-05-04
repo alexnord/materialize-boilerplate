@@ -1741,7 +1741,6 @@ AppSidebarNav.defaultProps = defaultProps;
 
 /* harmony default export */ __webpack_exports__["default"] = (AppSidebarNav);
 
-
 /***/ }),
 
 /***/ "./node_modules/@coreui/react/es/SidebarToggler.js":

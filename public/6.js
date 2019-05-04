@@ -434,10 +434,10 @@ webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
 
 /***/ }),
 
-/***/ "./resources/coreui/src/views/Charts/Charts.js":
-/*!*****************************************************!*\
-  !*** ./resources/coreui/src/views/Charts/Charts.js ***!
-  \*****************************************************/
+/***/ "./resources/js/pages/Charts/Charts.js":
+/*!*********************************************!*\
+  !*** ./resources/js/pages/Charts/Charts.js ***!
+  \*********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 

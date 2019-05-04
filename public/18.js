@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[18],{
 
-/***/ "./resources/coreui/src/views/Base/Dropdowns/Dropdowns.js":
-/*!****************************************************************!*\
-  !*** ./resources/coreui/src/views/Base/Dropdowns/Dropdowns.js ***!
-  \****************************************************************/
+/***/ "./resources/js/pages/Base/Dropdowns/Dropdowns.js":
+/*!********************************************************!*\
+  !*** ./resources/js/pages/Base/Dropdowns/Dropdowns.js ***!
+  \********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -173,7 +173,7 @@ function (_Component) {
         },
         "data-toggle": "dropdown",
         "aria-expanded": this.state.dropdownOpen[5]
-      }, "Custom Dropdown Content ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, " * ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownMenu"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Custom Dropdown Content", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, " * ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownMenu"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "dropdown-item",
         onClick: function onClick() {
           _this2.toggle(5);

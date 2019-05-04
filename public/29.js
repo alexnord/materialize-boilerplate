@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[29],{
 
-/***/ "./resources/coreui/src/views/Base/Tabs/Tabs.js":
-/*!******************************************************!*\
-  !*** ./resources/coreui/src/views/Base/Tabs/Tabs.js ***!
-  \******************************************************/
+/***/ "./resources/js/pages/Base/Tabs/Tabs.js":
+/*!**********************************************!*\
+  !*** ./resources/js/pages/Base/Tabs/Tabs.js ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -151,7 +151,7 @@ function (_Component) {
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "icon-calculator"
-      }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: this.state.activeTab[2] === '1' ? '' : 'd-none'
       }, " Calculator"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
         active: this.state.activeTab[2] === '2',
@@ -160,9 +160,9 @@ function (_Component) {
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "icon-basket-loaded"
-      }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: this.state.activeTab[2] === '2' ? '' : 'd-none'
-      }, " Shopping cart"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+      }, ' ', "Shopping cart"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
         className: classnames__WEBPACK_IMPORTED_MODULE_2___default()({
           active: this.state.activeTab[2] === '3'
         }),
@@ -171,7 +171,7 @@ function (_Component) {
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "icon-pie-chart"
-      }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }), ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: this.state.activeTab[2] === '3' ? '' : 'd-none'
       }, " Charts")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["TabContent"], {
         activeTab: this.state.activeTab[2]

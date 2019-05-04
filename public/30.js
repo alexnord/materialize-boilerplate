@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[30],{
 
-/***/ "./resources/coreui/src/views/Base/Tooltips/Tooltips.js":
-/*!**************************************************************!*\
-  !*** ./resources/coreui/src/views/Base/Tooltips/Tooltips.js ***!
-  \**************************************************************/
+/***/ "./resources/js/pages/Base/Tooltips/Tooltips.js":
+/*!******************************************************!*\
+  !*** ./resources/js/pages/Base/Tooltips/Tooltips.js ***!
+  \******************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -64,11 +64,11 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
         className: "mr-1",
         color: "secondary",
-        id: 'Tooltip-' + this.props.id
+        id: "Tooltip-".concat(this.props.id)
       }, this.props.item.text), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Tooltip"], {
         placement: this.props.item.placement,
         isOpen: this.state.tooltipOpen,
-        target: 'Tooltip-' + this.props.id,
+        target: "Tooltip-".concat(this.props.id),
         toggle: this.toggle
       }, "Tooltip Content!"));
     }

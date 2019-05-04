@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[45],{
 
-/***/ "./resources/coreui/src/views/Pages/Register/Register.js":
-/*!***************************************************************!*\
-  !*** ./resources/coreui/src/views/Pages/Register/Register.js ***!
-  \***************************************************************/
+/***/ "./resources/js/pages/Register/Register.js":
+/*!*************************************************!*\
+  !*** ./resources/js/pages/Register/Register.js ***!
+  \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 

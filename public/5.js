@@ -286,10 +286,10 @@ webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
 
 /***/ }),
 
-/***/ "./resources/coreui/src/views/Widgets/Widget01.js":
-/*!********************************************************!*\
-  !*** ./resources/coreui/src/views/Widgets/Widget01.js ***!
-  \********************************************************/
+/***/ "./resources/js/pages/Widgets/Widget01.js":
+/*!************************************************!*\
+  !*** ./resources/js/pages/Widgets/Widget01.js ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -394,7 +394,7 @@ function (_Component) {
         progress.style = 'progress-white';
         progress.color = '';
         card.style = 'text-white';
-        card.bgColor = 'bg-' + color;
+        card.bgColor = "bg-".concat(color);
       }
 
       var classes = Object(reactstrap_lib_utils__WEBPACK_IMPORTED_MODULE_4__["mapToCssModules"])(classnames__WEBPACK_IMPORTED_MODULE_3___default()(className, card.style, card.bgColor), cssModule);
@@ -422,10 +422,10 @@ Widget01.defaultProps = defaultProps;
 
 /***/ }),
 
-/***/ "./resources/coreui/src/views/Widgets/Widget02.js":
-/*!********************************************************!*\
-  !*** ./resources/coreui/src/views/Widgets/Widget02.js ***!
-  \********************************************************/
+/***/ "./resources/js/pages/Widgets/Widget02.js":
+/*!************************************************!*\
+  !*** ./resources/js/pages/Widgets/Widget02.js ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -543,10 +543,10 @@ function (_Component) {
         color: color,
         classes: ''
       };
-      lead.classes = classnames__WEBPACK_IMPORTED_MODULE_3___default()(lead.style, 'text-' + card.color, padding.lead);
+      lead.classes = classnames__WEBPACK_IMPORTED_MODULE_3___default()(lead.style, "text-".concat(card.color), padding.lead);
 
       var blockIcon = function blockIcon(icon) {
-        var classes = classnames__WEBPACK_IMPORTED_MODULE_3___default()(icon, 'bg-' + card.color, padding.icon, 'font-2xl mr-3 float-left');
+        var classes = classnames__WEBPACK_IMPORTED_MODULE_3___default()(icon, "bg-".concat(card.color), padding.icon, 'font-2xl mr-3 float-left');
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
           className: classes
         });
@@ -584,10 +584,10 @@ Widget02.defaultProps = defaultProps;
 
 /***/ }),
 
-/***/ "./resources/coreui/src/views/Widgets/Widget04.js":
-/*!********************************************************!*\
-  !*** ./resources/coreui/src/views/Widgets/Widget04.js ***!
-  \********************************************************/
+/***/ "./resources/js/pages/Widgets/Widget04.js":
+/*!************************************************!*\
+  !*** ./resources/js/pages/Widgets/Widget04.js ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -691,7 +691,7 @@ function (_Component) {
         progress.style = 'progress-white';
         progress.color = '';
         card.style = 'text-white';
-        card.bgColor = 'bg-' + color;
+        card.bgColor = "bg-".concat(color);
       }
 
       var classes = Object(reactstrap_lib_utils__WEBPACK_IMPORTED_MODULE_4__["mapToCssModules"])(classnames__WEBPACK_IMPORTED_MODULE_3___default()(className, card.style, card.bgColor), cssModule);
@@ -723,10 +723,10 @@ Widget04.defaultProps = defaultProps;
 
 /***/ }),
 
-/***/ "./resources/coreui/src/views/Widgets/Widgets.js":
-/*!*******************************************************!*\
-  !*** ./resources/coreui/src/views/Widgets/Widgets.js ***!
-  \*******************************************************/
+/***/ "./resources/js/pages/Widgets/Widgets.js":
+/*!***********************************************!*\
+  !*** ./resources/js/pages/Widgets/Widgets.js ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -735,11 +735,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
-/* harmony import */ var _Widget01__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Widget01 */ "./resources/coreui/src/views/Widgets/Widget01.js");
-/* harmony import */ var _Widget02__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Widget02 */ "./resources/coreui/src/views/Widgets/Widget02.js");
-/* harmony import */ var _Widget03__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Widget03 */ "./resources/coreui/src/views/Widgets/Widget03.js");
-/* harmony import */ var _Widget04__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Widget04 */ "./resources/coreui/src/views/Widgets/Widget04.js");
-/* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-chartjs-2 */ "./node_modules/react-chartjs-2/es/index.js");
+/* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-chartjs-2 */ "./node_modules/react-chartjs-2/es/index.js");
+/* harmony import */ var _Widget01__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Widget01 */ "./resources/js/pages/Widgets/Widget01.js");
+/* harmony import */ var _Widget02__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Widget02 */ "./resources/js/pages/Widgets/Widget02.js");
+/* harmony import */ var _Widget03__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Widget03 */ "./resources/js/pages/Widgets/Widget03.js");
+/* harmony import */ var _Widget04__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Widget04 */ "./resources/js/pages/Widgets/Widget04.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -841,21 +841,21 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_3__["default"], {
         color: "success",
         header: "89.9%"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_3__["default"], {
         color: "info",
         header: "12.124"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_3__["default"], {
         color: "warning",
         header: "$98.111,00",
         smallText: ""
@@ -865,7 +865,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_3__["default"], {
         color: "danger",
         value: "95",
         header: "1.9 TB",
@@ -875,7 +875,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_3__["default"], {
         color: "primary",
         variant: "inverse",
         header: "89.9%"
@@ -883,7 +883,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_3__["default"], {
         color: "warning",
         variant: "inverse",
         header: "12.124"
@@ -891,7 +891,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_3__["default"], {
         color: "danger",
         variant: "inverse",
         header: "$98.111,00",
@@ -902,7 +902,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_3__["default"], {
         color: "info",
         variant: "inverse",
         value: "95",
@@ -913,7 +913,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
         header: "$1.999,50",
         mainText: "Income",
         icon: "fa fa-cogs",
@@ -922,7 +922,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
         header: "$1.999,50",
         mainText: "Income",
         icon: "fa fa-laptop",
@@ -931,7 +931,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
         header: "$1.999,50",
         mainText: "Income",
         icon: "fa fa-moon-o",
@@ -940,7 +940,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
         header: "$1.999,50",
         mainText: "Income",
         icon: "fa fa-bell",
@@ -949,7 +949,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
         header: "$1.999,50",
         mainText: "Income",
         icon: "fa fa-cogs",
@@ -960,7 +960,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
         header: "$1.999,50",
         mainText: "Income",
         icon: "fa fa-laptop",
@@ -970,7 +970,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
         header: "$1.999,50",
         mainText: "Income",
         icon: "fa fa-moon-o",
@@ -980,7 +980,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
         header: "$1.999,50",
         mainText: "Income",
         icon: "fa fa-bell",
@@ -990,7 +990,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
         header: "$1.999,50",
         mainText: "Income",
         icon: "fa fa-cogs",
@@ -1000,7 +1000,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
         header: "$1.999,50",
         mainText: "Income",
         icon: "fa fa-laptop",
@@ -1010,7 +1010,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
         header: "$1.999,50",
         mainText: "Income",
         icon: "fa fa-moon-o",
@@ -1020,7 +1020,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
         header: "$1.999,50",
         mainText: "Income",
         icon: "fa fa-bell",
@@ -1030,7 +1030,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
         header: "$1.999,50",
         mainText: "Income",
         icon: "fa fa-cogs",
@@ -1040,7 +1040,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
         header: "$1.999,50",
         mainText: "Income",
         icon: "fa fa-laptop",
@@ -1050,7 +1050,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
         header: "$1.999,50",
         mainText: "Income",
         icon: "fa fa-moon-o",
@@ -1060,7 +1060,7 @@ function (_Component) {
         xs: "12",
         sm: "6",
         lg: "3"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
         header: "$1.999,50",
         mainText: "Income",
         icon: "fa fa-bell",
@@ -1070,7 +1070,7 @@ function (_Component) {
         xs: 12,
         sm: 6,
         md: 3
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget03__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget03__WEBPACK_IMPORTED_MODULE_5__["default"], {
         dataBox: function dataBox() {
           return {
             variant: 'facebook',
@@ -1080,7 +1080,7 @@ function (_Component) {
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "chart-wrapper"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_6__["Line"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__["Line"], {
         data: makeSocialBoxData(0),
         options: socialChartOpts,
         height: 90
@@ -1088,7 +1088,7 @@ function (_Component) {
         xs: 12,
         sm: 6,
         md: 3
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget03__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget03__WEBPACK_IMPORTED_MODULE_5__["default"], {
         dataBox: function dataBox() {
           return {
             variant: 'twitter',
@@ -1098,7 +1098,7 @@ function (_Component) {
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "chart-wrapper"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_6__["Line"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__["Line"], {
         data: makeSocialBoxData(1),
         options: socialChartOpts,
         height: 90
@@ -1106,7 +1106,7 @@ function (_Component) {
         xs: 12,
         sm: 6,
         md: 3
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget03__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget03__WEBPACK_IMPORTED_MODULE_5__["default"], {
         dataBox: function dataBox() {
           return {
             variant: 'linkedin',
@@ -1116,7 +1116,7 @@ function (_Component) {
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "chart-wrapper"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_6__["Line"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__["Line"], {
         data: makeSocialBoxData(2),
         options: socialChartOpts,
         height: 90
@@ -1124,7 +1124,7 @@ function (_Component) {
         xs: 12,
         sm: 6,
         md: 3
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget03__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget03__WEBPACK_IMPORTED_MODULE_5__["default"], {
         dataBox: function dataBox() {
           return {
             variant: 'google-plus',
@@ -1134,33 +1134,33 @@ function (_Component) {
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "chart-wrapper"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_6__["Line"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__["Line"], {
         data: makeSocialBoxData(3),
         options: socialChartOpts,
         height: 90
       }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardGroup"], {
         className: "mb-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
         icon: "icon-people",
         color: "info",
         header: "87.500",
         value: "25"
-      }, "Visitors"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, "Visitors"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
         icon: "icon-user-follow",
         color: "success",
         header: "385",
         value: "25"
-      }, "New Clients"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, "New Clients"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
         icon: "icon-basket-loaded",
         color: "warning",
         header: "1238",
         value: "25"
-      }, "Products sold"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, "Products sold"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
         icon: "icon-pie-chart",
         color: "primary",
         header: "28%",
         value: "25"
-      }, "Returning Visitors"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, "Returning Visitors"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
         icon: "icon-speedometer",
         color: "danger",
         header: "5:34:11",
@@ -1168,7 +1168,7 @@ function (_Component) {
       }, "Avg. Time")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         sm: "6",
         md: "2"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
         icon: "icon-people",
         color: "info",
         header: "87.500",
@@ -1176,7 +1176,7 @@ function (_Component) {
       }, "Visitors")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         sm: "6",
         md: "2"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
         icon: "icon-user-follow",
         color: "success",
         header: "385",
@@ -1184,7 +1184,7 @@ function (_Component) {
       }, "New Clients")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         sm: "6",
         md: "2"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
         icon: "icon-basket-loaded",
         color: "warning",
         header: "1238",
@@ -1192,7 +1192,7 @@ function (_Component) {
       }, "Products sold")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         sm: "6",
         md: "2"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
         icon: "icon-pie-chart",
         color: "primary",
         header: "28%",
@@ -1200,7 +1200,7 @@ function (_Component) {
       }, "Returning Visitors")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         sm: "6",
         md: "2"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
         icon: "icon-speedometer",
         color: "danger",
         header: "5:34:11",
@@ -1208,7 +1208,7 @@ function (_Component) {
       }, "Avg. Time")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         sm: "6",
         md: "2"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
         icon: "icon-speech",
         color: "info",
         header: "972",
@@ -1216,7 +1216,7 @@ function (_Component) {
       }, "Comments"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         sm: "6",
         md: "2"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
         icon: "icon-people",
         color: "info",
         header: "87.500",
@@ -1225,7 +1225,7 @@ function (_Component) {
       }, "Visitors")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         sm: "6",
         md: "2"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
         icon: "icon-user-follow",
         color: "success",
         header: "385",
@@ -1234,7 +1234,7 @@ function (_Component) {
       }, "New Clients")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         sm: "6",
         md: "2"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
         icon: "icon-basket-loaded",
         color: "warning",
         header: "1238",
@@ -1243,7 +1243,7 @@ function (_Component) {
       }, "Products sold")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         sm: "6",
         md: "2"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
         icon: "icon-pie-chart",
         color: "primary",
         header: "28%",
@@ -1252,7 +1252,7 @@ function (_Component) {
       }, "Returning Visitors")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         sm: "6",
         md: "2"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
         icon: "icon-speedometer",
         color: "danger",
         header: "5:34:11",
@@ -1261,7 +1261,7 @@ function (_Component) {
       }, "Avg. Time")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         sm: "6",
         md: "2"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
         icon: "icon-speech",
         color: "info",
         header: "972",

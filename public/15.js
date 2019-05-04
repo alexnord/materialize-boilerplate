@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[15],{
 
-/***/ "./resources/coreui/src/views/Base/Cards/Cards.js":
-/*!********************************************************!*\
-  !*** ./resources/coreui/src/views/Base/Cards/Cards.js ***!
-  \********************************************************/
+/***/ "./resources/js/pages/Base/Cards/Cards.js":
+/*!************************************************!*\
+  !*** ./resources/js/pages/Base/Cards/Cards.js ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -100,11 +100,11 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardHeader"], null, "Card with switch", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-header-actions"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_coreui_react__WEBPACK_IMPORTED_MODULE_2__["AppSwitch"], {
-        className: 'float-right mb-0',
+        className: "float-right mb-0",
         label: true,
-        color: 'info',
+        color: "info",
         defaultChecked: true,
-        size: 'sm'
+        size: "sm"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "12",
         sm: "6",
@@ -204,7 +204,7 @@ function (_Component) {
         className: "text-white bg-primary text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("blockquote", {
         className: "card-bodyquote"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, "Someone famous in ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("cite", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, "Someone famous in", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("cite", {
         title: "Source Title"
       }, "Source Title")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "12",
@@ -214,7 +214,7 @@ function (_Component) {
         className: "text-white bg-success text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("blockquote", {
         className: "card-bodyquote"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, "Someone famous in ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("cite", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, "Someone famous in", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("cite", {
         title: "Source Title"
       }, "Source Title")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "12",
@@ -224,7 +224,7 @@ function (_Component) {
         className: "text-white bg-info text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("blockquote", {
         className: "card-bodyquote"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, "Someone famous in ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("cite", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, "Someone famous in", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("cite", {
         title: "Source Title"
       }, "Source Title")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "12",
@@ -234,7 +234,7 @@ function (_Component) {
         className: "text-white bg-warning text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("blockquote", {
         className: "card-bodyquote"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, "Someone famous in ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("cite", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, "Someone famous in", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("cite", {
         title: "Source Title"
       }, "Source Title")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "12",
@@ -244,7 +244,7 @@ function (_Component) {
         className: "text-white bg-danger text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("blockquote", {
         className: "card-bodyquote"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, "Someone famous in ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("cite", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, "Someone famous in", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("cite", {
         title: "Source Title"
       }, "Source Title")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "12",
@@ -254,7 +254,7 @@ function (_Component) {
         className: "text-white bg-primary text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("blockquote", {
         className: "card-bodyquote"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, "Someone famous in ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("cite", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, "Someone famous in", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("cite", {
         title: "Source Title"
       }, "Source Title"))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "12",

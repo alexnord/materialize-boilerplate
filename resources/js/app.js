@@ -1,4 +1,3 @@
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes React and other helpers. It's a great starting point while
@@ -16,4 +15,4 @@ require('./bootstrap');
 // require('./components/App');
 
 /* Import the Main component */
-require('../coreui/src/index.js');
+require('./index.js');

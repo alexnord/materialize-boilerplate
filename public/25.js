@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[25],{
 
-/***/ "./resources/coreui/src/views/Base/Popovers/Popovers.js":
-/*!**************************************************************!*\
-  !*** ./resources/coreui/src/views/Base/Popovers/Popovers.js ***!
-  \**************************************************************/
+/***/ "./resources/js/pages/Base/Popovers/Popovers.js":
+/*!******************************************************!*\
+  !*** ./resources/js/pages/Base/Popovers/Popovers.js ***!
+  \******************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -64,12 +64,12 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
         className: "mr-1",
         color: "secondary",
-        id: 'Popover-' + this.props.id,
+        id: "Popover-".concat(this.props.id),
         onClick: this.toggle
       }, this.props.item.text), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Popover"], {
         placement: this.props.item.placement,
         isOpen: this.state.popoverOpen,
-        target: 'Popover-' + this.props.id,
+        target: "Popover-".concat(this.props.id),
         toggle: this.toggle
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["PopoverHeader"], null, "Popover Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["PopoverBody"], null, "Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.")));
     }

@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[31],{
 
-/***/ "./resources/coreui/src/views/Buttons/BrandButtons/BrandButtons.js":
-/*!*************************************************************************!*\
-  !*** ./resources/coreui/src/views/Buttons/BrandButtons/BrandButtons.js ***!
-  \*************************************************************************/
+/***/ "./resources/js/pages/Buttons/BrandButtons/BrandButtons.js":
+/*!*****************************************************************!*\
+  !*** ./resources/js/pages/Buttons/BrandButtons/BrandButtons.js ***!
+  \*****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -53,7 +53,7 @@ function (_Component) {
         xs: "12"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardHeader"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-align-justify"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Brand Button"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " Usage ex. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "<Button className=\"btn-facebook btn-brand\"><i className=\"fa fa-facebook\"></i><span>Facebook</span></Button>")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Size Small", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " Add this class ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, ".btn-sm"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Brand Button"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " Usage ex. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "<Button className=\"btn-facebook btn-brand\"><i className=\"fa fa-facebook\"></i><span>Facebook</span></Button>")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Size Small", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, ' ', "Add this class", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, ".btn-sm"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
         size: "sm",
         className: "btn-facebook btn-brand mr-1 mb-1"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
@@ -278,7 +278,7 @@ function (_Component) {
         className: "btn-vimeo btn-brand mr-1 mb-1"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-vimeo"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Vimeo"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Size Large", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " Add this class ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, ".btn-lg"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Vimeo"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Size Large", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, ' ', "Add this class", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, ".btn-lg"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
         size: "lg",
         className: "btn-facebook btn-brand mr-1 mb-1"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
@@ -407,7 +407,7 @@ function (_Component) {
         xs: "12"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardHeader"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-align-justify"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Brand Button"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " Icons only. Usage ex. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "<Button className=\"btn-facebook btn-brand icon\"><i className=\"fa fa-facebook\"></i></Button>")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Size Small", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " Add this class ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, ".btn-sm"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Brand Button"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " Icons only. Usage ex. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "<Button className=\"btn-facebook btn-brand icon\"><i className=\"fa fa-facebook\"></i></Button>")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Size Small", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, ' ', "Add this class", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, ".btn-sm"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
         size: "sm",
         className: "btn-facebook btn-brand icon mr-1 mb-1"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
@@ -632,7 +632,7 @@ function (_Component) {
         className: "btn-vimeo btn-brand icon mr-1 mb-1"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-vimeo"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Size Large", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " Add this class ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, ".btn-lg"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Size Large", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, ' ', "Add this class", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, ".btn-lg"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
         size: "lg",
         className: "btn-facebook btn-brand icon mr-1 mb-1"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
@@ -761,7 +761,7 @@ function (_Component) {
         xs: "12"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardHeader"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-align-justify"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Brand Button"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " Text only. Usage ex. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "<Button className=\"btn-facebook btn-brand text\"><span>Facebook</span></Button>")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Size Small", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " Add this class ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, ".btn-sm"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Brand Button"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " Text only. Usage ex. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "<Button className=\"btn-facebook btn-brand text\"><span>Facebook</span></Button>")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Size Small", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, ' ', "Add this class", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, ".btn-sm"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
         size: "sm",
         className: "btn-facebook btn-brand text mr-1 mb-1"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Facebook")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
@@ -886,7 +886,7 @@ function (_Component) {
         className: "btn-foursquare btn-brand text mr-1 mb-1"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Forsquare")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
         className: "btn-vimeo btn-brand text mr-1 mb-1"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Vimeo"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Size Large", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " Add this class ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, ".btn-lg"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Vimeo"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Size Large", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, ' ', "Add this class", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, ".btn-lg"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
         size: "lg",
         className: "btn-facebook btn-brand text mr-1 mb-1"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Facebook")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {

@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[38],{
 
-/***/ "./resources/coreui/src/views/Icons/SimpleLineIcons/SimpleLineIcons.js":
-/*!*****************************************************************************!*\
-  !*** ./resources/coreui/src/views/Icons/SimpleLineIcons/SimpleLineIcons.js ***!
-  \*****************************************************************************/
+/***/ "./resources/js/pages/Icons/SimpleLineIcons/SimpleLineIcons.js":
+/*!*********************************************************************!*\
+  !*** ./resources/js/pages/Icons/SimpleLineIcons/SimpleLineIcons.js ***!
+  \*********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -51,7 +51,7 @@ function (_Component) {
         className: "animated fadeIn"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardHeader"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-picture-o"
-      }), " Simple Line Icons"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+      }), ' ', "Simple Line Icons"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
         className: "text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "6",

@@ -6,7 +6,9 @@
     },
     "rules": {
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
-        "indent": ["error", 2]
+        "import/no-extraneous-dependencies": ["error", {"devDependencies": true, "packageDir": "./"}],
+        "indent": ["error", 2],
+        "import/no-named-as-default": 0,
+        "import/no-named-as-default-member": 0
     }
 }

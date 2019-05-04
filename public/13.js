@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[13],{
 
-/***/ "./resources/coreui/src/containers/DefaultLayout/DefaultFooter.js":
-/*!************************************************************************!*\
-  !*** ./resources/coreui/src/containers/DefaultLayout/DefaultFooter.js ***!
-  \************************************************************************/
+/***/ "./resources/js/containers/DefaultLayout/DefaultFooter.js":
+/*!****************************************************************!*\
+  !*** ./resources/js/containers/DefaultLayout/DefaultFooter.js ***!
+  \****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -63,9 +63,9 @@ function (_Component) {
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "https://coreui.io"
-      }, "CoreUI"), " \xA9 2018 creativeLabs."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }, "CoreUI"), ' ', "\xA9 2018 creativeLabs."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "ml-auto"
-      }, "Powered by ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, "Powered by", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "https://coreui.io/react"
       }, "CoreUI for React")));
     }

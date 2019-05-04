@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[21],{
 
-/***/ "./resources/coreui/src/views/Base/ListGroups/ListGroups.js":
-/*!******************************************************************!*\
-  !*** ./resources/coreui/src/views/Base/ListGroups/ListGroups.js ***!
-  \******************************************************************/
+/***/ "./resources/js/pages/Base/ListGroups/ListGroups.js":
+/*!**********************************************************!*\
+  !*** ./resources/js/pages/Base/ListGroups/ListGroups.js ***!
+  \**********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -88,17 +88,17 @@ function (_Component) {
         className: "fa fa-align-justify"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "List Group"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " tags")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ListGroup"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ListGroupItem"], {
         className: "justify-content-between"
-      }, "Cras justo odio ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Badge"], {
+      }, "Cras justo odio", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Badge"], {
         className: "float-right",
         pill: true
       }, "14")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ListGroupItem"], {
         className: "justify-content-between"
-      }, "Dapibus ac facilisis in ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Badge"], {
+      }, "Dapibus ac facilisis in", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Badge"], {
         className: "float-right",
         pill: true
       }, "2")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ListGroupItem"], {
         className: "justify-content-between"
-      }, "Morbi leo risus ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Badge"], {
+      }, "Morbi leo risus", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Badge"], {
         className: "float-right",
         pill: true,
         color: "warning"
@@ -146,7 +146,7 @@ function (_Component) {
         xl: "6"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardHeader"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-align-justify"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "List Group"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " anchors")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Be sure to ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "not use the standard ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, ".btn"), " classes here"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ListGroup"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ListGroupItem"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "List Group"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " anchors")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Be sure to", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "not use the standard", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, ".btn"), ' ', "classes here"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ListGroup"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ListGroupItem"], {
         active: true,
         tag: "a",
         href: "#",
@@ -204,7 +204,7 @@ function (_Component) {
         action: true
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ListGroupItemHeading"], null, "List group item heading"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ListGroupItemText"], null, "Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit."))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardHeader"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-align-justify"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "List Group"), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "with TabPanes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "List Group"), ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "with TabPanes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-header-actions"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Badge"], null, "NEW"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         xs: "4"

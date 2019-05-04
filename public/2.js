@@ -313,10 +313,10 @@ exports.focusableElements = focusableElements;
 
 /***/ }),
 
-/***/ "./resources/coreui/src/views/Widgets/Widget03.js":
-/*!********************************************************!*\
-  !*** ./resources/coreui/src/views/Widgets/Widget03.js ***!
-  \********************************************************/
+/***/ "./resources/js/pages/Widgets/Widget03.js":
+/*!************************************************!*\
+  !*** ./resources/js/pages/Widgets/Widget03.js ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -402,8 +402,8 @@ function (_Component) {
         return null;
       }
 
-      var back = 'bg-' + variant;
-      var icon = 'fa fa-' + variant;
+      var back = "bg-".concat(variant);
+      var icon = "fa fa-".concat(variant);
       var keys = Object.keys(data);
       var vals = Object.values(data);
       var classCard = 'brand-card';

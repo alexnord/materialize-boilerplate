@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[24],{
 
-/***/ "./resources/coreui/src/views/Base/Paginations/Pagnations.js":
-/*!*******************************************************************!*\
-  !*** ./resources/coreui/src/views/Base/Paginations/Pagnations.js ***!
-  \*******************************************************************/
+/***/ "./resources/js/pages/Base/Paginations/Pagnations.js":
+/*!***********************************************************!*\
+  !*** ./resources/js/pages/Base/Paginations/Pagnations.js ***!
+  \***********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 

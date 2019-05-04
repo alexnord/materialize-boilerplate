@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[32],{
 
-/***/ "./resources/coreui/src/views/Buttons/ButtonDropdowns/ButtonDropdowns.js":
-/*!*******************************************************************************!*\
-  !*** ./resources/coreui/src/views/Buttons/ButtonDropdowns/ButtonDropdowns.js ***!
-  \*******************************************************************************/
+/***/ "./resources/js/pages/Buttons/ButtonDropdowns/ButtonDropdowns.js":
+/*!***********************************************************************!*\
+  !*** ./resources/js/pages/Buttons/ButtonDropdowns/ButtonDropdowns.js ***!
+  \***********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
