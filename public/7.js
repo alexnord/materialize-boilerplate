@@ -471,13 +471,21 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
 
 
 
 
 
 var Widget03 = Object(react__WEBPACK_IMPORTED_MODULE_0__["lazy"])(function () {
-  return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../../pages/Widgets/Widget03 */ "./resources/js/pages/Widgets/Widget03.js"));
+  return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../Widgets/Widget03 */ "./resources/js/pages/Widgets/Widget03.js"));
 });
 var brandPrimary = Object(_coreui_coreui_dist_js_coreui_utilities__WEBPACK_IMPORTED_MODULE_4__["getStyle"])('--primary');
 var brandSuccess = Object(_coreui_coreui_dist_js_coreui_utilities__WEBPACK_IMPORTED_MODULE_4__["getStyle"])('--success');
@@ -518,8 +526,8 @@ var cardChartOpts1 = {
       display: false,
       ticks: {
         display: false,
-        min: Math.min.apply(Math, cardChartData1.datasets[0].data) - 5,
-        max: Math.max.apply(Math, cardChartData1.datasets[0].data) + 5
+        min: Math.min.apply(Math, _toConsumableArray(cardChartData1.datasets[0].data)) - 5,
+        max: Math.max.apply(Math, _toConsumableArray(cardChartData1.datasets[0].data)) + 5
       }
     }]
   },
@@ -532,9 +540,9 @@ var cardChartOpts1 = {
       hitRadius: 10,
       hoverRadius: 4
     }
-  } // Card Chart 2
+  }
+}; // Card Chart 2
 
-};
 var cardChartData2 = {
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
   datasets: [{
@@ -568,8 +576,8 @@ var cardChartOpts2 = {
       display: false,
       ticks: {
         display: false,
-        min: Math.min.apply(Math, cardChartData2.datasets[0].data) - 5,
-        max: Math.max.apply(Math, cardChartData2.datasets[0].data) + 5
+        min: Math.min.apply(Math, _toConsumableArray(cardChartData2.datasets[0].data)) - 5,
+        max: Math.max.apply(Math, _toConsumableArray(cardChartData2.datasets[0].data)) + 5
       }
     }]
   },
@@ -739,7 +747,7 @@ var makeSparkLineData = function makeSparkLineData(dataSetNo, variant) {
     labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
     datasets: [{
       backgroundColor: 'transparent',
-      borderColor: variant ? variant : '#c2cfd6',
+      borderColor: variant || '#c2cfd6',
       data: dataset.data,
       label: dataset.label
     }]
@@ -779,7 +787,7 @@ var sparklineChartOpts = {
     display: false
   }
 }; // Main Chart
-//Random Numbers
+// Random Numbers
 
 function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -790,7 +798,7 @@ var data1 = [];
 var data2 = [];
 var data3 = [];
 
-for (var i = 0; i <= elements; i++) {
+for (var i = 0; i <= elements; i + 1) {
   data1.push(random(50, 200));
   data2.push(random(80, 100));
   data3.push(65);
@@ -894,13 +902,6 @@ function (_Component) {
   }
 
   _createClass(Dashboard, [{
-    key: "toggle",
-    value: function toggle() {
-      this.setState({
-        dropdownOpen: !this.state.dropdownOpen
-      });
-    }
-  }, {
     key: "onRadioBtnClick",
     value: function onRadioBtnClick(radioSelected) {
       this.setState({
@@ -908,10 +909,25 @@ function (_Component) {
       });
     }
   }, {
+    key: "toggle",
+    value: function toggle() {
+      this.setState(function (previousState) {
+        return {
+          dropdownOpen: !previousState.dropdownOpen
+        };
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this2 = this;
 
+      var _this$state = this.state,
+          radioSelected = _this$state.radioSelected,
+          card1 = _this$state.card1,
+          card2 = _this$state.card2,
+          card3 = _this$state.card3,
+          card4 = _this$state.card4;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "animated fadeIn"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
@@ -926,10 +942,10 @@ function (_Component) {
         className: "float-right"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["ButtonDropdown"], {
         id: "card1",
-        isOpen: this.state.card1,
+        isOpen: card1,
         toggle: function toggle() {
           _this2.setState({
-            card1: !_this2.state.card1
+            card1: !card1
           });
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownToggle"], {
@@ -965,10 +981,10 @@ function (_Component) {
         className: "float-right"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Dropdown"], {
         id: "card2",
-        isOpen: this.state.card2,
+        isOpen: card2,
         toggle: function toggle() {
           _this2.setState({
-            card2: !_this2.state.card2
+            card2: !card2
           });
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownToggle"], {
@@ -1001,10 +1017,10 @@ function (_Component) {
         className: "float-right"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Dropdown"], {
         id: "card3",
-        isOpen: this.state.card3,
+        isOpen: card3,
         toggle: function toggle() {
           _this2.setState({
-            card3: !_this2.state.card3
+            card3: !card3
           });
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownToggle"], {
@@ -1038,10 +1054,10 @@ function (_Component) {
         className: "float-right"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["ButtonDropdown"], {
         id: "card4",
-        isOpen: this.state.card4,
+        isOpen: card4,
         toggle: function toggle() {
           _this2.setState({
-            card4: !_this2.state.card4
+            card4: !card4
           });
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownToggle"], {
@@ -1088,24 +1104,24 @@ function (_Component) {
         onClick: function onClick() {
           return _this2.onRadioBtnClick(1);
         },
-        active: this.state.radioSelected === 1
+        active: radioSelected === 1
       }, "Day"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
         color: "outline-secondary",
         onClick: function onClick() {
           return _this2.onRadioBtnClick(2);
         },
-        active: this.state.radioSelected === 2
+        active: radioSelected === 2
       }, "Month"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
         color: "outline-secondary",
         onClick: function onClick() {
           return _this2.onRadioBtnClick(3);
         },
-        active: this.state.radioSelected === 3
+        active: radioSelected === 3
       }, "Year"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "chart-wrapper",
         style: {
-          height: 300 + 'px',
-          marginTop: 40 + 'px'
+          height: "".concat(300, "px"),
+          marginTop: "".concat(40, "px")
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__["Line"], {
         data: mainChart,
@@ -1243,7 +1259,7 @@ function (_Component) {
         data: makeSocialBoxData(3),
         options: socialChartOpts,
         height: 90
-      })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Card"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CardHeader"], null, "Traffic ", ' & ', " Sales"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+      })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Card"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CardHeader"], null, "Traffic", ' ', ' & ', ' ', "Sales"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
         xs: "12",
         md: "6",
         xl: "6"
@@ -1481,7 +1497,7 @@ function (_Component) {
         className: "title"
       }, "Organic Search"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "ml-auto font-weight-bold"
-      }, "191,235 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }, "191,235", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted small"
       }, "(56%)"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "progress-group-bars"
@@ -1499,7 +1515,7 @@ function (_Component) {
         className: "title"
       }, "Facebook"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "ml-auto font-weight-bold"
-      }, "51,223 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }, "51,223", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted small"
       }, "(15%)"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "progress-group-bars"
@@ -1517,7 +1533,7 @@ function (_Component) {
         className: "title"
       }, "Twitter"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "ml-auto font-weight-bold"
-      }, "37,564 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }, "37,564", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted small"
       }, "(11%)"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "progress-group-bars"
@@ -1535,7 +1551,7 @@ function (_Component) {
         className: "title"
       }, "LinkedIn"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "ml-auto font-weight-bold"
-      }, "27,319 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }, "27,319", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted small"
       }, "(8%)"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "progress-group-bars"
@@ -1574,14 +1590,14 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: '/img/avatars/1.jpg',
+        src: "/img/avatars/1.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "avatar-status badge-success"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Yiorgos Avraamu"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "small text-muted"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "New"), " | Registered: Jan 1, 2015")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "New"), ' ', "| Registered: Jan 1, 2015")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "flag-icon flag-icon-us h4 mb-0",
@@ -1604,7 +1620,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-cc-mastercard",
         style: {
-          fontSize: 24 + 'px'
+          fontSize: "".concat(24, "px")
         }
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "small text-muted"
@@ -1613,14 +1629,14 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: '/img/avatars/2.jpg',
+        src: "/img/avatars/2.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "avatar-status badge-danger"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Avram Tarasios"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "small text-muted"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Recurring"), " | Registered: Jan 1, 2015")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Recurring"), ' ', "| Registered: Jan 1, 2015")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "flag-icon flag-icon-br h4 mb-0",
@@ -1643,7 +1659,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-cc-visa",
         style: {
-          fontSize: 24 + 'px'
+          fontSize: "".concat(24, "px")
         }
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "small text-muted"
@@ -1652,14 +1668,14 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: '/img/avatars/3.jpg',
+        src: "/img/avatars/3.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "avatar-status badge-warning"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Quintin Ed"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "small text-muted"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "New"), " | Registered: Jan 1, 2015")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "New"), ' ', "| Registered: Jan 1, 2015")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "flag-icon flag-icon-in h4 mb-0",
@@ -1682,7 +1698,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-cc-stripe",
         style: {
-          fontSize: 24 + 'px'
+          fontSize: "".concat(24, "px")
         }
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "small text-muted"
@@ -1691,14 +1707,14 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: '/img/avatars/4.jpg',
+        src: "/img/avatars/4.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "avatar-status badge-secondary"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "En\xE9as Kwadwo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "small text-muted"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "New"), " | Registered: Jan 1, 2015")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "New"), ' ', "| Registered: Jan 1, 2015")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "flag-icon flag-icon-fr h4 mb-0",
@@ -1721,7 +1737,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-paypal",
         style: {
-          fontSize: 24 + 'px'
+          fontSize: "".concat(24, "px")
         }
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "small text-muted"
@@ -1730,14 +1746,14 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: '/img/avatars/5.jpg',
+        src: "/img/avatars/5.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "avatar-status badge-success"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Agapetus Tade\xE1\u0161"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "small text-muted"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "New"), " | Registered: Jan 1, 2015")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "New"), ' ', "| Registered: Jan 1, 2015")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "flag-icon flag-icon-es h4 mb-0",
@@ -1760,7 +1776,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-google-wallet",
         style: {
-          fontSize: 24 + 'px'
+          fontSize: "".concat(24, "px")
         }
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "small text-muted"
@@ -1769,14 +1785,14 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "avatar"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: '/img/avatars/6.jpg',
+        src: "/img/avatars/6.jpg",
         className: "img-avatar",
         alt: "admin@bootstrapmaster.com"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "avatar-status badge-danger"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Friderik D\xE1vid"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "small text-muted"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "New"), " | Registered: Jan 1, 2015")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "New"), ' ', "| Registered: Jan 1, 2015")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "flag-icon flag-icon-pl h4 mb-0",
@@ -1799,7 +1815,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-cc-amex",
         style: {
-          fontSize: 24 + 'px'
+          fontSize: "".concat(24, "px")
         }
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "small text-muted"

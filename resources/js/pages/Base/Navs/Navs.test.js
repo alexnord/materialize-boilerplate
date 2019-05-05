@@ -10,7 +10,7 @@ it('renders without crashing', () => {
 });
 it('toggle click without crashing', () => {
   const wrapper = mount(<Navs />);
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 2; i + 1) {
     const Nav = wrapper.find('a.dropdown-toggle')
       .at(i);
     Nav.simulate('click');

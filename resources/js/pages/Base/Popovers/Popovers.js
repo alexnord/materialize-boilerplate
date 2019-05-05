@@ -8,47 +8,7 @@ import {
   PopoverBody,
   PopoverHeader,
 } from 'reactstrap';
-
-class PopoverItem extends Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      popoverOpen: false,
-    };
-  }
-
-  toggle() {
-    this.setState({
-      popoverOpen: !this.state.popoverOpen,
-    });
-  }
-
-  render() {
-    return (
-      <span>
-        <Button
-          className="mr-1"
-          color="secondary"
-          id={`Popover-${this.props.id}`}
-          onClick={this.toggle}
-        >
-          {this.props.item.text}
-        </Button>
-        <Popover
-          placement={this.props.item.placement}
-          isOpen={this.state.popoverOpen}
-          target={`Popover-${this.props.id}`}
-          toggle={this.toggle}
-        >
-          <PopoverHeader>Popover Title</PopoverHeader>
-          <PopoverBody>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</PopoverBody>
-        </Popover>
-      </span>
-    );
-  }
-}
+import PopoverItem from '../../../components/PopoverItem';
 
 class Popovers extends Component {
   constructor(props) {
@@ -59,18 +19,22 @@ class Popovers extends Component {
       popoverOpen: false,
       popovers: [
         {
+          id: 1,
           placement: 'top',
           text: 'Top',
         },
         {
+          id: 2,
           placement: 'bottom',
           text: 'Bottom',
         },
         {
+          id: 3,
           placement: 'left',
           text: 'Left',
         },
         {
+          id: 4,
           placement: 'right',
           text: 'Right',
         },
@@ -79,12 +43,13 @@ class Popovers extends Component {
   }
 
   toggle() {
-    this.setState({
-      popoverOpen: !this.state.popoverOpen,
-    });
+    this.setState(previousState => ({
+      popoverOpen: !previousState.popoverOpen,
+    }));
   }
 
   render() {
+    const { popovers, popoverOpen } = this.state;
     return (
       <div className="animated fadeIn">
         <Card>
@@ -108,7 +73,7 @@ class Popovers extends Component {
             </Button>
             <Popover
               placement="bottom"
-              isOpen={this.state.popoverOpen}
+              isOpen={popoverOpen}
               target="Popover1"
               toggle={this.toggle}
             >
@@ -127,7 +92,9 @@ Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque
             <small> list</small>
           </CardHeader>
           <CardBody>
-            {this.state.popovers.map((popover, i) => <PopoverItem key={i} item={popover} id={i} />)}
+            {popovers.map(popover => (
+              <PopoverItem key={popover.id} item={popover} id={popover.id} />
+            ))}
           </CardBody>
         </Card>
       </div>

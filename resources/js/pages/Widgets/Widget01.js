@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, CardBody, Progress } from 'reactstrap';
 import classNames from 'classnames';
@@ -12,6 +12,7 @@ const propTypes = {
   value: PropTypes.string,
   children: PropTypes.node,
   className: PropTypes.string,
+  // eslint-disable-next-line
   cssModule: PropTypes.object,
   variant: PropTypes.string,
 };
@@ -23,48 +24,58 @@ const defaultProps = {
   // color: '',
   value: '25',
   variant: '',
+  color: 'success',
+  children: null,
+  className: '',
 };
 
-class Widget01 extends Component {
-  render() {
-    const {
-      className, cssModule, header, mainText, smallText, color, value, children, variant, ...attributes
-    } = this.props;
+const Widget01 = (props) => {
+  const {
+    className,
+    cssModule,
+    header,
+    mainText,
+    smallText,
+    color,
+    value,
+    children,
+    variant,
+    ...attributes
+  } = props;
 
-    // demo purposes only
-    const progress = {
-      style: '',
-      color,
-      value,
-    };
-    const card = {
-      style: '',
-      bgColor: '',
-    };
+  // demo purposes only
+  const progress = {
+    style: '',
+    color,
+    value,
+  };
+  const card = {
+    style: '',
+    bgColor: '',
+  };
 
-    if (variant === 'inverse') {
-      progress.style = 'progress-white';
-      progress.color = '';
-      card.style = 'text-white';
-      card.bgColor = `bg-${color}`;
-    }
-
-    const classes = mapToCssModules(classNames(className, card.style, card.bgColor), cssModule);
-    progress.style = classNames('progress-xs my-3', progress.style);
-
-    return (
-      <Card className={classes} {...attributes}>
-        <CardBody>
-          <div className="h4 m-0">{header}</div>
-          <div>{mainText}</div>
-          <Progress className={progress.style} color={progress.color} value={progress.value} />
-          <small className="text-muted">{smallText}</small>
-          <div>{children}</div>
-        </CardBody>
-      </Card>
-    );
+  if (variant === 'inverse') {
+    progress.style = 'progress-white';
+    progress.color = '';
+    card.style = 'text-white';
+    card.bgColor = `bg-${color}`;
   }
-}
+
+  const classes = mapToCssModules(classNames(className, card.style, card.bgColor), cssModule);
+  progress.style = classNames('progress-xs my-3', progress.style);
+
+  return (
+    <Card className={classes} {...attributes}>
+      <CardBody>
+        <div className="h4 m-0">{header}</div>
+        <div>{mainText}</div>
+        <Progress className={progress.style} color={progress.color} value={progress.value} />
+        <small className="text-muted">{smallText}</small>
+        <div>{children}</div>
+      </CardBody>
+    </Card>
+  );
+};
 
 Widget01.propTypes = propTypes;
 Widget01.defaultProps = defaultProps;

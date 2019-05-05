@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[30],{
 
-/***/ "./resources/js/pages/Base/Tooltips/Tooltips.js":
-/*!******************************************************!*\
-  !*** ./resources/js/pages/Base/Tooltips/Tooltips.js ***!
-  \******************************************************/
+/***/ "./resources/js/pages/Base/Tabs/Tabs.js":
+/*!**********************************************!*\
+  !*** ./resources/js/pages/Base/Tabs/Tabs.js ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -12,6 +12,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -33,156 +35,189 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var TooltipItem =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(TooltipItem, _React$Component);
+var lorem = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, ' + 'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ' + 'ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip ex ' + 'ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate ' + 'velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat ' + 'cupidatat non proident, sunt in culpa qui officia deserunt mollit.';
+var tabPaneContent = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["TabPane"], {
+  tabId: "1"
+}, "1. ".concat(lorem)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["TabPane"], {
+  tabId: "2"
+}, "2. ".concat(lorem)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["TabPane"], {
+  tabId: "3"
+}, "3. ".concat(lorem)));
 
-  function TooltipItem(props) {
+var Tabs =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Tabs, _Component);
+
+  function Tabs(props) {
     var _this;
 
-    _classCallCheck(this, TooltipItem);
+    _classCallCheck(this, Tabs);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(TooltipItem).call(this, props));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Tabs).call(this, props));
     _this.toggle = _this.toggle.bind(_assertThisInitialized(_this));
     _this.state = {
-      tooltipOpen: false
+      activeTab: new Array(4).fill('1')
     };
     return _this;
   }
 
-  _createClass(TooltipItem, [{
+  _createClass(Tabs, [{
     key: "toggle",
-    value: function toggle() {
-      this.setState({
-        tooltipOpen: !this.state.tooltipOpen
+    value: function toggle(tabPane, tab) {
+      this.setState(function (previousState) {
+        var newArray = previousState.activeTab.slice();
+        newArray[tabPane] = tab;
+        return {
+          activeTab: newArray
+        };
       });
     }
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
-        className: "mr-1",
-        color: "secondary",
-        id: "Tooltip-".concat(this.props.id)
-      }, this.props.item.text), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Tooltip"], {
-        placement: this.props.item.placement,
-        isOpen: this.state.tooltipOpen,
-        target: "Tooltip-".concat(this.props.id),
-        toggle: this.toggle
-      }, "Tooltip Content!"));
-    }
-  }]);
+      var _this2 = this;
 
-  return TooltipItem;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
-
-var Tooltips =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(Tooltips, _Component);
-
-  function Tooltips(props) {
-    var _this2;
-
-    _classCallCheck(this, Tooltips);
-
-    _this2 = _possibleConstructorReturn(this, _getPrototypeOf(Tooltips).call(this, props));
-    _this2.toggle = _this2.toggle.bind(_assertThisInitialized(_this2));
-    _this2.state = {
-      tooltipOpen: [false, false],
-      tooltips: [{
-        placement: 'top',
-        text: 'Top'
-      }, {
-        placement: 'bottom',
-        text: 'Bottom'
-      }, {
-        placement: 'left',
-        text: 'Left'
-      }, {
-        placement: 'right',
-        text: 'Right'
-      }]
-    };
-    return _this2;
-  }
-
-  _createClass(Tooltips, [{
-    key: "toggle",
-    value: function toggle(i) {
-      var newArray = this.state.tooltipOpen.map(function (element, index) {
-        return index === i ? !element : false;
-      });
-      this.setState({
-        tooltipOpen: newArray
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this3 = this;
-
+      var activeTab = this.state.activeTab;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "animated fadeIn"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardHeader"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fa fa-align-justify"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Tooltips"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card-header-actions"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "https://reactstrap.github.io/components/tooltips/",
-        rel: "noreferrer noopener",
-        target: "_blank",
-        className: "card-header-action"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
-        className: "text-muted"
-      }, "docs")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Somewhere in here is a ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
-        id: "TooltipExample"
-      }, "tooltip"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Tooltip"], {
-        placement: "right",
-        isOpen: this.state.tooltipOpen[0],
-        target: "TooltipExample",
-        toggle: function toggle() {
-          _this3.toggle(0);
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+        xs: "12",
+        md: "6",
+        className: "mb-4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"], {
+        tabs: true
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        active: activeTab[0] === '1',
+        onClick: function onClick() {
+          _this2.toggle(0, '1');
         }
-      }, "Hello world!"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardHeader"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fa fa-align-justify"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Tooltip"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " disable autohide")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Sometimes you need to allow users to select text within a ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
-        id: "DisabledAutoHideExample"
-      }, "tooltip"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Tooltip"], {
-        placement: "top",
-        isOpen: this.state.tooltipOpen[1],
-        autohide: false,
-        target: "DisabledAutoHideExample",
-        toggle: function toggle() {
-          _this3.toggle(1);
+      }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        active: activeTab[0] === '2',
+        onClick: function onClick() {
+          _this2.toggle(0, '2');
         }
-      }, "Try to select this text!"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardHeader"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fa fa-align-justify"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Tooltip"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " list")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, this.state.tooltips.map(function (tooltip, i) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TooltipItem, {
-          key: i,
-          item: tooltip,
-          id: i
-        });
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardHeader"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fa fa-align-justify"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Tooltip"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " uncontrolled")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Somewhere in here is a ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
-        id: "UncontrolledTooltipExample"
-      }, "tooltip"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["UncontrolledTooltip"], {
-        placement: "right",
-        target: "UncontrolledTooltipExample"
-      }, "Hello world!"))));
+      }, "Profile")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        active: activeTab[0] === '3',
+        onClick: function onClick() {
+          _this2.toggle(0, '3');
+        }
+      }, "Messages"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["TabContent"], {
+        activeTab: activeTab[0]
+      }, tabPaneContent)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+        xs: "12",
+        md: "6",
+        className: "mb-4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"], {
+        tabs: true
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        active: activeTab[1] === '1',
+        onClick: function onClick() {
+          _this2.toggle(1, '1');
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-calculator"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        active: activeTab[1] === '2',
+        onClick: function onClick() {
+          _this2.toggle(1, '2');
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-basket-loaded"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        active: activeTab[1] === '3',
+        onClick: function onClick() {
+          _this2.toggle(1, '3');
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-pie-chart"
+      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["TabContent"], {
+        activeTab: activeTab[1]
+      }, tabPaneContent)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+        xs: "12",
+        md: "6",
+        className: "mb-4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"], {
+        tabs: true
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        active: activeTab[2] === '1',
+        onClick: function onClick() {
+          _this2.toggle(2, '1');
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-calculator"
+      }), ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: activeTab[2] === '1' ? '' : 'd-none'
+      }, " Calculator"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        active: activeTab[2] === '2',
+        onClick: function onClick() {
+          _this2.toggle(2, '2');
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-basket-loaded"
+      }), ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: activeTab[2] === '2' ? '' : 'd-none'
+      }, ' ', "Shopping cart"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        className: classnames__WEBPACK_IMPORTED_MODULE_2___default()({
+          active: activeTab[2] === '3'
+        }),
+        onClick: function onClick() {
+          _this2.toggle(2, '3');
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-pie-chart"
+      }), ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: activeTab[2] === '3' ? '' : 'd-none'
+      }, " Charts")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["TabContent"], {
+        activeTab: activeTab[2]
+      }, tabPaneContent)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+        xs: "12",
+        md: "6",
+        className: "mb-4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"], {
+        tabs: true
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        active: activeTab[3] === '1',
+        onClick: function onClick() {
+          _this2.toggle(3, '1');
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-calculator"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: activeTab[3] === '1' ? '' : 'd-none'
+      }, " Calc"), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Badge"], {
+        color: "success"
+      }, "New"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        active: activeTab[3] === '2',
+        onClick: function onClick() {
+          _this2.toggle(3, '2');
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-basket-loaded"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: activeTab[3] === '2' ? '' : 'd-none'
+      }, " Cart"), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Badge"], {
+        pill: true,
+        color: "danger"
+      }, "29"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        active: activeTab[3] === '3',
+        onClick: function onClick() {
+          _this2.toggle(3, '3');
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-pie-chart"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: activeTab[3] === '3' ? '' : 'd-none'
+      }, " Charts")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["TabContent"], {
+        activeTab: activeTab[3]
+      }, tabPaneContent))));
     }
   }]);
 
-  return Tooltips;
+  return Tabs;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (Tooltips);
+/* harmony default export */ __webpack_exports__["default"] = (Tabs);
 
 /***/ })
 

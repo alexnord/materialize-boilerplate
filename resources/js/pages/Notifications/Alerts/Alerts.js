@@ -19,6 +19,7 @@ class Alerts extends Component {
   }
 
   render() {
+    const { visible } = this.state;
     return (
       <div className="animated fadeIn">
         <Row>
@@ -82,23 +83,17 @@ class Alerts extends Component {
               <CardBody>
                 <Alert color="primary">
                   {/* eslint-disable-next-line */}
-                  This is a primary alert with <a href="#" className="alert-link">an example
-                  link
-                  </a>
+                  This is a primary alert with <a href="#" className="alert-link">an example link</a>
 . Give it a click if you like.
                 </Alert>
                 <Alert color="secondary">
                   {/* eslint-disable-next-line */}
-                  This is a secondary alert with <a href="#" className="alert-link">an example
-                  link
-                  </a>
+                  This is a secondary alert with <a href="#" className="alert-link">an example link</a>
 . Give it a click if you like.
                 </Alert>
                 <Alert color="success">
                   {/* eslint-disable-next-line */}
-                  This is a success alert with <a href="#" className="alert-link">an example
-                  link
-                  </a>
+                  This is a success alert with <a href="#" className="alert-link">an example link</a>
 . Give it a click if you like.
                 </Alert>
                 <Alert color="danger">
@@ -108,9 +103,7 @@ class Alerts extends Component {
                 </Alert>
                 <Alert color="warning">
                   {/* eslint-disable-next-line */}
-                  This is a warning alert with <a href="#" className="alert-link">an example
-                  link
-                  </a>
+                  This is a warning alert with <a href="#" className="alert-link">an example link</a>
 . Give it a click if you like.
                 </Alert>
                 <Alert color="info">
@@ -167,7 +160,7 @@ class Alerts extends Component {
                 <small>dismissing</small>
               </CardHeader>
               <CardBody>
-                <Alert color="info" isOpen={this.state.visible} toggle={this.onDismiss}>
+                <Alert color="info" isOpen={visible} toggle={this.onDismiss}>
                   I am an alert and I can be dismissed!
                 </Alert>
               </CardBody>

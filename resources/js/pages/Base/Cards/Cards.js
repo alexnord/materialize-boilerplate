@@ -26,14 +26,15 @@ class Cards extends Component {
   }
 
   toggle() {
-    this.setState({ collapse: !this.state.collapse });
+    this.setState(prevState => ({ collapse: !prevState.collapse }));
   }
 
   toggleFade() {
-    this.setState(prevState => ({ fadeIn: !prevState }));
+    this.setState(prevState => ({ fadeIn: !prevState.fadeIn }));
   }
 
   render() {
+    const { collapse, timeout, fadeIn } = this.state;
     return (
       <div className="animated fadeIn">
         <Row>
@@ -317,7 +318,7 @@ class Cards extends Component {
               <CardBody>
                 <blockquote className="card-bodyquote">
                   <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
                     ante.
                   </p>
                   <footer>
@@ -333,7 +334,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
               <CardBody>
                 <blockquote className="card-bodyquote">
                   <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
                     ante.
                   </p>
                   <footer>
@@ -349,7 +350,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
               <CardBody>
                 <blockquote className="card-bodyquote">
                   <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
                     ante.
                   </p>
                   <footer>
@@ -365,7 +366,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
               <CardBody>
                 <blockquote className="card-bodyquote">
                   <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
                     ante.
                   </p>
                   <footer>
@@ -381,7 +382,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
               <CardBody>
                 <blockquote className="card-bodyquote">
                   <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
                     ante.
                   </p>
                   <footer>
@@ -397,7 +398,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
               <CardBody>
                 <blockquote className="card-bodyquote">
                   <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
                     ante.
                   </p>
                   <footer>
@@ -481,7 +482,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
             </Card>
           </Col>
           <Col xs="12" sm="6" md="4">
-            <Fade timeout={this.state.timeout} in={this.state.fadeIn}>
+            <Fade timeout={timeout} in={fadeIn}>
               <Card>
                 <CardHeader>
                   Card actions
@@ -502,14 +503,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
                       <i className="icon-arrow-up" />
                     </a>
                     {/* eslint-disable-next-line */}
-                    <a className="card-header-action btn btn-close" onClick={this.toggleFade}><i
-                      className="icon-close"
-                    >
-                    </i>
+                    <a className="card-header-action btn btn-close" onClick={this.toggleFade}>
+                      <i className="icon-close" />
                     </a>
                   </div>
                 </CardHeader>
-                <Collapse isOpen={this.state.collapse} id="collapseExample">
+                <Collapse isOpen={collapse} id="collapseExample">
                   <CardBody>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                     euismod tincidunt ut

@@ -11,6 +11,15 @@ import {
   ModalHeader,
   Row,
 } from 'reactstrap';
+import PropTypes from 'prop-types';
+
+const propTypes = {
+  className: PropTypes.string,
+};
+
+const defaultProps = {
+  className: '',
+};
 
 class Modals extends Component {
   constructor(props) {
@@ -37,54 +46,65 @@ class Modals extends Component {
   }
 
   toggle() {
-    this.setState({
-      modal: !this.state.modal,
-    });
+    this.setState(previousState => ({
+      modal: !previousState.modal,
+    }));
   }
 
   toggleLarge() {
-    this.setState({
-      large: !this.state.large,
-    });
+    this.setState(previousState => ({
+      large: !previousState.large,
+    }));
   }
 
   toggleSmall() {
-    this.setState({
-      small: !this.state.small,
-    });
+    this.setState(previousState => ({
+      small: !previousState.small,
+    }));
   }
 
   togglePrimary() {
-    this.setState({
-      primary: !this.state.primary,
-    });
+    this.setState(previousState => ({
+      primary: !previousState.primary,
+    }));
   }
 
   toggleSuccess() {
-    this.setState({
-      success: !this.state.success,
-    });
+    this.setState(previousState => ({
+      success: !previousState.success,
+    }));
   }
 
   toggleWarning() {
-    this.setState({
-      warning: !this.state.warning,
-    });
+    this.setState(previousState => ({
+      warning: !previousState.warning,
+    }));
   }
 
   toggleDanger() {
-    this.setState({
-      danger: !this.state.danger,
-    });
+    this.setState(previousState => ({
+      danger: !previousState.danger,
+    }));
   }
 
   toggleInfo() {
-    this.setState({
-      info: !this.state.info,
-    });
+    this.setState(previousState => ({
+      info: !previousState.info,
+    }));
   }
 
   render() {
+    const { className } = this.props;
+    const {
+      modal,
+      large,
+      small,
+      primary,
+      success,
+      warning,
+      danger,
+      info,
+    } = this.state;
     return (
       <div className="animated fadeIn">
         <Row>
@@ -98,9 +118,9 @@ class Modals extends Component {
               <CardBody>
                 <Button onClick={this.toggle} className="mr-1">Launch demo modal</Button>
                 <Modal
-                  isOpen={this.state.modal}
+                  isOpen={modal}
                   toggle={this.toggle}
-                  className={this.props.className}
+                  className={className}
                 >
                   <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
                   <ModalBody>
@@ -123,9 +143,9 @@ class Modals extends Component {
 
                 <Button onClick={this.toggleLarge} className="mr-1">Launch large modal</Button>
                 <Modal
-                  isOpen={this.state.large}
+                  isOpen={large}
                   toggle={this.toggleLarge}
-                  className={`modal-lg ${this.props.className}`}
+                  className={`modal-lg ${className}`}
                 >
                   <ModalHeader toggle={this.toggleLarge}>Modal title</ModalHeader>
                   <ModalBody>
@@ -148,9 +168,9 @@ class Modals extends Component {
 
                 <Button onClick={this.toggleSmall} className="mr-1">Launch small modal</Button>
                 <Modal
-                  isOpen={this.state.small}
+                  isOpen={small}
                   toggle={this.toggleSmall}
-                  className={`modal-sm ${this.props.className}`}
+                  className={`modal-sm ${className}`}
                 >
                   <ModalHeader toggle={this.toggleSmall}>Modal title</ModalHeader>
                   <ModalBody>
@@ -178,9 +198,9 @@ Primary
                   modal
                 </Button>
                 <Modal
-                  isOpen={this.state.primary}
+                  isOpen={primary}
                   toggle={this.togglePrimary}
-                  className={`modal-primary ${this.props.className}`}
+                  className={`modal-primary ${className}`}
                 >
                   <ModalHeader toggle={this.togglePrimary}>Modal title</ModalHeader>
                   <ModalBody>
@@ -206,9 +226,9 @@ Success
                   modal
                 </Button>
                 <Modal
-                  isOpen={this.state.success}
+                  isOpen={success}
                   toggle={this.toggleSuccess}
-                  className={`modal-success ${this.props.className}`}
+                  className={`modal-success ${className}`}
                 >
                   <ModalHeader toggle={this.toggleSuccess}>Modal title</ModalHeader>
                   <ModalBody>
@@ -234,9 +254,9 @@ Warning
                   modal
                 </Button>
                 <Modal
-                  isOpen={this.state.warning}
+                  isOpen={warning}
                   toggle={this.toggleWarning}
-                  className={`modal-warning ${this.props.className}`}
+                  className={`modal-warning ${className}`}
                 >
                   <ModalHeader toggle={this.toggleWarning}>Modal title</ModalHeader>
                   <ModalBody>
@@ -262,9 +282,9 @@ Danger
                   modal
                 </Button>
                 <Modal
-                  isOpen={this.state.danger}
+                  isOpen={danger}
                   toggle={this.toggleDanger}
-                  className={`modal-danger ${this.props.className}`}
+                  className={`modal-danger ${className}`}
                 >
                   <ModalHeader toggle={this.toggleDanger}>Modal title</ModalHeader>
                   <ModalBody>
@@ -287,9 +307,9 @@ Danger
 
                 <Button color="info" onClick={this.toggleInfo} className="mr-1">Info modal</Button>
                 <Modal
-                  isOpen={this.state.info}
+                  isOpen={info}
                   toggle={this.toggleInfo}
-                  className={`modal-info ${this.props.className}`}
+                  className={`modal-info ${className}`}
                 >
                   <ModalHeader toggle={this.toggleInfo}>Modal title</ModalHeader>
                   <ModalBody>
@@ -318,5 +338,8 @@ Danger
     );
   }
 }
+
+Modals.propTypes = propTypes;
+Modals.defaultProps = defaultProps;
 
 export default Modals;

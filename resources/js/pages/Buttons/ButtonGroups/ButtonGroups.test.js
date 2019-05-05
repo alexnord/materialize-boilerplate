@@ -10,7 +10,7 @@ it('renders without crashing', () => {
 });
 it('toggle click without crashing', () => {
   const wrapper = mount(<ButtonGroups />);
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 2; i + 1) {
     const ButtonGroup = wrapper.find('button.dropdown-toggle')
       .at(i);
     ButtonGroup.simulate('click');

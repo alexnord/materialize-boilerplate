@@ -61,6 +61,7 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
+      var visible = this.state.visible;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "animated fadeIn"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
@@ -156,7 +157,7 @@ function (_Component) {
         className: "fa fa-align-justify"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Alerts"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "dismissing")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Alert"], {
         color: "info",
-        isOpen: this.state.visible,
+        isOpen: visible,
         toggle: this.onDismiss
       }, "I am an alert and I can be dismissed!"))))));
     }

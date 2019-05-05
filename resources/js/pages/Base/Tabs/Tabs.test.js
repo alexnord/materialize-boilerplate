@@ -10,8 +10,8 @@ it('renders without crashing', () => {
 });
 it('toggle click without crashing', () => {
   const wrapper = mount(<Tabs />);
-  for (let pane = 0; pane < 4; pane++) {
-    for (let tabId = 1; tabId < 4; tabId++) {
+  for (let pane = 0; pane < 4; pane + 1) {
+    for (let tabId = 1; tabId < 4; tabId + 1) {
       const Tab = wrapper.find('.nav-tabs .nav-item .nav-link')
         .at((3 * pane) + tabId - 1);
       Tab.simulate('click');

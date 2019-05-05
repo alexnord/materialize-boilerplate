@@ -39,14 +39,23 @@ class Forms extends Component {
   }
 
   toggle() {
-    this.setState({ collapse: !this.state.collapse });
+    this.setState(prevState => ({ collapse: !prevState.collapse }));
   }
 
   toggleFade() {
-    this.setState(prevState => ({ fadeIn: !prevState }));
+    this.setState(prevState => ({ fadeIn: !prevState.fadeIn }));
   }
 
   render() {
+    const {
+      collapse,
+      fadeIn,
+      timeout,
+      first,
+      second,
+      third,
+      fourth,
+    } = this.state;
     return (
       <div className="animated fadeIn">
         <Row>
@@ -1094,15 +1103,15 @@ Please provide a valid
                       <InputGroup>
                         <InputGroupButtonDropdown
                           addonType="prepend"
-                          isOpen={this.state.first}
+                          isOpen={first}
                           toggle={() => {
-                            this.setState({ first: !this.state.first });
+                            this.setState({ first: !first });
                           }}
                         >
                           <DropdownToggle caret color="primary">
                             Dropdown
                           </DropdownToggle>
-                          <DropdownMenu className={this.state.first ? 'show' : ''}>
+                          <DropdownMenu className={first ? 'show' : ''}>
                             <DropdownItem>Action</DropdownItem>
                             <DropdownItem>Another Action</DropdownItem>
                             <DropdownItem>Something else here</DropdownItem>
@@ -1130,15 +1139,15 @@ Please provide a valid
                         />
                         <InputGroupButtonDropdown
                           addonType="append"
-                          isOpen={this.state.second}
+                          isOpen={second}
                           toggle={() => {
-                            this.setState({ second: !this.state.second });
+                            this.setState({ second: !second });
                           }}
                         >
                           <DropdownToggle caret color="primary">
                             Dropdown
                           </DropdownToggle>
-                          <DropdownMenu className={this.state.second ? 'show' : ''}>
+                          <DropdownMenu className={second ? 'show' : ''}>
                             <DropdownItem>Action</DropdownItem>
                             <DropdownItem>Another Action</DropdownItem>
                             <DropdownItem>Something else here</DropdownItem>
@@ -1154,13 +1163,13 @@ Please provide a valid
                       <InputGroup>
                         <InputGroupButtonDropdown
                           addonType="prepend"
-                          isOpen={this.state.third}
+                          isOpen={third}
                           toggle={() => {
-                            this.setState({ third: !this.state.third });
+                            this.setState({ third: !third });
                           }}
                         >
                           <DropdownToggle caret color="primary">Action</DropdownToggle>
-                          <DropdownMenu className={this.state.third ? 'show' : ''}>
+                          <DropdownMenu className={third ? 'show' : ''}>
                             <DropdownItem>Action</DropdownItem>
                             <DropdownItem>Another Action</DropdownItem>
                             <DropdownItem>Something else here</DropdownItem>
@@ -1176,15 +1185,15 @@ Please provide a valid
                         />
                         <InputGroupButtonDropdown
                           addonType="append"
-                          isOpen={this.state.fourth}
+                          isOpen={fourth}
                           toggle={() => {
-                            this.setState({ fourth: !this.state.fourth });
+                            this.setState({ fourth: !fourth });
                           }}
                         >
                           <DropdownToggle caret color="primary">
                             Dropdown
                           </DropdownToggle>
-                          <DropdownMenu className={this.state.fourth ? 'show' : ''}>
+                          <DropdownMenu className={fourth ? 'show' : ''}>
                             <DropdownItem>Action</DropdownItem>
                             <DropdownItem>Another Action</DropdownItem>
                             <DropdownItem>Something else here</DropdownItem>
@@ -1506,7 +1515,7 @@ Please provide a valid
         </Row>
         <Row>
           <Col xs="12">
-            <Fade timeout={this.state.timeout} in={this.state.fadeIn}>
+            <Fade timeout={timeout} in={fadeIn}>
               <Card>
                 <CardHeader>
                   <i className="fa fa-edit" />
@@ -1535,7 +1544,7 @@ Please provide a valid
                     </Button>
                   </div>
                 </CardHeader>
-                <Collapse isOpen={this.state.collapse} id="collapseExample">
+                <Collapse isOpen={collapse} id="collapseExample">
                   <CardBody>
                     <Form className="form-horizontal">
                       <FormGroup>
@@ -1547,7 +1556,7 @@ Please provide a valid
                             </InputGroupAddon>
                             <Input id="prependedInput" size="16" type="text" />
                           </InputGroup>
-                          <p className="help-block">Here's some help text</p>
+                          <p className="help-block">Here&apos;s some help text</p>
                         </div>
                       </FormGroup>
                       <FormGroup>
@@ -1559,7 +1568,7 @@ Please provide a valid
                               <InputGroupText>.00</InputGroupText>
                             </InputGroupAddon>
                           </InputGroup>
-                          <span className="help-block">Here's more help text</span>
+                          <span className="help-block">Here&apos;s more help text</span>
                         </div>
                       </FormGroup>
                       <FormGroup>

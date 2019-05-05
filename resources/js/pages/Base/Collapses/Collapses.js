@@ -50,11 +50,11 @@ class Collapses extends Component {
   }
 
   toggle() {
-    this.setState({ collapse: !this.state.collapse });
+    this.setState(previousState => ({ collapse: !previousState.collapse }));
   }
 
   toggleAccordion(tab) {
-    const prevState = this.state.accordion;
+    const { accordion: prevState } = this.state;
     const state = prevState.map((x, index) => (tab === index ? !x : false));
 
     this.setState({
@@ -63,7 +63,7 @@ class Collapses extends Component {
   }
 
   toggleCustom(tab) {
-    const prevState = this.state.custom;
+    const { custom: prevState } = this.state;
     const state = prevState.map((x, index) => (tab === index ? !x : false));
 
     this.setState({
@@ -72,10 +72,18 @@ class Collapses extends Component {
   }
 
   toggleFade() {
-    this.setState({ fadeIn: !this.state.fadeIn });
+    this.setState(previousState => ({ fadeIn: !previousState.fadeIn }));
   }
 
   render() {
+    const {
+      collapse,
+      accordion,
+      custom,
+      status,
+      fadeIn,
+      timeout,
+    } = this.state;
     return (
       <div className="animated fadeIn">
         <Row>
@@ -96,7 +104,7 @@ class Collapses extends Component {
                 </div>
               </CardHeader>
               <Collapse
-                isOpen={this.state.collapse}
+                isOpen={collapse}
                 onEntering={this.onEntering}
                 onEntered={this.onEntered}
                 onExiting={this.onExiting}
@@ -142,7 +150,7 @@ Toggle
                 <hr />
                 <h5>
                   Current state:
-                  {this.state.status}
+                  {status}
                 </h5>
               </CardFooter>
             </Card>
@@ -162,7 +170,7 @@ Toggle
                 </div>
               </CardHeader>
               <CardBody>
-                <Fade timeout={this.state.timeout} in={this.state.fadeIn} tag="h5" className="mt-3">
+                <Fade timeout={timeout} in={fadeIn} tag="h5" className="mt-3">
                   This content will fade in and out as the button is pressed...
                 </Fade>
               </CardBody>
@@ -195,14 +203,14 @@ Toggle
                         color="link"
                         className="text-left m-0 p-0"
                         onClick={() => this.toggleAccordion(0)}
-                        aria-expanded={this.state.accordion[0]}
+                        aria-expanded={accordion[0]}
                         aria-controls="collapseOne"
                       >
                         <h5 className="m-0 p-0">Collapsible Group Item #1</h5>
                       </Button>
                     </CardHeader>
                     <Collapse
-                      isOpen={this.state.accordion[0]}
+                      isOpen={accordion[0]}
                       data-parent="#accordion"
                       id="collapseOne"
                       aria-labelledby="headingOne"
@@ -216,8 +224,8 @@ Toggle
                         keffiyeh helvetica, craft beer labore wes anderson cred
                         nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
                         Leggings occaecat craft
-                        beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                        heard of them accusamus labore sustainable VHS.
+                        beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                        haven&apos;t heard of them accusamus labore sustainable VHS.
                       </CardBody>
                     </Collapse>
                   </Card>
@@ -228,14 +236,14 @@ Toggle
                         color="link"
                         className="text-left m-0 p-0"
                         onClick={() => this.toggleAccordion(1)}
-                        aria-expanded={this.state.accordion[1]}
+                        aria-expanded={accordion[1]}
                         aria-controls="collapseTwo"
                       >
                         <h5 className="m-0 p-0">Collapsible Group Item #2</h5>
                       </Button>
                     </CardHeader>
                     <Collapse
-                      isOpen={this.state.accordion[1]}
+                      isOpen={accordion[1]}
                       data-parent="#accordion"
                       id="collapseTwo"
                     >
@@ -248,8 +256,8 @@ Toggle
                         keffiyeh helvetica, craft beer labore wes anderson cred
                         nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
                         Leggings occaecat craft
-                        beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                        heard of them accusamus labore sustainable VHS.
+                        beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                        haven&apos;t heard of them accusamus labore sustainable VHS.
                       </CardBody>
                     </Collapse>
                   </Card>
@@ -260,14 +268,14 @@ Toggle
                         color="link"
                         className="text-left m-0 p-0"
                         onClick={() => this.toggleAccordion(2)}
-                        aria-expanded={this.state.accordion[2]}
+                        aria-expanded={accordion[2]}
                         aria-controls="collapseThree"
                       >
                         <h5 className="m-0 p-0">Collapsible Group Item #3</h5>
                       </Button>
                     </CardHeader>
                     <Collapse
-                      isOpen={this.state.accordion[2]}
+                      isOpen={accordion[2]}
                       data-parent="#accordion"
                       id="collapseThree"
                     >
@@ -280,8 +288,8 @@ Toggle
                         keffiyeh helvetica, craft beer labore wes anderson cred
                         nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
                         Leggings occaecat craft
-                        beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                        heard of them accusamus labore sustainable VHS.
+                        beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                        haven&apos;t heard of them accusamus labore sustainable VHS.
                       </CardBody>
                     </Collapse>
                   </Card>
@@ -306,13 +314,13 @@ Toggle
                       className="m-0 p-0"
                       color="link"
                       onClick={() => this.toggleCustom(0)}
-                      aria-expanded={this.state.custom[0]}
+                      aria-expanded={custom[0]}
                       aria-controls="exampleAccordion1"
                     >
                       Toggle item
                     </Button>
                     <Collapse
-                      isOpen={this.state.custom[0]}
+                      isOpen={custom[0]}
                       data-parent="#exampleAccordion"
                       id="exampleAccordion1"
                     >
@@ -328,13 +336,13 @@ Toggle
                       className="m-0 p-0"
                       color="link"
                       onClick={() => this.toggleCustom(1)}
-                      aria-expanded={this.state.custom[1]}
+                      aria-expanded={custom[1]}
                       aria-controls="exampleAccordion2"
                     >
                       Toggle item 2
                     </Button>
                     <Collapse
-                      isOpen={this.state.custom[1]}
+                      isOpen={custom[1]}
                       data-parent="#exampleAccordion"
                       id="exampleAccordion2"
                     >

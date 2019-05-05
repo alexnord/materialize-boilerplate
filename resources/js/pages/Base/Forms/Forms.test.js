@@ -12,8 +12,22 @@ it('renders without crashing', () => {
 describe('toggle clicks', () => {
   it('dropdowns without crashing', () => {
     const wrapper = mount(<Forms />);
-    for (let i = 0; i < 4; i++) {
-      const count = i === 0 ? 'first' : i === 1 ? 'second' : i === 2 ? 'third' : 'fourth';
+    for (let i = 0; i < 4; i + 1) {
+      let count = '';
+      switch (i) {
+      case i === 0:
+        count = 'first';
+        break;
+      case i === 1:
+        count = 'second';
+        break;
+      case i === 2:
+        count = 'third';
+        break;
+      default:
+        count = 'fourth';
+        break;
+      }
       const Dropdown = wrapper.find('button.dropdown-toggle')
         .at(i);
       Dropdown.simulate('click');

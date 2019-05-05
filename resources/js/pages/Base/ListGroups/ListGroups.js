@@ -25,7 +25,8 @@ class ListGroups extends Component {
   }
 
   toggle(tab) {
-    if (this.state.activeTab !== tab) {
+    const { activeTab } = this.state;
+    if (activeTab !== tab) {
       this.setState({
         activeTab: tab,
       });
@@ -33,6 +34,7 @@ class ListGroups extends Component {
   }
 
   render() {
+    const { activeTab } = this.state;
     return (
       <div className="animated fadeIn">
         <Row>
@@ -236,35 +238,35 @@ class ListGroups extends Component {
                       <ListGroupItem
                         onClick={() => this.toggle(0)}
                         action
-                        active={this.state.activeTab === 0}
+                        active={activeTab === 0}
                       >
 Home
                       </ListGroupItem>
                       <ListGroupItem
                         onClick={() => this.toggle(1)}
                         action
-                        active={this.state.activeTab === 1}
+                        active={activeTab === 1}
                       >
 Profile
                       </ListGroupItem>
                       <ListGroupItem
                         onClick={() => this.toggle(2)}
                         action
-                        active={this.state.activeTab === 2}
+                        active={activeTab === 2}
                       >
 Messages
                       </ListGroupItem>
                       <ListGroupItem
                         onClick={() => this.toggle(3)}
                         action
-                        active={this.state.activeTab === 3}
+                        active={activeTab === 3}
                       >
 Settings
                       </ListGroupItem>
                     </ListGroup>
                   </Col>
                   <Col xs="8">
-                    <TabContent activeTab={this.state.activeTab}>
+                    <TabContent activeTab={activeTab}>
                       <TabPane tabId={0}>
                         <p>
                           Velit aute mollit ipsum ad dolor consectetur nulla officia culpa

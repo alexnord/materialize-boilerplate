@@ -1,42 +1,12 @@
 import React, { Component } from 'react';
 import {
-  Button, Card, CardBody, CardHeader, Tooltip, UncontrolledTooltip,
+  Card,
+  CardBody,
+  CardHeader,
+  Tooltip,
+  UncontrolledTooltip,
 } from 'reactstrap';
-
-class TooltipItem extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      tooltipOpen: false,
-    };
-  }
-
-  toggle() {
-    this.setState({
-      tooltipOpen: !this.state.tooltipOpen,
-    });
-  }
-
-  render() {
-    return (
-      <span>
-        <Button className="mr-1" color="secondary" id={`Tooltip-${this.props.id}`}>
-          {this.props.item.text}
-        </Button>
-        <Tooltip
-          placement={this.props.item.placement}
-          isOpen={this.state.tooltipOpen}
-          target={`Tooltip-${this.props.id}`}
-          toggle={this.toggle}
-        >
-          Tooltip Content!
-        </Tooltip>
-      </span>
-    );
-  }
-}
+import TooltipItem from '../../../components/TooltipItem';
 
 class Tooltips extends Component {
   constructor(props) {
@@ -47,18 +17,22 @@ class Tooltips extends Component {
       tooltipOpen: [false, false],
       tooltips: [
         {
+          id: 1,
           placement: 'top',
           text: 'Top',
         },
         {
+          id: 2,
           placement: 'bottom',
           text: 'Bottom',
         },
         {
+          id: 3,
           placement: 'left',
           text: 'Left',
         },
         {
+          id: 4,
           placement: 'right',
           text: 'Right',
         },
@@ -67,13 +41,16 @@ class Tooltips extends Component {
   }
 
   toggle(i) {
-    const newArray = this.state.tooltipOpen.map((element, index) => (index === i ? !element : false));
-    this.setState({
-      tooltipOpen: newArray,
+    this.setState((previousState) => {
+      const newArray = previousState.tooltipOpen.map((element, index) => (
+        index === i ? !element : false
+      ));
+      return { tooltipOpen: newArray };
     });
   }
 
   render() {
+    const { tooltips, tooltipOpen } = this.state;
     return (
       <div className="animated fadeIn">
         <Card>
@@ -96,7 +73,7 @@ class Tooltips extends Component {
             <p>Somewhere in here is a <a href="#" id="TooltipExample">tooltip</a>.</p>
             <Tooltip
               placement="right"
-              isOpen={this.state.tooltipOpen[0]}
+              isOpen={tooltipOpen[0]}
               target="TooltipExample"
               toggle={() => {
                 this.toggle(0);
@@ -114,17 +91,11 @@ class Tooltips extends Component {
           </CardHeader>
           <CardBody>
             {/* eslint-disable-next-line */}
-            <p>Sometimes you need to allow users to select text within a <a
-              href="#"
-              id="DisabledAutoHideExample"
-            >
-tooltip
-            </a>
-.
+            <p>Sometimes you need to allow users to select text within a <a href="#" id="DisabledAutoHideExample">tooltip</a>.
             </p>
             <Tooltip
               placement="top"
-              isOpen={this.state.tooltipOpen[1]}
+              isOpen={tooltipOpen[1]}
               autohide={false}
               target="DisabledAutoHideExample"
               toggle={() => {
@@ -142,7 +113,9 @@ tooltip
             <small> list</small>
           </CardHeader>
           <CardBody>
-            {this.state.tooltips.map((tooltip, i) => <TooltipItem key={i} item={tooltip} id={i} />)}
+            {tooltips.map(
+              tooltip => <TooltipItem key={tooltip.id} item={tooltip} id={tooltip.id} />,
+            )}
           </CardBody>
         </Card>
         <Card>

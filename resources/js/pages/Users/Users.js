@@ -1,20 +1,43 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import {
-  Badge, Card, CardBody, CardHeader, Col, Row, Table,
+  Badge,
+  Card,
+  CardBody,
+  CardHeader,
+  Col,
+  Row,
+  Table,
 } from 'reactstrap';
 
 import usersData from './UsersData';
 
-function UserRow(props) {
-  const { user } = props;
+function UserRow(userData) {
+  const { user } = userData;
   const userLink = `/users/${user.id}`;
 
-  const getBadge = status => (status === 'Active' ? 'success'
-    : status === 'Inactive' ? 'secondary'
-      : status === 'Pending' ? 'warning'
-        : status === 'Banned' ? 'danger'
-          : 'primary');
+  const getBadge = (status) => {
+    let badgeState = '';
+    switch (status) {
+    case 'Active':
+      badgeState = 'success';
+      break;
+    case 'Inactive':
+      badgeState = 'secondary';
+      break;
+    case 'Pending':
+      badgeState = 'warning';
+      break;
+    case 'Banned':
+      badgeState = 'danger';
+      break;
+    default:
+      badgeState = 'primary';
+      break;
+    }
+    return badgeState;
+  };
+
 
   return (
     <tr key={user.id.toString()}>
@@ -27,44 +50,42 @@ function UserRow(props) {
   );
 }
 
-class Users extends Component {
-  render() {
-    const userList = usersData.filter(user => user.id < 10);
+const Users = () => {
+  const userList = usersData.filter(user => user.id < 10);
 
-    return (
-      <div className="animated fadeIn">
-        <Row>
-          <Col xl={6}>
-            <Card>
-              <CardHeader>
-                <i className="fa fa-align-justify" />
-                {' '}
-                Users
-                {' '}
-                <small className="text-muted">example</small>
-              </CardHeader>
-              <CardBody>
-                <Table responsive hover>
-                  <thead>
-                    <tr>
-                      <th scope="col">id</th>
-                      <th scope="col">name</th>
-                      <th scope="col">registered</th>
-                      <th scope="col">role</th>
-                      <th scope="col">status</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {userList.map((user, index) => <UserRow key={index} user={user} />)}
-                  </tbody>
-                </Table>
-              </CardBody>
-            </Card>
-          </Col>
-        </Row>
-      </div>
-    );
-  }
-}
+  return (
+    <div className="animated fadeIn">
+      <Row>
+        <Col xl={6}>
+          <Card>
+            <CardHeader>
+              <i className="fa fa-align-justify" />
+              {' '}
+              Users
+              {' '}
+              <small className="text-muted">example</small>
+            </CardHeader>
+            <CardBody>
+              <Table responsive hover>
+                <thead>
+                  <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">name</th>
+                    <th scope="col">registered</th>
+                    <th scope="col">role</th>
+                    <th scope="col">status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {userList.map(user => <UserRow key={user.id} user={user} />)}
+                </tbody>
+              </Table>
+            </CardBody>
+          </Card>
+        </Col>
+      </Row>
+    </div>
+  );
+};
 
 export default Users;

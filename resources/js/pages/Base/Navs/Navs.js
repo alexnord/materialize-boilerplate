@@ -23,13 +23,16 @@ class Navs extends Component {
   }
 
   toggle(i) {
-    const newArray = this.state.dropdownOpen.map((element, index) => (index === i ? !element : false));
-    this.setState({
-      dropdownOpen: newArray,
+    this.setState((previousState) => {
+      const newArray = previousState.dropdownOpen.map((element, index) => (
+        index === i ? !element : false
+      ));
+      return { dropdownOpen: newArray };
     });
   }
 
   render() {
+    const { dropdownOpen } = this.state;
     return (
       <div className="animated fadeIn">
         <Card>
@@ -91,7 +94,7 @@ class Navs extends Component {
               </NavItem>
               <Dropdown
                 nav
-                isOpen={this.state.dropdownOpen[0]}
+                isOpen={dropdownOpen[0]}
                 toggle={() => {
                   this.toggle(0);
                 }}
@@ -131,7 +134,7 @@ class Navs extends Component {
               </NavItem>
               <Dropdown
                 nav
-                isOpen={this.state.dropdownOpen[1]}
+                isOpen={dropdownOpen[1]}
                 toggle={() => {
                   this.toggle(1);
                 }}

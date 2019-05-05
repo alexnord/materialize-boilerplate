@@ -29,18 +29,19 @@ class Navbars extends Component {
   }
 
   toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen,
-    });
+    this.setState(previousState => ({
+      isOpen: !previousState.isOpen,
+    }));
   }
 
   toggleNavbar() {
-    this.setState({
-      collapsed: !this.state.collapsed,
-    });
+    this.setState(previousState => ({
+      collapsed: !previousState.collapsed,
+    }));
   }
 
   render() {
+    const { collapsed, isOpen } = this.state;
     return (
       <div className="animated fadeIn">
         <Card>
@@ -62,7 +63,7 @@ class Navbars extends Component {
             <Navbar color="info" light expand="md">
               <NavbarBrand href="/">Bootstrap</NavbarBrand>
               <NavbarToggler onClick={this.toggle} />
-              <Collapse isOpen={this.state.isOpen} navbar>
+              <Collapse isOpen={isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                   <NavItem>
                     <NavLink href="#/components/navbars">Components</NavLink>
@@ -108,7 +109,7 @@ Github
             <Navbar color="success" light>
               <NavbarBrand href="/" className="mr-auto">Bootstrap</NavbarBrand>
               <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-              <Collapse isOpen={!this.state.collapsed} navbar>
+              <Collapse isOpen={!collapsed} navbar>
                 <Nav navbar>
                   <NavItem>
                     <NavLink href="#/components/navbars">Components</NavLink>

@@ -23,13 +23,16 @@ class Dropdowns extends Component {
   }
 
   toggle(i) {
-    const newArray = this.state.dropdownOpen.map((element, index) => (index === i ? !element : false));
-    this.setState({
-      dropdownOpen: newArray,
+    this.setState((previousState) => {
+      const newArray = previousState.dropdownOpen.map((element, index) => (
+        index === i ? !element : false
+      ));
+      return { dropdownOpen: newArray };
     });
   }
 
   render() {
+    const { dropdownOpen } = this.state;
     return (
       <div className="animated fadeIn">
         <Row>
@@ -51,7 +54,7 @@ class Dropdowns extends Component {
               </CardHeader>
               <CardBody>
                 <Dropdown
-                  isOpen={this.state.dropdownOpen[0]}
+                  isOpen={dropdownOpen[0]}
                   toggle={() => {
                     this.toggle(0);
                   }}
@@ -77,13 +80,13 @@ class Dropdowns extends Component {
               </CardHeader>
               <CardBody>
                 <Dropdown
-                  isOpen={this.state.dropdownOpen[1]}
+                  isOpen={dropdownOpen[1]}
                   toggle={() => {
                     this.toggle(1);
                   }}
                 >
                   <DropdownToggle caret>
-                    This dropdown's menu is right-aligned
+                    This dropdown&apos;s menu is right-aligned
                   </DropdownToggle>
                   <DropdownMenu right style={{ right: 'auto' }}>
                     <DropdownItem header>Header</DropdownItem>
@@ -103,7 +106,7 @@ class Dropdowns extends Component {
               </CardHeader>
               <CardBody>
                 <Dropdown
-                  isOpen={this.state.dropdownOpen[2]}
+                  isOpen={dropdownOpen[2]}
                   toggle={() => {
                     this.toggle(2);
                   }}
@@ -122,7 +125,7 @@ class Dropdowns extends Component {
                   </DropdownMenu>
                 </Dropdown>
                 <Dropdown
-                  isOpen={this.state.dropdownOpen[3]}
+                  isOpen={dropdownOpen[3]}
                   toggle={() => {
                     this.toggle(3);
                   }}
@@ -140,7 +143,7 @@ class Dropdowns extends Component {
                   </DropdownMenu>
                 </Dropdown>
                 <Dropdown
-                  isOpen={this.state.dropdownOpen[4]}
+                  isOpen={dropdownOpen[4]}
                   toggle={() => {
                     this.toggle(4);
                   }}
@@ -166,7 +169,7 @@ class Dropdowns extends Component {
               </CardHeader>
               <CardBody>
                 <Dropdown
-                  isOpen={this.state.dropdownOpen[5]}
+                  isOpen={dropdownOpen[5]}
                   toggle={() => {
                     this.toggle(5);
                   }}
@@ -177,13 +180,14 @@ class Dropdowns extends Component {
                       this.toggle(5);
                     }}
                     data-toggle="dropdown"
-                    aria-expanded={this.state.dropdownOpen[5]}
+                    aria-expanded={dropdownOpen[5]}
                   >
                     Custom Dropdown Content
                     {' '}
                     <strong> * </strong>
                   </DropdownToggle>
                   <DropdownMenu>
+                    { /* eslint-disable-next-line */ }
                     <div
                       className="dropdown-item"
                       onClick={() => {
@@ -192,6 +196,7 @@ class Dropdowns extends Component {
                     >
 Custom dropdown item 1
                     </div>
+                    { /* eslint-disable-next-line */ }
                     <div
                       className="dropdown-item"
                       onClick={() => {
@@ -200,6 +205,7 @@ Custom dropdown item 1
                     >
 Custom dropdown item 2
                     </div>
+                    { /* eslint-disable-next-line */ }
                     <div
                       className="dropdown-item-text"
                       onClick={() => {
@@ -209,7 +215,10 @@ Custom dropdown item 2
 Custom dropdown text 3
                     </div>
                     <hr className="my-0 dropdown-item-text" />
+                    { /* eslint-disable-next-line */ }
                     <div
+                      role="menuitem"
+                      tabIndex={0}
                       onClick={() => {
                         this.toggle(5);
                       }}

@@ -54,11 +54,13 @@ function (_Component) {
   _createClass(ButtonDropdowns, [{
     key: "toggle",
     value: function toggle(i) {
-      var newArray = this.state.dropdownOpen.map(function (element, index) {
-        return index === i ? !element : false;
-      });
-      this.setState({
-        dropdownOpen: newArray
+      this.setState(function (previousState) {
+        var newArray = previousState.dropdownOpen.map(function (element, index) {
+          return index === i ? !element : false;
+        });
+        return {
+          dropdownOpen: newArray
+        };
       });
     }
   }, {
@@ -66,6 +68,7 @@ function (_Component) {
     value: function render() {
       var _this2 = this;
 
+      var dropdownOpen = this.state.dropdownOpen;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "animated fadeIn"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
@@ -82,7 +85,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
         className: "text-muted"
       }, "docs")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ButtonDropdown"], {
-        isOpen: this.state.dropdownOpen[0],
+        isOpen: dropdownOpen[0],
         toggle: function toggle() {
           _this2.toggle(0);
         }
@@ -100,7 +103,7 @@ function (_Component) {
         className: "fa fa-align-justify"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Single button dropdowns")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ButtonDropdown"], {
         className: "mr-1",
-        isOpen: this.state.dropdownOpen[1],
+        isOpen: dropdownOpen[1],
         toggle: function toggle() {
           _this2.toggle(1);
         }
@@ -115,7 +118,7 @@ function (_Component) {
         divider: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], null, "Another Action"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ButtonDropdown"], {
         className: "mr-1",
-        isOpen: this.state.dropdownOpen[2],
+        isOpen: dropdownOpen[2],
         toggle: function toggle() {
           _this2.toggle(2);
         }
@@ -130,7 +133,7 @@ function (_Component) {
         divider: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], null, "Another Action"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ButtonDropdown"], {
         className: "mr-1",
-        isOpen: this.state.dropdownOpen[3],
+        isOpen: dropdownOpen[3],
         toggle: function toggle() {
           _this2.toggle(3);
         }
@@ -145,7 +148,7 @@ function (_Component) {
         divider: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], null, "Another Action"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ButtonDropdown"], {
         className: "mr-1",
-        isOpen: this.state.dropdownOpen[4],
+        isOpen: dropdownOpen[4],
         toggle: function toggle() {
           _this2.toggle(4);
         }
@@ -160,7 +163,7 @@ function (_Component) {
         divider: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], null, "Another Action"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ButtonDropdown"], {
         className: "mr-1",
-        isOpen: this.state.dropdownOpen[5],
+        isOpen: dropdownOpen[5],
         toggle: function toggle() {
           _this2.toggle(5);
         }
@@ -175,7 +178,7 @@ function (_Component) {
         divider: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], null, "Another Action"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ButtonDropdown"], {
         className: "mr-1",
-        isOpen: this.state.dropdownOpen[6],
+        isOpen: dropdownOpen[6],
         toggle: function toggle() {
           _this2.toggle(6);
         }
@@ -192,7 +195,7 @@ function (_Component) {
         className: "fa fa-align-justify"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Split button dropdowns")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ButtonDropdown"], {
         className: "mr-1",
-        isOpen: this.state.dropdownOpen[7],
+        isOpen: dropdownOpen[7],
         toggle: function toggle() {
           _this2.toggle(7);
         }
@@ -210,7 +213,7 @@ function (_Component) {
         divider: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], null, "Another Action"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ButtonDropdown"], {
         className: "mr-1",
-        isOpen: this.state.dropdownOpen[8],
+        isOpen: dropdownOpen[8],
         toggle: function toggle() {
           _this2.toggle(8);
         }
@@ -228,7 +231,7 @@ function (_Component) {
         divider: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], null, "Another Action"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ButtonDropdown"], {
         className: "mr-1",
-        isOpen: this.state.dropdownOpen[9],
+        isOpen: dropdownOpen[9],
         toggle: function toggle() {
           _this2.toggle(9);
         }
@@ -246,7 +249,7 @@ function (_Component) {
         divider: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], null, "Another Action"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ButtonDropdown"], {
         className: "mr-1",
-        isOpen: this.state.dropdownOpen[10],
+        isOpen: dropdownOpen[10],
         toggle: function toggle() {
           _this2.toggle(10);
         }
@@ -264,7 +267,7 @@ function (_Component) {
         divider: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], null, "Another Action"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ButtonDropdown"], {
         className: "mr-1",
-        isOpen: this.state.dropdownOpen[11],
+        isOpen: dropdownOpen[11],
         toggle: function toggle() {
           _this2.toggle(11);
         }
@@ -282,7 +285,7 @@ function (_Component) {
         divider: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], null, "Another Action"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ButtonDropdown"], {
         className: "mr-1",
-        isOpen: this.state.dropdownOpen[12],
+        isOpen: dropdownOpen[12],
         toggle: function toggle() {
           _this2.toggle(12);
         }
@@ -303,7 +306,7 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Dropdown directions")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ButtonDropdown"], {
         direction: "up",
         className: "mr-1",
-        isOpen: this.state.dropdownOpen[13],
+        isOpen: dropdownOpen[13],
         toggle: function toggle() {
           _this2.toggle(13);
         }
@@ -317,7 +320,7 @@ function (_Component) {
       }, "Action Disabled"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], null, "Action"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], null, "Another Action"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ButtonDropdown"], {
         direction: "left",
         className: "mr-1",
-        isOpen: this.state.dropdownOpen[14],
+        isOpen: dropdownOpen[14],
         toggle: function toggle() {
           _this2.toggle(14);
         }
@@ -331,7 +334,7 @@ function (_Component) {
       }, "Action Disabled"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], null, "Action"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], null, "Another Action"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ButtonDropdown"], {
         direction: "right",
         className: "mr-1",
-        isOpen: this.state.dropdownOpen[15],
+        isOpen: dropdownOpen[15],
         toggle: function toggle() {
           _this2.toggle(15);
         }
@@ -344,7 +347,7 @@ function (_Component) {
         disabled: true
       }, "Action Disabled"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], null, "Action"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], null, "Another Action"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ButtonDropdown"], {
         className: "mr-1",
-        isOpen: this.state.dropdownOpen[16],
+        isOpen: dropdownOpen[16],
         toggle: function toggle() {
           _this2.toggle(16);
         }
@@ -359,7 +362,7 @@ function (_Component) {
         className: "fa fa-align-justify"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Button Dropdown sizing")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ButtonDropdown"], {
         className: "mr-1",
-        isOpen: this.state.dropdownOpen[17],
+        isOpen: dropdownOpen[17],
         toggle: function toggle() {
           _this2.toggle(17);
         }
@@ -371,7 +374,7 @@ function (_Component) {
       }, "Header"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], {
         disabled: true
       }, "Action Disabled"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], null, "Action"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"], null, "Another Action"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["ButtonDropdown"], {
-        isOpen: this.state.dropdownOpen[18],
+        isOpen: dropdownOpen[18],
         toggle: function toggle() {
           _this2.toggle(18);
         }

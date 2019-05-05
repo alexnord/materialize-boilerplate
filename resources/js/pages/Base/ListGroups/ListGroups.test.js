@@ -10,7 +10,7 @@ it('renders without crashing', () => {
 });
 it('toggle click without crashing', () => {
   const wrapper = mount(<ListGroups />);
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 4; i + 1) {
     const ListGroup = wrapper.find('#list-tab .list-group-item-action.list-group-item')
       .at(i);
     ListGroup.simulate('click');

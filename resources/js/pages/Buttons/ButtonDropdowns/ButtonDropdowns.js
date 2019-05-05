@@ -23,13 +23,16 @@ class ButtonDropdowns extends Component {
   }
 
   toggle(i) {
-    const newArray = this.state.dropdownOpen.map((element, index) => (index === i ? !element : false));
-    this.setState({
-      dropdownOpen: newArray,
+    this.setState((previousState) => {
+      const newArray = previousState.dropdownOpen.map((element, index) => (
+        index === i ? !element : false
+      ));
+      return { dropdownOpen: newArray };
     });
   }
 
   render() {
+    const { dropdownOpen } = this.state;
     return (
       <div className="animated fadeIn">
         <Row>
@@ -51,7 +54,7 @@ class ButtonDropdowns extends Component {
               </CardHeader>
               <CardBody>
                 <ButtonDropdown
-                  isOpen={this.state.dropdownOpen[0]}
+                  isOpen={dropdownOpen[0]}
                   toggle={() => {
                     this.toggle(0);
                   }}
@@ -77,7 +80,7 @@ class ButtonDropdowns extends Component {
               <CardBody>
                 <ButtonDropdown
                   className="mr-1"
-                  isOpen={this.state.dropdownOpen[1]}
+                  isOpen={dropdownOpen[1]}
                   toggle={() => {
                     this.toggle(1);
                   }}
@@ -95,7 +98,7 @@ class ButtonDropdowns extends Component {
                 </ButtonDropdown>
                 <ButtonDropdown
                   className="mr-1"
-                  isOpen={this.state.dropdownOpen[2]}
+                  isOpen={dropdownOpen[2]}
                   toggle={() => {
                     this.toggle(2);
                   }}
@@ -113,7 +116,7 @@ class ButtonDropdowns extends Component {
                 </ButtonDropdown>
                 <ButtonDropdown
                   className="mr-1"
-                  isOpen={this.state.dropdownOpen[3]}
+                  isOpen={dropdownOpen[3]}
                   toggle={() => {
                     this.toggle(3);
                   }}
@@ -131,7 +134,7 @@ class ButtonDropdowns extends Component {
                 </ButtonDropdown>
                 <ButtonDropdown
                   className="mr-1"
-                  isOpen={this.state.dropdownOpen[4]}
+                  isOpen={dropdownOpen[4]}
                   toggle={() => {
                     this.toggle(4);
                   }}
@@ -149,7 +152,7 @@ class ButtonDropdowns extends Component {
                 </ButtonDropdown>
                 <ButtonDropdown
                   className="mr-1"
-                  isOpen={this.state.dropdownOpen[5]}
+                  isOpen={dropdownOpen[5]}
                   toggle={() => {
                     this.toggle(5);
                   }}
@@ -167,7 +170,7 @@ class ButtonDropdowns extends Component {
                 </ButtonDropdown>
                 <ButtonDropdown
                   className="mr-1"
-                  isOpen={this.state.dropdownOpen[6]}
+                  isOpen={dropdownOpen[6]}
                   toggle={() => {
                     this.toggle(6);
                   }}
@@ -193,7 +196,7 @@ class ButtonDropdowns extends Component {
               <CardBody>
                 <ButtonDropdown
                   className="mr-1"
-                  isOpen={this.state.dropdownOpen[7]}
+                  isOpen={dropdownOpen[7]}
                   toggle={() => {
                     this.toggle(7);
                   }}
@@ -210,7 +213,7 @@ class ButtonDropdowns extends Component {
                 </ButtonDropdown>
                 <ButtonDropdown
                   className="mr-1"
-                  isOpen={this.state.dropdownOpen[8]}
+                  isOpen={dropdownOpen[8]}
                   toggle={() => {
                     this.toggle(8);
                   }}
@@ -227,7 +230,7 @@ class ButtonDropdowns extends Component {
                 </ButtonDropdown>
                 <ButtonDropdown
                   className="mr-1"
-                  isOpen={this.state.dropdownOpen[9]}
+                  isOpen={dropdownOpen[9]}
                   toggle={() => {
                     this.toggle(9);
                   }}
@@ -244,7 +247,7 @@ class ButtonDropdowns extends Component {
                 </ButtonDropdown>
                 <ButtonDropdown
                   className="mr-1"
-                  isOpen={this.state.dropdownOpen[10]}
+                  isOpen={dropdownOpen[10]}
                   toggle={() => {
                     this.toggle(10);
                   }}
@@ -261,7 +264,7 @@ class ButtonDropdowns extends Component {
                 </ButtonDropdown>
                 <ButtonDropdown
                   className="mr-1"
-                  isOpen={this.state.dropdownOpen[11]}
+                  isOpen={dropdownOpen[11]}
                   toggle={() => {
                     this.toggle(11);
                   }}
@@ -278,7 +281,7 @@ class ButtonDropdowns extends Component {
                 </ButtonDropdown>
                 <ButtonDropdown
                   className="mr-1"
-                  isOpen={this.state.dropdownOpen[12]}
+                  isOpen={dropdownOpen[12]}
                   toggle={() => {
                     this.toggle(12);
                   }}
@@ -304,7 +307,7 @@ class ButtonDropdowns extends Component {
                 <ButtonDropdown
                   direction="up"
                   className="mr-1"
-                  isOpen={this.state.dropdownOpen[13]}
+                  isOpen={dropdownOpen[13]}
                   toggle={() => {
                     this.toggle(13);
                   }}
@@ -322,7 +325,7 @@ class ButtonDropdowns extends Component {
                 <ButtonDropdown
                   direction="left"
                   className="mr-1"
-                  isOpen={this.state.dropdownOpen[14]}
+                  isOpen={dropdownOpen[14]}
                   toggle={() => {
                     this.toggle(14);
                   }}
@@ -340,7 +343,7 @@ class ButtonDropdowns extends Component {
                 <ButtonDropdown
                   direction="right"
                   className="mr-1"
-                  isOpen={this.state.dropdownOpen[15]}
+                  isOpen={dropdownOpen[15]}
                   toggle={() => {
                     this.toggle(15);
                   }}
@@ -357,7 +360,7 @@ class ButtonDropdowns extends Component {
                 </ButtonDropdown>
                 <ButtonDropdown
                   className="mr-1"
-                  isOpen={this.state.dropdownOpen[16]}
+                  isOpen={dropdownOpen[16]}
                   toggle={() => {
                     this.toggle(16);
                   }}
@@ -382,7 +385,7 @@ class ButtonDropdowns extends Component {
               <CardBody>
                 <ButtonDropdown
                   className="mr-1"
-                  isOpen={this.state.dropdownOpen[17]}
+                  isOpen={dropdownOpen[17]}
                   toggle={() => {
                     this.toggle(17);
                   }}
@@ -398,7 +401,7 @@ class ButtonDropdowns extends Component {
                   </DropdownMenu>
                 </ButtonDropdown>
                 <ButtonDropdown
-                  isOpen={this.state.dropdownOpen[18]}
+                  isOpen={dropdownOpen[18]}
                   toggle={() => {
                     this.toggle(18);
                   }}
