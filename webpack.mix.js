@@ -1,5 +1,7 @@
 const mix = require('laravel-mix');
 
+const MomentLocalesPlugin = require('moment-locales-webpack-plugin');
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -11,5 +13,11 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.react('resources/js/app.js', 'public/js')
+mix.react('resources/js/app.js', 'public/js').webpackConfig({
+    plugins: [
+        // To strip all locales except “en”
+        new MomentLocalesPlugin(),
+    ],
+    // Other config goes here
+})
    .sass('resources/sass/app.scss', 'public/css');
