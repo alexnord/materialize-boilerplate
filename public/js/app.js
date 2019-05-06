@@ -73491,20 +73491,20 @@ var loading = function loading() {
 
 
 var DefaultLayout = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(4), __webpack_require__.e(8)]).then(__webpack_require__.bind(null, /*! ./containers/DefaultLayout */ "./resources/js/containers/DefaultLayout/DefaultLayout.js"));
+  return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2), __webpack_require__.e(3)]).then(__webpack_require__.bind(null, /*! ./containers/DefaultLayout */ "./resources/js/containers/DefaultLayout/DefaultLayout.js"));
 }); // Pages
 
 var Login = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(39)]).then(__webpack_require__.bind(null, /*! ./pages/Login */ "./resources/js/pages/Login/Login.js"));
+  return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(10)]).then(__webpack_require__.bind(null, /*! ./pages/Login */ "./resources/js/pages/Login/Login.js"));
 });
 var Register = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(45)]).then(__webpack_require__.bind(null, /*! ./pages/Register */ "./resources/js/pages/Register/Register.js"));
+  return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(13)]).then(__webpack_require__.bind(null, /*! ./pages/Register */ "./resources/js/pages/Register/Register.js"));
 });
 var Page404 = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(43)]).then(__webpack_require__.bind(null, /*! ./pages/Page404 */ "./resources/js/pages/Page404/Page404.js"));
+  return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(11)]).then(__webpack_require__.bind(null, /*! ./pages/Page404 */ "./resources/js/pages/Page404/Page404.js"));
 });
 var Page500 = react__WEBPACK_IMPORTED_MODULE_0___default.a.lazy(function () {
-  return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(44)]).then(__webpack_require__.bind(null, /*! ./pages/Page500 */ "./resources/js/pages/Page500/Page500.js"));
+  return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(12)]).then(__webpack_require__.bind(null, /*! ./pages/Page500 */ "./resources/js/pages/Page500/Page500.js"));
 });
 
 var MainApp = function MainApp() {
@@ -73877,8 +73877,8 @@ function register(config) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/danielwilhelmsen/Code/Personal/materialize/materialize-boilerplate/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/danielwilhelmsen/Code/Personal/materialize/materialize-boilerplate/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/alexnord/Sites/Materialize/dendri/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/alexnord/Sites/Materialize/dendri/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

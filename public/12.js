@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[12],{
 
-/***/ "./resources/js/pages/Users/User.js":
-/*!******************************************!*\
-  !*** ./resources/js/pages/Users/User.js ***!
-  \******************************************/
+/***/ "./resources/js/pages/Page500/Page500.js":
+/*!***********************************************!*\
+  !*** ./resources/js/pages/Page500/Page500.js ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -12,244 +12,42 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _UsersData__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./UsersData */ "./resources/js/pages/Users/UsersData.js");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
-
-function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-
-
-var propTypes = {
-  match: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.shape({
-    params: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.shape({
-      id: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number
-    })
-  })
-};
-var defaultProps = {
-  match: {
-    params: {
-      id: null
-    }
-  }
-};
-
-var User = function User(props) {
-  var match = props.match;
-  var user = _UsersData__WEBPACK_IMPORTED_MODULE_3__["default"].find(function (userInfo) {
-    return userInfo.id.toString() === match.params.id;
-  });
-  var userDetails = user ? Object.entries(user) : [['id', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "text-muted icon-ban"
-  }), ' ', "Not found")]];
+var Page500 = function Page500() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "animated fadeIn"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    lg: 6
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardHeader"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "icon-info pr-1"
-  }), "User id:", ' ', match.params.id)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Table"], {
-    responsive: true,
-    striped: true,
-    hover: true
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, userDetails.map(function (_ref) {
-    var _ref2 = _slicedToArray(_ref, 2),
-        key = _ref2[0],
-        value = _ref2[1];
-
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
-      key: key
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "".concat(key, ":")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, value)));
-  }))))))));
+    className: "app flex-row align-items-center"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+    className: "justify-content-center"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+    md: "6"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "clearfix"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "float-left display-3 mr-4"
+  }, "500"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "pt-3"
+  }, "Houston, we have a problem!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "text-muted float-left"
+  }, "The page you are looking for is temporarily unavailable.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["InputGroup"], {
+    className: "input-prepend"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["InputGroupAddon"], {
+    addonType: "prepend"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["InputGroupText"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fa fa-search"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Input"], {
+    size: "16",
+    type: "text",
+    placeholder: "What are you looking for?"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["InputGroupAddon"], {
+    addonType: "append"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    color: "info"
+  }, "Search")))))));
 };
 
-User.propTypes = propTypes;
-User.defaultProps = defaultProps;
-/* harmony default export */ __webpack_exports__["default"] = (User);
-
-/***/ }),
-
-/***/ "./resources/js/pages/Users/UsersData.js":
-/*!***********************************************!*\
-  !*** ./resources/js/pages/Users/UsersData.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var usersData = [{
-  id: 0,
-  name: 'John Doe',
-  registered: '2018/01/01',
-  role: 'Guest',
-  status: 'Pending'
-}, {
-  id: 1,
-  name: 'Samppa Nori',
-  registered: '2018/01/01',
-  role: 'Member',
-  status: 'Active'
-}, {
-  id: 2,
-  name: 'Estavan Lykos',
-  registered: '2018/02/01',
-  role: 'Staff',
-  status: 'Banned'
-}, {
-  id: 3,
-  name: 'Chetan Mohamed',
-  registered: '2018/02/01',
-  role: 'Admin',
-  status: 'Inactive'
-}, {
-  id: 4,
-  name: 'Derick Maximinus',
-  registered: '2018/03/01',
-  role: 'Member',
-  status: 'Pending'
-}, {
-  id: 5,
-  name: 'Friderik Dávid',
-  registered: '2018/01/21',
-  role: 'Staff',
-  status: 'Active'
-}, {
-  id: 6,
-  name: 'Yiorgos Avraamu',
-  registered: '2018/01/01',
-  role: 'Member',
-  status: 'Active'
-}, {
-  id: 7,
-  name: 'Avram Tarasios',
-  registered: '2018/02/01',
-  role: 'Staff',
-  status: 'Banned'
-}, {
-  id: 8,
-  name: 'Quintin Ed',
-  registered: '2018/02/01',
-  role: 'Admin',
-  status: 'Inactive'
-}, {
-  id: 9,
-  name: 'Enéas Kwadwo',
-  registered: '2018/03/01',
-  role: 'Member',
-  status: 'Pending'
-}, {
-  id: 10,
-  name: 'Agapetus Tadeáš',
-  registered: '2018/01/21',
-  role: 'Staff',
-  status: 'Active'
-}, {
-  id: 11,
-  name: 'Carwyn Fachtna',
-  registered: '2018/01/01',
-  role: 'Member',
-  status: 'Active'
-}, {
-  id: 12,
-  name: 'Nehemiah Tatius',
-  registered: '2018/02/01',
-  role: 'Staff',
-  status: 'Banned'
-}, {
-  id: 13,
-  name: 'Ebbe Gemariah',
-  registered: '2018/02/01',
-  role: 'Admin',
-  status: 'Inactive'
-}, {
-  id: 14,
-  name: 'Eustorgios Amulius',
-  registered: '2018/03/01',
-  role: 'Member',
-  status: 'Pending'
-}, {
-  id: 15,
-  name: 'Leopold Gáspár',
-  registered: '2018/01/21',
-  role: 'Staff',
-  status: 'Active'
-}, {
-  id: 16,
-  name: 'Pompeius René',
-  registered: '2018/01/01',
-  role: 'Member',
-  status: 'Active'
-}, {
-  id: 17,
-  name: 'Paĉjo Jadon',
-  registered: '2018/02/01',
-  role: 'Staff',
-  status: 'Banned'
-}, {
-  id: 18,
-  name: 'Micheal Mercurius',
-  registered: '2018/02/01',
-  role: 'Admin',
-  status: 'Inactive'
-}, {
-  id: 19,
-  name: 'Ganesha Dubhghall',
-  registered: '2018/03/01',
-  role: 'Member',
-  status: 'Pending'
-}, {
-  id: 20,
-  name: 'Hiroto Šimun',
-  registered: '2018/01/21',
-  role: 'Staff',
-  status: 'Active'
-}, {
-  id: 21,
-  name: 'Vishnu Serghei',
-  registered: '2018/01/01',
-  role: 'Member',
-  status: 'Active'
-}, {
-  id: 22,
-  name: 'Zbyněk Phoibos',
-  registered: '2018/02/01',
-  role: 'Staff',
-  status: 'Banned'
-}, {
-  id: 23,
-  name: 'Einar Randall',
-  registered: '2018/02/01',
-  role: 'Admin',
-  status: 'Inactive'
-}, {
-  id: 24,
-  name: 'Félix Troels',
-  registered: '2018/03/21',
-  role: 'Staff',
-  status: 'Active'
-}, {
-  id: 25,
-  name: 'Aulus Agmundr',
-  registered: '2018/01/01',
-  role: 'Member',
-  status: 'Pending'
-}, {
-  id: 42,
-  name: 'Ford Prefex',
-  registered: '2001/05/21',
-  role: 'Alien',
-  status: 'Don\'t panic!'
-}];
-/* harmony default export */ __webpack_exports__["default"] = (usersData);
+/* harmony default export */ __webpack_exports__["default"] = (Page500);
 
 /***/ })
 

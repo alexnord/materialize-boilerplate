@@ -286,10 +286,10 @@ webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
 
 /***/ }),
 
-/***/ "./resources/js/pages/Widgets/Widget01.js":
-/*!************************************************!*\
-  !*** ./resources/js/pages/Widgets/Widget01.js ***!
-  \************************************************/
+/***/ "./resources/js/pages/Dashboard/Dashboard.js":
+/*!***************************************************!*\
+  !*** ./resources/js/pages/Dashboard/Dashboard.js ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -297,389 +297,237 @@ webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-chartjs-2 */ "./node_modules/react-chartjs-2/es/index.js");
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var reactstrap_lib_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! reactstrap/lib/utils */ "./node_modules/reactstrap/lib/utils.js");
-/* harmony import */ var reactstrap_lib_utils__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(reactstrap_lib_utils__WEBPACK_IMPORTED_MODULE_4__);
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+/* harmony import */ var _coreui_coreui_plugin_chartjs_custom_tooltips__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @coreui/coreui-plugin-chartjs-custom-tooltips */ "./node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/umd/custom-tooltips.js");
+/* harmony import */ var _coreui_coreui_plugin_chartjs_custom_tooltips__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_coreui_coreui_plugin_chartjs_custom_tooltips__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _coreui_coreui_dist_js_coreui_utilities__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @coreui/coreui/dist/js/coreui-utilities */ "./node_modules/@coreui/coreui/dist/js/coreui-utilities.js");
+/* harmony import */ var _coreui_coreui_dist_js_coreui_utilities__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_coreui_coreui_dist_js_coreui_utilities__WEBPACK_IMPORTED_MODULE_4__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
 
 
 
 
 
-var propTypes = {
-  header: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  mainText: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  smallText: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  color: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  value: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node,
-  className: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  // eslint-disable-next-line
-  cssModule: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object,
-  variant: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
+var Widget03 = Object(react__WEBPACK_IMPORTED_MODULE_0__["lazy"])(function () {
+  return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ../Widgets/Widget03 */ "./resources/js/pages/Widgets/Widget03.js"));
+});
+var brandPrimary = Object(_coreui_coreui_dist_js_coreui_utilities__WEBPACK_IMPORTED_MODULE_4__["getStyle"])('--primary');
+var brandSuccess = Object(_coreui_coreui_dist_js_coreui_utilities__WEBPACK_IMPORTED_MODULE_4__["getStyle"])('--success');
+var brandInfo = Object(_coreui_coreui_dist_js_coreui_utilities__WEBPACK_IMPORTED_MODULE_4__["getStyle"])('--info');
+var brandWarning = Object(_coreui_coreui_dist_js_coreui_utilities__WEBPACK_IMPORTED_MODULE_4__["getStyle"])('--warning');
+var brandDanger = Object(_coreui_coreui_dist_js_coreui_utilities__WEBPACK_IMPORTED_MODULE_4__["getStyle"])('--danger'); // Card Chart 1
+
+var cardChartData1 = {
+  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  datasets: [{
+    label: 'My First dataset',
+    backgroundColor: brandPrimary,
+    borderColor: 'rgba(255,255,255,.55)',
+    data: [65, 59, 84, 84, 51, 55, 40]
+  }]
 };
-var defaultProps = {
-  header: '89.9%',
-  mainText: 'Lorem ipsum...',
-  smallText: 'Lorem ipsum dolor sit amet enim.',
-  // color: '',
-  value: '25',
-  variant: '',
-  color: 'success',
-  children: null,
-  className: ''
-};
-
-var Widget01 = function Widget01(props) {
-  var className = props.className,
-      cssModule = props.cssModule,
-      header = props.header,
-      mainText = props.mainText,
-      smallText = props.smallText,
-      color = props.color,
-      value = props.value,
-      children = props.children,
-      variant = props.variant,
-      attributes = _objectWithoutProperties(props, ["className", "cssModule", "header", "mainText", "smallText", "color", "value", "children", "variant"]); // demo purposes only
-
-
-  var progress = {
-    style: '',
-    color: color,
-    value: value
-  };
-  var card = {
-    style: '',
-    bgColor: ''
-  };
-
-  if (variant === 'inverse') {
-    progress.style = 'progress-white';
-    progress.color = '';
-    card.style = 'text-white';
-    card.bgColor = "bg-".concat(color);
-  }
-
-  var classes = Object(reactstrap_lib_utils__WEBPACK_IMPORTED_MODULE_4__["mapToCssModules"])(classnames__WEBPACK_IMPORTED_MODULE_3___default()(className, card.style, card.bgColor), cssModule);
-  progress.style = classnames__WEBPACK_IMPORTED_MODULE_3___default()('progress-xs my-3', progress.style);
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Card"], _extends({
-    className: classes
-  }, attributes), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "h4 m-0"
-  }, header), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, mainText), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
-    className: progress.style,
-    color: progress.color,
-    value: progress.value
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
-    className: "text-muted"
-  }, smallText), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, children)));
-};
-
-Widget01.propTypes = propTypes;
-Widget01.defaultProps = defaultProps;
-/* harmony default export */ __webpack_exports__["default"] = (Widget01);
-
-/***/ }),
-
-/***/ "./resources/js/pages/Widgets/Widget02.js":
-/*!************************************************!*\
-  !*** ./resources/js/pages/Widgets/Widget02.js ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var reactstrap_lib_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! reactstrap/lib/utils */ "./node_modules/reactstrap/lib/utils.js");
-/* harmony import */ var reactstrap_lib_utils__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(reactstrap_lib_utils__WEBPACK_IMPORTED_MODULE_4__);
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-
-
-
-
-
-var propTypes = {
-  header: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  mainText: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  icon: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  color: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  variant: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  footer: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
-  link: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node,
-  className: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  // eslint-disable-next-line
-  cssModule: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object
-};
-var defaultProps = {
-  header: '$1,999.50',
-  mainText: 'Income',
-  icon: 'fa fa-cogs',
-  color: 'primary',
-  variant: '0',
-  link: '#',
-  footer: false,
-  children: null,
-  className: ''
-};
-
-var Widget02 = function Widget02(props) {
-  var className = props.className,
-      cssModule = props.cssModule,
-      header = props.header,
-      mainText = props.mainText,
-      icon = props.icon,
-      color = props.color,
-      footer = props.footer,
-      link = props.link,
-      children = props.children,
-      variant = props.variant,
-      attributes = _objectWithoutProperties(props, ["className", "cssModule", "header", "mainText", "icon", "color", "footer", "link", "children", "variant"]); // demo purposes only
-
-
-  var padding = {};
-
-  switch (variant) {
-    case '0':
-      padding = {
-        card: 'p-3',
-        icon: 'p-3',
-        lead: 'mt-2'
-      };
-      break;
-
-    case '1':
-      padding = {
-        card: 'p-0',
-        icon: 'p-4',
-        lead: 'pt-3'
-      };
-      break;
-
-    default:
-      padding = {
-        card: 'p-0',
-        icon: 'p-4 px-5',
-        lead: 'pt-3'
-      };
-  }
-
-  var card = {
-    style: 'clearfix',
-    color: color,
-    icon: icon,
-    classes: ''
-  };
-  card.classes = Object(reactstrap_lib_utils__WEBPACK_IMPORTED_MODULE_4__["mapToCssModules"])(classnames__WEBPACK_IMPORTED_MODULE_3___default()(className, card.style, padding.card), cssModule);
-  var lead = {
-    style: 'h5 mb-0',
-    color: color,
-    classes: ''
-  };
-  lead.classes = classnames__WEBPACK_IMPORTED_MODULE_3___default()(lead.style, "text-".concat(card.color), padding.lead);
-
-  var blockIcon = function blockIcon(iconClass) {
-    var classes = classnames__WEBPACK_IMPORTED_MODULE_3___default()(iconClass, "bg-".concat(card.color), padding.icon, 'font-2xl mr-3 float-left');
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-      className: classes
-    });
-  };
-
-  var cardFooter = function cardFooter() {
-    if (footer) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CardFooter"], {
-        className: "px-3 py-2"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "font-weight-bold font-xs btn-block text-muted",
-        href: link
-      }, "View More", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fa fa-angle-right float-right font-lg"
-      })));
+var cardChartOpts1 = {
+  tooltips: {
+    enabled: false,
+    custom: _coreui_coreui_plugin_chartjs_custom_tooltips__WEBPACK_IMPORTED_MODULE_3__["CustomTooltips"]
+  },
+  maintainAspectRatio: false,
+  legend: {
+    display: false
+  },
+  scales: {
+    xAxes: [{
+      gridLines: {
+        color: 'transparent',
+        zeroLineColor: 'transparent'
+      },
+      ticks: {
+        fontSize: 2,
+        fontColor: 'transparent'
+      }
+    }],
+    yAxes: [{
+      display: false,
+      ticks: {
+        display: false,
+        min: Math.min.apply(Math, _toConsumableArray(cardChartData1.datasets[0].data)) - 5,
+        max: Math.max.apply(Math, _toConsumableArray(cardChartData1.datasets[0].data)) + 5
+      }
+    }]
+  },
+  elements: {
+    line: {
+      borderWidth: 1
+    },
+    point: {
+      radius: 4,
+      hitRadius: 10,
+      hoverRadius: 4
     }
-
-    return null;
-  };
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Card"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CardBody"], _extends({
-    className: card.classes
-  }, attributes), blockIcon(card.icon), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: lead.classes
-  }, header), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "text-muted text-uppercase font-weight-bold font-xs"
-  }, mainText)), cardFooter());
-};
-
-Widget02.propTypes = propTypes;
-Widget02.defaultProps = defaultProps;
-/* harmony default export */ __webpack_exports__["default"] = (Widget02);
-
-/***/ }),
-
-/***/ "./resources/js/pages/Widgets/Widget04.js":
-/*!************************************************!*\
-  !*** ./resources/js/pages/Widgets/Widget04.js ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var reactstrap_lib_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! reactstrap/lib/utils */ "./node_modules/reactstrap/lib/utils.js");
-/* harmony import */ var reactstrap_lib_utils__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(reactstrap_lib_utils__WEBPACK_IMPORTED_MODULE_4__);
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-
-
-
-
-
-var propTypes = {
-  header: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  icon: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  color: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  value: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node,
-  className: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  // eslint-disable-next-line
-  cssModule: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object,
-  invert: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool
-};
-var defaultProps = {
-  header: '87.500',
-  icon: 'icon-people',
-  color: 'info',
-  value: '25',
-  children: 'Visitors',
-  invert: false,
-  className: ''
-};
-
-var Widget04 = function Widget04(props) {
-  var className = props.className,
-      cssModule = props.cssModule,
-      header = props.header,
-      icon = props.icon,
-      color = props.color,
-      value = props.value,
-      children = props.children,
-      invert = props.invert,
-      attributes = _objectWithoutProperties(props, ["className", "cssModule", "header", "icon", "color", "value", "children", "invert"]); // demo purposes only
-
-
-  var progress = {
-    style: '',
-    color: color,
-    value: value
-  };
-  var card = {
-    style: '',
-    bgColor: '',
-    icon: icon
-  };
-
-  if (invert) {
-    progress.style = 'progress-white';
-    progress.color = '';
-    card.style = 'text-white';
-    card.bgColor = "bg-".concat(color);
   }
+}; // Card Chart 2
 
-  var classes = Object(reactstrap_lib_utils__WEBPACK_IMPORTED_MODULE_4__["mapToCssModules"])(classnames__WEBPACK_IMPORTED_MODULE_3___default()(className, card.style, card.bgColor), cssModule);
-  progress.style = classnames__WEBPACK_IMPORTED_MODULE_3___default()('progress-xs mt-3 mb-0', progress.style);
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Card"], _extends({
-    className: classes
-  }, attributes), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "h1 text-muted text-right mb-2"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: card.icon
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "h4 mb-0"
-  }, header), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
-    className: "text-muted text-uppercase font-weight-bold"
-  }, children), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
-    className: progress.style,
-    color: progress.color,
-    value: progress.value
-  })));
+var cardChartData2 = {
+  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  datasets: [{
+    label: 'My First dataset',
+    backgroundColor: brandInfo,
+    borderColor: 'rgba(255,255,255,.55)',
+    data: [1, 18, 9, 17, 34, 22, 11]
+  }]
 };
+var cardChartOpts2 = {
+  tooltips: {
+    enabled: false,
+    custom: _coreui_coreui_plugin_chartjs_custom_tooltips__WEBPACK_IMPORTED_MODULE_3__["CustomTooltips"]
+  },
+  maintainAspectRatio: false,
+  legend: {
+    display: false
+  },
+  scales: {
+    xAxes: [{
+      gridLines: {
+        color: 'transparent',
+        zeroLineColor: 'transparent'
+      },
+      ticks: {
+        fontSize: 2,
+        fontColor: 'transparent'
+      }
+    }],
+    yAxes: [{
+      display: false,
+      ticks: {
+        display: false,
+        min: Math.min.apply(Math, _toConsumableArray(cardChartData2.datasets[0].data)) - 5,
+        max: Math.max.apply(Math, _toConsumableArray(cardChartData2.datasets[0].data)) + 5
+      }
+    }]
+  },
+  elements: {
+    line: {
+      tension: 0.00001,
+      borderWidth: 1
+    },
+    point: {
+      radius: 4,
+      hitRadius: 10,
+      hoverRadius: 4
+    }
+  }
+}; // Card Chart 3
 
-Widget04.propTypes = propTypes;
-Widget04.defaultProps = defaultProps;
-/* harmony default export */ __webpack_exports__["default"] = (Widget04);
+var cardChartData3 = {
+  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  datasets: [{
+    label: 'My First dataset',
+    backgroundColor: 'rgba(255,255,255,.2)',
+    borderColor: 'rgba(255,255,255,.55)',
+    data: [78, 81, 80, 45, 34, 12, 40]
+  }]
+};
+var cardChartOpts3 = {
+  tooltips: {
+    enabled: false,
+    custom: _coreui_coreui_plugin_chartjs_custom_tooltips__WEBPACK_IMPORTED_MODULE_3__["CustomTooltips"]
+  },
+  maintainAspectRatio: false,
+  legend: {
+    display: false
+  },
+  scales: {
+    xAxes: [{
+      display: false
+    }],
+    yAxes: [{
+      display: false
+    }]
+  },
+  elements: {
+    line: {
+      borderWidth: 2
+    },
+    point: {
+      radius: 0,
+      hitRadius: 10,
+      hoverRadius: 4
+    }
+  }
+}; // Card Chart 4
 
-/***/ }),
+var cardChartData4 = {
+  labels: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+  datasets: [{
+    label: 'My First dataset',
+    backgroundColor: 'rgba(255,255,255,.3)',
+    borderColor: 'transparent',
+    data: [78, 81, 80, 45, 34, 12, 40, 75, 34, 89, 32, 68, 54, 72, 18, 98]
+  }]
+};
+var cardChartOpts4 = {
+  tooltips: {
+    enabled: false,
+    custom: _coreui_coreui_plugin_chartjs_custom_tooltips__WEBPACK_IMPORTED_MODULE_3__["CustomTooltips"]
+  },
+  maintainAspectRatio: false,
+  legend: {
+    display: false
+  },
+  scales: {
+    xAxes: [{
+      display: false,
+      barPercentage: 0.6
+    }],
+    yAxes: [{
+      display: false
+    }]
+  }
+}; // Social Box Chart
 
-/***/ "./resources/js/pages/Widgets/Widgets.js":
-/*!***********************************************!*\
-  !*** ./resources/js/pages/Widgets/Widgets.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
-/* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-chartjs-2 */ "./node_modules/react-chartjs-2/es/index.js");
-/* harmony import */ var _Widget01__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Widget01 */ "./resources/js/pages/Widgets/Widget01.js");
-/* harmony import */ var _Widget02__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Widget02 */ "./resources/js/pages/Widgets/Widget02.js");
-/* harmony import */ var _Widget03__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Widget03 */ "./resources/js/pages/Widgets/Widget03.js");
-/* harmony import */ var _Widget04__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Widget04 */ "./resources/js/pages/Widgets/Widget04.js");
-
-
-
-
-
-
- // Brand Card Chart
+var socialBoxData = [{
+  data: [65, 59, 84, 84, 51, 55, 40],
+  label: 'facebook'
+}, {
+  data: [1, 13, 9, 17, 34, 41, 38],
+  label: 'twitter'
+}, {
+  data: [78, 81, 80, 45, 34, 12, 40],
+  label: 'linkedin'
+}, {
+  data: [35, 23, 56, 22, 97, 23, 64],
+  label: 'google'
+}];
 
 var makeSocialBoxData = function makeSocialBoxData(dataSetNo) {
-  var socialBoxData = [{
-    data: [65, 59, 84, 84, 51, 55, 40],
-    label: 'facebook'
-  }, {
-    data: [1, 13, 9, 17, 34, 41, 38],
-    label: 'twitter'
-  }, {
-    data: [78, 81, 80, 45, 34, 12, 40],
-    label: 'linkedin'
-  }, {
-    data: [35, 23, 56, 22, 97, 23, 64],
-    label: 'google'
-  }];
   var dataset = socialBoxData[dataSetNo];
   var data = {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -698,6 +546,10 @@ var makeSocialBoxData = function makeSocialBoxData(dataSetNo) {
 };
 
 var socialChartOpts = {
+  tooltips: {
+    enabled: false,
+    custom: _coreui_coreui_plugin_chartjs_custom_tooltips__WEBPACK_IMPORTED_MODULE_3__["CustomTooltips"]
+  },
   responsive: true,
   maintainAspectRatio: false,
   legend: {
@@ -719,445 +571,1114 @@ var socialChartOpts = {
       hoverBorderWidth: 3
     }
   }
+}; // sparkline charts
+
+var sparkLineChartData = [{
+  data: [35, 23, 56, 22, 97, 23, 64],
+  label: 'New Clients'
+}, {
+  data: [65, 59, 84, 84, 51, 55, 40],
+  label: 'Recurring Clients'
+}, {
+  data: [35, 23, 56, 22, 97, 23, 64],
+  label: 'Pageviews'
+}, {
+  data: [65, 59, 84, 84, 51, 55, 40],
+  label: 'Organic'
+}, {
+  data: [78, 81, 80, 45, 34, 12, 40],
+  label: 'CTR'
+}, {
+  data: [1, 13, 9, 17, 34, 41, 38],
+  label: 'Bounce Rate'
+}];
+
+var makeSparkLineData = function makeSparkLineData(dataSetNo, variant) {
+  var dataset = sparkLineChartData[dataSetNo];
+  var data = {
+    labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    datasets: [{
+      backgroundColor: 'transparent',
+      borderColor: variant || '#c2cfd6',
+      data: dataset.data,
+      label: dataset.label
+    }]
+  };
+  return function () {
+    return data;
+  };
 };
 
-var Widgets = function Widgets() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "animated fadeIn"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    color: "success",
-    header: "89.9%"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    color: "info",
-    header: "12.124"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    color: "warning",
-    header: "$98.111,00",
-    smallText: ""
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
-    className: "text-muted"
-  }, "Excepteur sint occaecat..."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    color: "danger",
-    value: "95",
-    header: "1.9 TB",
-    mainText: "Danger!",
-    smallText: "This is your final warning..."
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    color: "primary",
-    variant: "inverse",
-    header: "89.9%"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    color: "warning",
-    variant: "inverse",
-    header: "12.124"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    color: "danger",
-    variant: "inverse",
-    header: "$98.111,00",
-    smallText: ""
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
-    className: "text-muted"
-  }, "Excepteur sint occaecat..."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget01__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    color: "info",
-    variant: "inverse",
-    value: "95",
-    header: "1.9 TB",
-    mainText: "Danger!",
-    smallText: "This is your final warning..."
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    header: "$1.999,50",
-    mainText: "Income",
-    icon: "fa fa-cogs",
-    color: "primary"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    header: "$1.999,50",
-    mainText: "Income",
-    icon: "fa fa-laptop",
-    color: "info"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    header: "$1.999,50",
-    mainText: "Income",
-    icon: "fa fa-moon-o",
-    color: "warning"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    header: "$1.999,50",
-    mainText: "Income",
-    icon: "fa fa-bell",
-    color: "danger"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    header: "$1.999,50",
-    mainText: "Income",
-    icon: "fa fa-cogs",
-    color: "primary",
-    footer: true,
-    link: "#/charts"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    header: "$1.999,50",
-    mainText: "Income",
-    icon: "fa fa-laptop",
-    color: "info",
-    footer: true
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    header: "$1.999,50",
-    mainText: "Income",
-    icon: "fa fa-moon-o",
-    color: "warning",
-    footer: true
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    header: "$1.999,50",
-    mainText: "Income",
-    icon: "fa fa-bell",
-    color: "danger",
-    footer: true
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    header: "$1.999,50",
-    mainText: "Income",
-    icon: "fa fa-cogs",
-    color: "primary",
-    variant: "1"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    header: "$1.999,50",
-    mainText: "Income",
-    icon: "fa fa-laptop",
-    color: "info",
-    variant: "1"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    header: "$1.999,50",
-    mainText: "Income",
-    icon: "fa fa-moon-o",
-    color: "warning",
-    variant: "1"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    header: "$1.999,50",
-    mainText: "Income",
-    icon: "fa fa-bell",
-    color: "danger",
-    variant: "1"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    header: "$1.999,50",
-    mainText: "Income",
-    icon: "fa fa-cogs",
-    color: "primary",
-    variant: "2"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    header: "$1.999,50",
-    mainText: "Income",
-    icon: "fa fa-laptop",
-    color: "info",
-    variant: "2"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    header: "$1.999,50",
-    mainText: "Income",
-    icon: "fa fa-moon-o",
-    color: "warning",
-    variant: "2"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: "12",
-    sm: "6",
-    lg: "3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget02__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    header: "$1.999,50",
-    mainText: "Income",
-    icon: "fa fa-bell",
-    color: "danger",
-    variant: "2"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: 12,
-    sm: 6,
-    md: 3
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget03__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    dataBox: function dataBox() {
-      return {
-        variant: 'facebook',
-        friends: '89k',
-        feeds: '459'
-      };
+var sparklineChartOpts = {
+  tooltips: {
+    enabled: false,
+    custom: _coreui_coreui_plugin_chartjs_custom_tooltips__WEBPACK_IMPORTED_MODULE_3__["CustomTooltips"]
+  },
+  responsive: true,
+  maintainAspectRatio: true,
+  scales: {
+    xAxes: [{
+      display: false
+    }],
+    yAxes: [{
+      display: false
+    }]
+  },
+  elements: {
+    line: {
+      borderWidth: 2
+    },
+    point: {
+      radius: 0,
+      hitRadius: 10,
+      hoverRadius: 4,
+      hoverBorderWidth: 3
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "chart-wrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__["Line"], {
-    data: makeSocialBoxData(0),
-    options: socialChartOpts,
-    height: 90
-  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: 12,
-    sm: 6,
-    md: 3
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget03__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    dataBox: function dataBox() {
-      return {
-        variant: 'twitter',
-        followers: '973k',
-        tweets: '1.792'
-      };
+  },
+  legend: {
+    display: false
+  }
+}; // Main Chart
+// Random Numbers
+
+function random(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+var elements = 27;
+var data1 = [];
+var data2 = [];
+var data3 = [];
+
+for (var i = 0; i <= elements; i += 1) {
+  data1.push(random(50, 200));
+  data2.push(random(80, 100));
+  data3.push(65);
+}
+
+var mainChart = {
+  labels: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
+  datasets: [{
+    label: 'My First dataset',
+    backgroundColor: Object(_coreui_coreui_dist_js_coreui_utilities__WEBPACK_IMPORTED_MODULE_4__["hexToRgba"])(brandInfo, 10),
+    borderColor: brandInfo,
+    pointHoverBackgroundColor: '#fff',
+    borderWidth: 2,
+    data: data1
+  }, {
+    label: 'My Second dataset',
+    backgroundColor: 'transparent',
+    borderColor: brandSuccess,
+    pointHoverBackgroundColor: '#fff',
+    borderWidth: 2,
+    data: data2
+  }, {
+    label: 'My Third dataset',
+    backgroundColor: 'transparent',
+    borderColor: brandDanger,
+    pointHoverBackgroundColor: '#fff',
+    borderWidth: 1,
+    borderDash: [8, 5],
+    data: data3
+  }]
+};
+var mainChartOpts = {
+  tooltips: {
+    enabled: false,
+    custom: _coreui_coreui_plugin_chartjs_custom_tooltips__WEBPACK_IMPORTED_MODULE_3__["CustomTooltips"],
+    intersect: true,
+    mode: 'index',
+    position: 'nearest',
+    callbacks: {
+      labelColor: function labelColor(tooltipItem, chart) {
+        return {
+          backgroundColor: chart.data.datasets[tooltipItem.datasetIndex].borderColor
+        };
+      }
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "chart-wrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__["Line"], {
-    data: makeSocialBoxData(1),
-    options: socialChartOpts,
-    height: 90
-  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: 12,
-    sm: 6,
-    md: 3
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget03__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    dataBox: function dataBox() {
-      return {
-        variant: 'linkedin',
-        contacts: '500+',
-        feeds: '292'
-      };
+  },
+  maintainAspectRatio: false,
+  legend: {
+    display: false
+  },
+  scales: {
+    xAxes: [{
+      gridLines: {
+        drawOnChartArea: false
+      }
+    }],
+    yAxes: [{
+      ticks: {
+        beginAtZero: true,
+        maxTicksLimit: 5,
+        stepSize: Math.ceil(250 / 5),
+        max: 250
+      }
+    }]
+  },
+  elements: {
+    point: {
+      radius: 0,
+      hitRadius: 10,
+      hoverRadius: 4,
+      hoverBorderWidth: 3
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "chart-wrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__["Line"], {
-    data: makeSocialBoxData(2),
-    options: socialChartOpts,
-    height: 90
-  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: 12,
-    sm: 6,
-    md: 3
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget03__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    dataBox: function dataBox() {
-      return {
-        variant: 'google-plus',
-        followers: '894',
-        circles: '92'
-      };
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "chart-wrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__["Line"], {
-    data: makeSocialBoxData(3),
-    options: socialChartOpts,
-    height: 90
-  }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardGroup"], {
-    className: "mb-4"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    icon: "icon-people",
-    color: "info",
-    header: "87.500",
-    value: "25"
-  }, "Visitors"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    icon: "icon-user-follow",
-    color: "success",
-    header: "385",
-    value: "25"
-  }, "New Clients"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    icon: "icon-basket-loaded",
-    color: "warning",
-    header: "1238",
-    value: "25"
-  }, "Products sold"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    icon: "icon-pie-chart",
-    color: "primary",
-    header: "28%",
-    value: "25"
-  }, "Returning Visitors"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    icon: "icon-speedometer",
-    color: "danger",
-    header: "5:34:11",
-    value: "25"
-  }, "Avg. Time")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: "6",
-    md: "2"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    icon: "icon-people",
-    color: "info",
-    header: "87.500",
-    value: "25"
-  }, "Visitors")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: "6",
-    md: "2"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    icon: "icon-user-follow",
-    color: "success",
-    header: "385",
-    value: "25"
-  }, "New Clients")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: "6",
-    md: "2"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    icon: "icon-basket-loaded",
-    color: "warning",
-    header: "1238",
-    value: "25"
-  }, "Products sold")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: "6",
-    md: "2"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    icon: "icon-pie-chart",
-    color: "primary",
-    header: "28%",
-    value: "25"
-  }, "Returning Visitors")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: "6",
-    md: "2"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    icon: "icon-speedometer",
-    color: "danger",
-    header: "5:34:11",
-    value: "25"
-  }, "Avg. Time")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: "6",
-    md: "2"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    icon: "icon-speech",
-    color: "info",
-    header: "972",
-    value: "25"
-  }, "Comments"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: "6",
-    md: "2"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    icon: "icon-people",
-    color: "info",
-    header: "87.500",
-    value: "25",
-    invert: true
-  }, "Visitors")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: "6",
-    md: "2"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    icon: "icon-user-follow",
-    color: "success",
-    header: "385",
-    value: "25",
-    invert: true
-  }, "New Clients")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: "6",
-    md: "2"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    icon: "icon-basket-loaded",
-    color: "warning",
-    header: "1238",
-    value: "25",
-    invert: true
-  }, "Products sold")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: "6",
-    md: "2"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    icon: "icon-pie-chart",
-    color: "primary",
-    header: "28%",
-    value: "25",
-    invert: true
-  }, "Returning Visitors")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: "6",
-    md: "2"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    icon: "icon-speedometer",
-    color: "danger",
-    header: "5:34:11",
-    value: "25",
-    invert: true
-  }, "Avg. Time")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: "6",
-    md: "2"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widget04__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    icon: "icon-speech",
-    color: "info",
-    header: "972",
-    value: "25",
-    invert: true
-  }, "Comments"))));
+  }
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Widgets);
+var Dashboard =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Dashboard, _Component);
+
+  function Dashboard(props) {
+    var _this;
+
+    _classCallCheck(this, Dashboard);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Dashboard).call(this, props));
+
+    _defineProperty(_assertThisInitialized(_this), "loading", function () {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "animated fadeIn pt-1 text-center"
+      }, "Loading...");
+    });
+
+    _this.toggle = _this.toggle.bind(_assertThisInitialized(_this));
+    _this.onRadioBtnClick = _this.onRadioBtnClick.bind(_assertThisInitialized(_this));
+    _this.state = {
+      dropdownOpen: false,
+      radioSelected: 2
+    };
+    return _this;
+  }
+
+  _createClass(Dashboard, [{
+    key: "onRadioBtnClick",
+    value: function onRadioBtnClick(radioSelected) {
+      this.setState({
+        radioSelected: radioSelected
+      });
+    }
+  }, {
+    key: "toggle",
+    value: function toggle() {
+      this.setState(function (previousState) {
+        return {
+          dropdownOpen: !previousState.dropdownOpen
+        };
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$state = this.state,
+          radioSelected = _this$state.radioSelected,
+          card1 = _this$state.card1,
+          card2 = _this$state.card2,
+          card3 = _this$state.card3,
+          card4 = _this$state.card4;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "animated fadeIn"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        xs: "12",
+        sm: "6",
+        lg: "3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Card"], {
+        className: "text-white bg-info"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CardBody"], {
+        className: "pb-0"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["ButtonGroup"], {
+        className: "float-right"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["ButtonDropdown"], {
+        id: "card1",
+        isOpen: card1,
+        toggle: function toggle() {
+          _this2.setState({
+            card1: !card1
+          });
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownToggle"], {
+        caret: true,
+        className: "p-0",
+        color: "transparent"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-settings"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownMenu"], {
+        right: true
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownItem"], null, "Action"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownItem"], null, "Another action"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownItem"], {
+        disabled: true
+      }, "Disabled action"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownItem"], null, "Something else here")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-value"
+      }, "9.823"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Members online")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "chart-wrapper mx-3",
+        style: {
+          height: '70px'
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__["Line"], {
+        data: cardChartData2,
+        options: cardChartOpts2,
+        height: 70
+      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        xs: "12",
+        sm: "6",
+        lg: "3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Card"], {
+        className: "text-white bg-primary"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CardBody"], {
+        className: "pb-0"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["ButtonGroup"], {
+        className: "float-right"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Dropdown"], {
+        id: "card2",
+        isOpen: card2,
+        toggle: function toggle() {
+          _this2.setState({
+            card2: !card2
+          });
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownToggle"], {
+        className: "p-0",
+        color: "transparent"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-location-pin"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownMenu"], {
+        right: true
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownItem"], null, "Action"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownItem"], null, "Another action"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownItem"], null, "Something else here")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-value"
+      }, "9.823"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Members online")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "chart-wrapper mx-3",
+        style: {
+          height: '70px'
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__["Line"], {
+        data: cardChartData1,
+        options: cardChartOpts1,
+        height: 70
+      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        xs: "12",
+        sm: "6",
+        lg: "3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Card"], {
+        className: "text-white bg-warning"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CardBody"], {
+        className: "pb-0"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["ButtonGroup"], {
+        className: "float-right"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Dropdown"], {
+        id: "card3",
+        isOpen: card3,
+        toggle: function toggle() {
+          _this2.setState({
+            card3: !card3
+          });
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownToggle"], {
+        caret: true,
+        className: "p-0",
+        color: "transparent"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-settings"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownMenu"], {
+        right: true
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownItem"], null, "Action"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownItem"], null, "Another action"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownItem"], null, "Something else here")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-value"
+      }, "9.823"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Members online")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "chart-wrapper",
+        style: {
+          height: '70px'
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__["Line"], {
+        data: cardChartData3,
+        options: cardChartOpts3,
+        height: 70
+      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        xs: "12",
+        sm: "6",
+        lg: "3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Card"], {
+        className: "text-white bg-danger"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CardBody"], {
+        className: "pb-0"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["ButtonGroup"], {
+        className: "float-right"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["ButtonDropdown"], {
+        id: "card4",
+        isOpen: card4,
+        toggle: function toggle() {
+          _this2.setState({
+            card4: !card4
+          });
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownToggle"], {
+        caret: true,
+        className: "p-0",
+        color: "transparent"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-settings"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownMenu"], {
+        right: true
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownItem"], null, "Action"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownItem"], null, "Another action"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["DropdownItem"], null, "Something else here")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-value"
+      }, "9.823"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Members online")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "chart-wrapper mx-3",
+        style: {
+          height: '70px'
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__["Bar"], {
+        data: cardChartData4,
+        options: cardChartOpts4,
+        height: 70
+      }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Card"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        sm: "5"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CardTitle"], {
+        className: "mb-0"
+      }, "Traffic"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "small text-muted"
+      }, "November 2015")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        sm: "7",
+        className: "d-none d-sm-inline-block"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+        color: "primary",
+        className: "float-right"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-cloud-download"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["ButtonToolbar"], {
+        className: "float-right",
+        "aria-label": "Toolbar with button groups"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["ButtonGroup"], {
+        className: "mr-3",
+        "aria-label": "First group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+        color: "outline-secondary",
+        onClick: function onClick() {
+          return _this2.onRadioBtnClick(1);
+        },
+        active: radioSelected === 1
+      }, "Day"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+        color: "outline-secondary",
+        onClick: function onClick() {
+          return _this2.onRadioBtnClick(2);
+        },
+        active: radioSelected === 2
+      }, "Month"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+        color: "outline-secondary",
+        onClick: function onClick() {
+          return _this2.onRadioBtnClick(3);
+        },
+        active: radioSelected === 3
+      }, "Year"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "chart-wrapper",
+        style: {
+          height: "".concat(300, "px"),
+          marginTop: "".concat(40, "px")
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__["Line"], {
+        data: mainChart,
+        options: mainChartOpts,
+        height: 300
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CardFooter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        sm: 12,
+        md: true,
+        className: "mb-sm-2 mb-0"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-muted"
+      }, "Visits"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "29.703 Users (40%)"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs mt-2",
+        color: "success",
+        value: "40"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        sm: 12,
+        md: true,
+        className: "mb-sm-2 mb-0 d-md-down-none"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-muted"
+      }, "Unique"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "24.093 Users (20%)"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs mt-2",
+        color: "info",
+        value: "20"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        sm: 12,
+        md: true,
+        className: "mb-sm-2 mb-0"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-muted"
+      }, "Pageviews"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "78.706 Views (60%)"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs mt-2",
+        color: "warning",
+        value: "60"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        sm: 12,
+        md: true,
+        className: "mb-sm-2 mb-0"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-muted"
+      }, "New Users"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "22.123 Users (80%)"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs mt-2",
+        color: "danger",
+        value: "80"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        sm: 12,
+        md: true,
+        className: "mb-sm-2 mb-0 d-md-down-none"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-muted"
+      }, "Bounce Rate"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Average Rate (40.15%)"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs mt-2",
+        color: "primary",
+        value: "40"
+      }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        xs: "6",
+        sm: "6",
+        lg: "3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Suspense"], {
+        fallback: this.loading()
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Widget03, {
+        dataBox: function dataBox() {
+          return {
+            variant: 'facebook',
+            friends: '89k',
+            feeds: '459'
+          };
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "chart-wrapper"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__["Line"], {
+        data: makeSocialBoxData(0),
+        options: socialChartOpts,
+        height: 90
+      }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        xs: "6",
+        sm: "6",
+        lg: "3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Suspense"], {
+        fallback: this.loading()
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Widget03, {
+        dataBox: function dataBox() {
+          return {
+            variant: 'twitter',
+            followers: '973k',
+            tweets: '1.792'
+          };
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "chart-wrapper"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__["Line"], {
+        data: makeSocialBoxData(1),
+        options: socialChartOpts,
+        height: 90
+      }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        xs: "6",
+        sm: "6",
+        lg: "3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Suspense"], {
+        fallback: this.loading()
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Widget03, {
+        dataBox: function dataBox() {
+          return {
+            variant: 'linkedin',
+            contacts: '500+',
+            feeds: '292'
+          };
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "chart-wrapper"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__["Line"], {
+        data: makeSocialBoxData(2),
+        options: socialChartOpts,
+        height: 90
+      }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        xs: "6",
+        sm: "6",
+        lg: "3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Suspense"], {
+        fallback: this.loading()
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Widget03, {
+        dataBox: function dataBox() {
+          return {
+            variant: 'google-plus',
+            followers: '894',
+            circles: '92'
+          };
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "chart-wrapper"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__["Line"], {
+        data: makeSocialBoxData(3),
+        options: socialChartOpts,
+        height: 90
+      })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Card"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CardHeader"], null, "Traffic", ' ', ' & ', ' ', "Sales"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["CardBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        xs: "12",
+        md: "6",
+        xl: "6"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        sm: "6"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "callout callout-info"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+        className: "text-muted"
+      }, "New Clients"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+        className: "h4"
+      }, "9,123"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "chart-wrapper"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__["Line"], {
+        data: makeSparkLineData(0, brandPrimary),
+        options: sparklineChartOpts,
+        width: 100,
+        height: 30
+      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        sm: "6"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "callout callout-danger"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+        className: "text-muted"
+      }, "Recurring Clients"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+        className: "h4"
+      }, "22,643"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "chart-wrapper"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__["Line"], {
+        data: makeSparkLineData(1, brandDanger),
+        options: sparklineChartOpts,
+        width: 100,
+        height: 30
+      }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
+        className: "mt-0"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group mb-4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-prepend"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "progress-group-text"
+      }, "Monday")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-bars"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "info",
+        value: "34"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "danger",
+        value: "78"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group mb-4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-prepend"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "progress-group-text"
+      }, "Tuesday")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-bars"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "info",
+        value: "56"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "danger",
+        value: "94"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group mb-4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-prepend"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "progress-group-text"
+      }, "Wednesday")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-bars"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "info",
+        value: "12"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "danger",
+        value: "67"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group mb-4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-prepend"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "progress-group-text"
+      }, "Thursday")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-bars"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "info",
+        value: "43"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "danger",
+        value: "91"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group mb-4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-prepend"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "progress-group-text"
+      }, "Friday")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-bars"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "info",
+        value: "22"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "danger",
+        value: "73"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group mb-4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-prepend"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "progress-group-text"
+      }, "Saturday")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-bars"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "info",
+        value: "53"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "danger",
+        value: "82"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group mb-4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-prepend"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "progress-group-text"
+      }, "Sunday")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-bars"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "info",
+        value: "9"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "danger",
+        value: "69"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "legend text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("sup", {
+        className: "px-1"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Badge"], {
+        pill: true,
+        color: "info"
+      }, "\xA0")), "New clients \xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("sup", {
+        className: "px-1"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Badge"], {
+        pill: true,
+        color: "danger"
+      }, "\xA0")), "Recurring clients"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        xs: "12",
+        md: "6",
+        xl: "6"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        sm: "6"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "callout callout-warning"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+        className: "text-muted"
+      }, "Pageviews"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+        className: "h4"
+      }, "78,623"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "chart-wrapper"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__["Line"], {
+        data: makeSparkLineData(2, brandWarning),
+        options: sparklineChartOpts,
+        width: 100,
+        height: 30
+      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        sm: "6"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "callout callout-success"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+        className: "text-muted"
+      }, "Organic"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+        className: "h4"
+      }, "49,123"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "chart-wrapper"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__["Line"], {
+        data: makeSparkLineData(3, brandSuccess),
+        options: sparklineChartOpts,
+        width: 100,
+        height: 30
+      }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
+        className: "mt-0"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-header"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-user progress-group-icon"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title"
+      }, "Male"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "ml-auto font-weight-bold"
+      }, "43%")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-bars"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "warning",
+        value: "43"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group mb-5"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-header"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-user-female progress-group-icon"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title"
+      }, "Female"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "ml-auto font-weight-bold"
+      }, "37%")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-bars"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "warning",
+        value: "37"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-header"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-globe progress-group-icon"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title"
+      }, "Organic Search"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "ml-auto font-weight-bold"
+      }, "191,235", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "text-muted small"
+      }, "(56%)"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-bars"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "success",
+        value: "56"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-header"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-social-facebook progress-group-icon"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title"
+      }, "Facebook"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "ml-auto font-weight-bold"
+      }, "51,223", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "text-muted small"
+      }, "(15%)"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-bars"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "success",
+        value: "15"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-header"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-social-twitter progress-group-icon"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title"
+      }, "Twitter"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "ml-auto font-weight-bold"
+      }, "37,564", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "text-muted small"
+      }, "(11%)"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-bars"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "success",
+        value: "11"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-header"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-social-linkedin progress-group-icon"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title"
+      }, "LinkedIn"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "ml-auto font-weight-bold"
+      }, "27,319", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "text-muted small"
+      }, "(8%)"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "progress-group-bars"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "success",
+        value: "8"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "divider text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+        color: "link",
+        size: "sm",
+        className: "text-muted",
+        "data-toggle": "tooltip",
+        "data-placement": "top",
+        title: "",
+        "data-original-title": "show more"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-options"
+      })))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Table"], {
+        hover: true,
+        responsive: true,
+        className: "table-outline mb-0 d-none d-sm-table"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", {
+        className: "thead-light"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "icon-people"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "User"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+        className: "text-center"
+      }, "Country"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Usage"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+        className: "text-center"
+      }, "Payment Method"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Activity"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "avatar"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "/img/avatars/1.jpg",
+        className: "img-avatar",
+        alt: "admin@bootstrapmaster.com"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "avatar-status badge-success"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Yiorgos Avraamu"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "small text-muted"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "New"), ' ', "| Registered: Jan 1, 2015")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "flag-icon flag-icon-us h4 mb-0",
+        title: "us",
+        id: "us"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "clearfix"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "float-left"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "50%")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "float-right"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+        className: "text-muted"
+      }, "Jun 11, 2015 - Jul 10, 2015"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "success",
+        value: "50"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fa fa-cc-mastercard",
+        style: {
+          fontSize: "".concat(24, "px")
+        }
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "small text-muted"
+      }, "Last login"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "10 sec ago"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "avatar"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "/img/avatars/2.jpg",
+        className: "img-avatar",
+        alt: "admin@bootstrapmaster.com"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "avatar-status badge-danger"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Avram Tarasios"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "small text-muted"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Recurring"), ' ', "| Registered: Jan 1, 2015")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "flag-icon flag-icon-br h4 mb-0",
+        title: "br",
+        id: "br"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "clearfix"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "float-left"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "10%")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "float-right"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+        className: "text-muted"
+      }, "Jun 11, 2015 - Jul 10, 2015"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "info",
+        value: "10"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fa fa-cc-visa",
+        style: {
+          fontSize: "".concat(24, "px")
+        }
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "small text-muted"
+      }, "Last login"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "5 minutes ago"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "avatar"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "/img/avatars/3.jpg",
+        className: "img-avatar",
+        alt: "admin@bootstrapmaster.com"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "avatar-status badge-warning"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Quintin Ed"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "small text-muted"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "New"), ' ', "| Registered: Jan 1, 2015")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "flag-icon flag-icon-in h4 mb-0",
+        title: "in",
+        id: "in"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "clearfix"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "float-left"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "74%")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "float-right"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+        className: "text-muted"
+      }, "Jun 11, 2015 - Jul 10, 2015"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "warning",
+        value: "74"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fa fa-cc-stripe",
+        style: {
+          fontSize: "".concat(24, "px")
+        }
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "small text-muted"
+      }, "Last login"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "1 hour ago"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "avatar"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "/img/avatars/4.jpg",
+        className: "img-avatar",
+        alt: "admin@bootstrapmaster.com"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "avatar-status badge-secondary"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "En\xE9as Kwadwo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "small text-muted"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "New"), ' ', "| Registered: Jan 1, 2015")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "flag-icon flag-icon-fr h4 mb-0",
+        title: "fr",
+        id: "fr"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "clearfix"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "float-left"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "98%")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "float-right"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+        className: "text-muted"
+      }, "Jun 11, 2015 - Jul 10, 2015"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "danger",
+        value: "98"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fa fa-paypal",
+        style: {
+          fontSize: "".concat(24, "px")
+        }
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "small text-muted"
+      }, "Last login"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Last month"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "avatar"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "/img/avatars/5.jpg",
+        className: "img-avatar",
+        alt: "admin@bootstrapmaster.com"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "avatar-status badge-success"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Agapetus Tade\xE1\u0161"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "small text-muted"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "New"), ' ', "| Registered: Jan 1, 2015")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "flag-icon flag-icon-es h4 mb-0",
+        title: "es",
+        id: "es"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "clearfix"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "float-left"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "22%")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "float-right"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+        className: "text-muted"
+      }, "Jun 11, 2015 - Jul 10, 2015"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "info",
+        value: "22"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fa fa-google-wallet",
+        style: {
+          fontSize: "".concat(24, "px")
+        }
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "small text-muted"
+      }, "Last login"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Last week"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "avatar"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "/img/avatars/6.jpg",
+        className: "img-avatar",
+        alt: "admin@bootstrapmaster.com"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "avatar-status badge-danger"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Friderik D\xE1vid"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "small text-muted"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "New"), ' ', "| Registered: Jan 1, 2015")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "flag-icon flag-icon-pl h4 mb-0",
+        title: "pl",
+        id: "pl"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "clearfix"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "float-left"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "43%")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "float-right"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
+        className: "text-muted"
+      }, "Jun 11, 2015 - Jul 10, 2015"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Progress"], {
+        className: "progress-xs",
+        color: "success",
+        value: "43"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fa fa-cc-amex",
+        style: {
+          fontSize: "".concat(24, "px")
+        }
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "small text-muted"
+      }, "Last login"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Yesterday"))))))))));
+    }
+  }]);
+
+  return Dashboard;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Dashboard);
 
 /***/ })
 
