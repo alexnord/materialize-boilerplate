@@ -73748,11 +73748,11 @@ __webpack_require__.r(__webpack_exports__);
 // import 'core-js/es7/reflect'
 // CustomEvent() constructor functionality in IE9, IE10, IE11
 
-(function () {
+(function EventBuilder() {
   if (typeof window.CustomEvent === 'function') return false;
 
-  function CustomEvent(event, params) {
-    params = params || {
+  function CustomEvent(event, inputParams) {
+    var params = inputParams || {
       bubbles: false,
       cancelable: false,
       detail: undefined
@@ -73772,13 +73772,13 @@ __webpack_require__.r(__webpack_exports__);
 /*!***************************************!*\
   !*** ./resources/js/serviceWorker.js ***!
   \***************************************/
-/*! exports provided: register, unregister */
+/*! exports provided: unregister, register */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "register", function() { return register; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unregister", function() { return unregister; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "register", function() { return register; });
 // In production, we register a service worker to serve assets from local cache.
 // This lets the app load faster on subsequent visits in production, and gives
 // it offline capabilities. However, it also means that developers (and users)
@@ -73789,12 +73789,10 @@ __webpack_require__.r(__webpack_exports__);
 var isLocalhost = Boolean(window.location.hostname === 'localhost' // [::1] is the IPv6 localhost address.
 || window.location.hostname === '[::1]' // 127.0.0.1/8 is considered localhost for IPv4.
 || window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/));
-function register(config) {
-  if (false) { var publicUrl; }
-}
 
 function registerValidSW(swUrl, config) {
   navigator.serviceWorker.register(swUrl).then(function (registration) {
+    // eslint-disable-next-line
     registration.onupdatefound = function () {
       var installingWorker = registration.installing;
 
@@ -73854,6 +73852,9 @@ function unregister() {
       registration.unregister();
     });
   }
+}
+function register(config) {
+  if (false) { var publicUrl; }
 }
 
 /***/ }),

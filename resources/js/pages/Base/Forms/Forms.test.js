@@ -12,7 +12,7 @@ it('renders without crashing', () => {
 describe('toggle clicks', () => {
   it('dropdowns without crashing', () => {
     const wrapper = mount(<Forms />);
-    for (let i = 0; i < 4; i + 1) {
+    for (let i = 0; i < 4; i += 1) {
       let count = '';
       switch (i) {
       case i === 0:

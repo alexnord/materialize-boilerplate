@@ -62,35 +62,39 @@ function (_Component) {
   _createClass(ThemeView, [{
     key: "componentDidMount",
     value: function componentDidMount() {
+      // eslint-disable-next-line
       var elem = react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this).parentNode.firstChild;
       var color = window.getComputedStyle(elem).getPropertyValue('background-color');
-      this.setState({
-        bgColor: color || this.state.bgColor
+      this.setState(function (previousState) {
+        return {
+          bgColor: color || previousState.bgColor
+        };
       });
     }
   }, {
     key: "render",
     value: function render() {
+      var bgColor = this.state.bgColor;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
         className: "w-100"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "text-muted"
       }, "HEX:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "font-weight-bold"
-      }, Object(_coreui_coreui_dist_js_coreui_utilities__WEBPACK_IMPORTED_MODULE_4__["rgbToHex"])(this.state.bgColor))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+      }, Object(_coreui_coreui_dist_js_coreui_utilities__WEBPACK_IMPORTED_MODULE_4__["rgbToHex"])(bgColor))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "text-muted"
       }, "RGB:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         className: "font-weight-bold"
-      }, this.state.bgColor))));
+      }, bgColor))));
     }
   }]);
 
   return ThemeView;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
-var ThemeColor = function ThemeColor(props) {
-  var className = props.className,
-      children = props.children;
+var ThemeColor = function ThemeColor(properties) {
+  var className = properties.className,
+      children = properties.children;
   var classes = classnames__WEBPACK_IMPORTED_MODULE_2___default()(className, 'theme-color w-75 rounded mb-3');
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Col"], {
     xl: "2",

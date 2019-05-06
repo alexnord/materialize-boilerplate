@@ -10,14 +10,14 @@ it('renders without crashing', () => {
 });
 it('toggle click without crashing', () => {
   const wrapper = mount(<Dropdowns />);
-  for (let i = 0; i < 5; i + 1) {
+  for (let i = 0; i < 5; i += 1) {
     const Dropdown = wrapper.find('button.dropdown-toggle')
       .at(i);
     Dropdown.simulate('click');
     expect(wrapper.state().dropdownOpen[i])
       .toEqual(true);
   }
-  for (let i = 0; i < 2; i + 1) {
+  for (let i = 0; i < 2; i += 1) {
     const Dropdown = wrapper.find('[data-toggle="dropdown"]')
       .at(0);
     Dropdown.simulate('click');

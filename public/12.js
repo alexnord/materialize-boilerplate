@@ -12,7 +12,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
-/* harmony import */ var _UsersData__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./UsersData */ "./resources/js/pages/Users/UsersData.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _UsersData__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./UsersData */ "./resources/js/pages/Users/UsersData.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
@@ -25,10 +27,25 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+var propTypes = {
+  match: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.shape({
+    params: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.shape({
+      id: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number
+    })
+  })
+};
+var defaultProps = {
+  match: {
+    params: {
+      id: null
+    }
+  }
+};
+
 var User = function User(props) {
   var match = props.match;
-  var user = _UsersData__WEBPACK_IMPORTED_MODULE_2__["default"].find(function (user) {
-    return user.id.toString() === match.params.id;
+  var user = _UsersData__WEBPACK_IMPORTED_MODULE_3__["default"].find(function (userInfo) {
+    return userInfo.id.toString() === match.params.id;
   });
   var userDetails = user ? Object.entries(user) : [['id', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "text-muted icon-ban"
@@ -54,6 +71,8 @@ var User = function User(props) {
   }))))))));
 };
 
+User.propTypes = propTypes;
+User.defaultProps = defaultProps;
 /* harmony default export */ __webpack_exports__["default"] = (User);
 
 /***/ }),

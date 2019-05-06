@@ -383,7 +383,7 @@ const data1 = [];
 const data2 = [];
 const data3 = [];
 
-for (let i = 0; i <= elements; i + 1) {
+for (let i = 0; i <= elements; i += 1) {
   data1.push(random(50, 200));
   data2.push(random(80, 100));
   data3.push(65);
